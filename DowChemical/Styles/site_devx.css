@@ -1,0 +1,53 @@
+﻿/* ASPxDropdown
+----------------------------------------------------------*/
+.disableScrollListBox {
+    overflow:hidden !important;
+}
+
+/* Calendar
+----------------------------------------------------------*/
+
+.dxeCalendarHeader_MetropolisBlue td {
+    padding: 6px 0px 0px 0px !important;
+}
+.dxMonthGridWithWeekNumbers {    
+    padding: 4px 16px 8px 16px !important;
+}
+
+/* ASPxGridView Change CSS */
+.ASPxGrid_Head
+{
+    height: 32px !important;
+    font-family: "leelawadee";
+    font-size: 1em !important;
+    font-weight: 600 !important;
+}
+
+.ASPxGrid_RowHeight
+{
+    height: 28px !important;
+}
+
+.ASPxGrid_RowHeight30
+{
+    height: 30px !important;
+    font-family: "leelawadee";
+    font-size: 0.85em !important;
+}
+
+.ASPxGrid_RowHeight30Alt
+{
+    height: 30px !important;
+    font-family: "leelawadee";
+    font-size: 0.85em !important;
+    background-color: #EEEEEE !important;
+}
+
+
+/* RadWindowManager Change CSS */
+.btok_right
+{
+    text-align: right;
+    clear: both;
+    float: right;
+}

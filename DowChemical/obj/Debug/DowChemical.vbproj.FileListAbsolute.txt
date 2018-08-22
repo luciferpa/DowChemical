@@ -1,0 +1,579 @@
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\ApplicationInsights.config
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\roslyn\csc.exe
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\roslyn\vbc.exe
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\roslyn\VBCSCompiler.exe
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DowChemical.dll.config
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DowChemical.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DowChemical.pdb
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\WebForms_Basic.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\AiLib.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Antlr3.Runtime.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DevExpress.Data.v14.2.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DevExpress.Printing.v14.2.Core.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DevExpress.RichEdit.v14.2.Core.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DevExpress.Web.ASPxThemes.v14.2.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DevExpress.Web.v14.2.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\EntityFramework.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\EntityFramework.SqlServer.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AI.Web.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.ApplicationInsights.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Newtonsoft.Json.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Owin.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\System.Web.Optimization.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\System.Web.Providers.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Web.Spreadsheet.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Web.UI.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Web.UI.Skins.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Core.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Flow.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Windows.Zip.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\WebGrease.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DevExpress.Office.v14.2.Core.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\AiLib.pdb
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\AiLib.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DevExpress.Data.v14.2.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DevExpress.Printing.v14.2.Core.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DevExpress.RichEdit.v14.2.Core.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DevExpress.Web.v14.2.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\EntityFramework.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\EntityFramework.SqlServer.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AI.Web.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.ApplicationInsights.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\System.Web.Optimization.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Web.Spreadsheet.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Web.UI.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Core.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Flow.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Telerik.Windows.Zip.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Antlr3.Runtime.pdb
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Newtonsoft.Json.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\System.Web.Providers.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\DevExpress.Office.v14.2.Core.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\de\DevExpress.Data.v14.2.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\es\DevExpress.Data.v14.2.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\ja\DevExpress.Data.v14.2.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\ru\DevExpress.Data.v14.2.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\de\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\es\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\ja\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\ru\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\de\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\es\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\ja\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\ru\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\de\DevExpress.Web.v14.2.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\es\DevExpress.Web.v14.2.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\ja\DevExpress.Web.v14.2.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\ru\DevExpress.Web.v14.2.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\de\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\es\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\ja\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\bin\ru\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\obj\Debug\DowChemical.vbprojResolveAssemblyReference.cache
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\obj\Debug\DowChemical.Resources.resources
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\obj\Debug\DowChemical.vbproj.GenerateResource.Cache
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\obj\Debug\DowChemical.dll.licenses
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\obj\Debug\DowChemical.dll
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\obj\Debug\WebForms_Basic.xml
+C:\Users\TanaratP\Documents\Visual Studio 2015\Projects\DowChemical\DowChemical\obj\Debug\DowChemical.pdb
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ApplicationInsights.config
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Reports\SampleReport.trdx
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\roslyn\csc.exe
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\roslyn\System.Collections.Immutable.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\roslyn\System.Reflection.Metadata.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\roslyn\vbc.exe
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\roslyn\VBCSCompiler.exe
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\roslyn\VBCSCompiler.exe.config
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DowChemical.dll.config
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DowChemical.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DowChemical.pdb
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\WebForms_Basic.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\AiLib.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Antlr3.Runtime.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\AspNet.ScriptManager.bootstrap.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\AspNet.ScriptManager.jQuery.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DevExpress.Data.v14.2.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DevExpress.Printing.v14.2.Core.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DevExpress.RichEdit.v14.2.Core.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DevExpress.Web.ASPxThemes.v14.2.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DevExpress.Web.v14.2.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\EntityFramework.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\EntityFramework.SqlServer.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AI.Agent.Intercept.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AI.DependencyCollector.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AI.Web.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AI.WindowsServer.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.ApplicationInsights.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Core.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Cookies.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Facebook.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Google.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.OAuth.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Twitter.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.ReportViewer.WebForms.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.ScriptManager.WebForms.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Web.Infrastructure.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Newtonsoft.Json.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Owin.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\System.Net.Http.Formatting.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\System.Web.Http.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\System.Web.Http.WebHost.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\System.Web.Optimization.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\System.Web.Providers.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Reporting.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Reporting.Services.WebApi.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Reporting.XpsRendering.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.ReportViewer.Html5.WebForms.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Web.Spreadsheet.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Web.UI.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Web.UI.Skins.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Core.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Flow.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Windows.Zip.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\WebGrease.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DevExpress.Office.v14.2.Core.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.SqlServer.Types.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\AiLib.pdb
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\AiLib.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DevExpress.Data.v14.2.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DevExpress.Printing.v14.2.Core.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DevExpress.RichEdit.v14.2.Core.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DevExpress.Web.v14.2.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\EntityFramework.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\EntityFramework.SqlServer.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AI.DependencyCollector.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AI.Web.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AI.WindowsServer.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.ApplicationInsights.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\System.Net.Http.Formatting.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\System.Web.Http.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\System.Web.Http.WebHost.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\System.Web.Optimization.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Reporting.pdb
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Reporting.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Reporting.Services.WebApi.pdb
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Reporting.Services.WebApi.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Reporting.XpsRendering.pdb
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Reporting.XpsRendering.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.ReportViewer.Html5.WebForms.pdb
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.ReportViewer.Html5.WebForms.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Web.Spreadsheet.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Web.UI.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Core.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Flow.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Telerik.Windows.Zip.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Antlr3.Runtime.pdb
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Newtonsoft.Json.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Core.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\System.Web.Providers.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Facebook.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Cookies.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Google.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Twitter.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.Owin.Security.OAuth.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\DevExpress.Office.v14.2.Core.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\de\DevExpress.Data.v14.2.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\es\DevExpress.Data.v14.2.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ja\DevExpress.Data.v14.2.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ru\DevExpress.Data.v14.2.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\de\DevExpress.Printing.v14.2.Core.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\es\DevExpress.Printing.v14.2.Core.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ja\DevExpress.Printing.v14.2.Core.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ru\DevExpress.Printing.v14.2.Core.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\de\DevExpress.RichEdit.v14.2.Core.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\es\DevExpress.RichEdit.v14.2.Core.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ja\DevExpress.RichEdit.v14.2.Core.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ru\DevExpress.RichEdit.v14.2.Core.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\de\DevExpress.Web.v14.2.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\es\DevExpress.Web.v14.2.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ja\DevExpress.Web.v14.2.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ru\DevExpress.Web.v14.2.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\de\DevExpress.Office.v14.2.Core.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\es\DevExpress.Office.v14.2.Core.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ja\DevExpress.Office.v14.2.Core.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ru\DevExpress.Office.v14.2.Core.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\obj\Debug\DowChemical.vbprojResolveAssemblyReference.cache
+D:\OneDrive\PROJECT\DowChemical\DowChemical\obj\Debug\DowChemical.vbproj.ResolveComReference.cache
+D:\OneDrive\PROJECT\DowChemical\DowChemical\obj\Debug\DowChemical.Resources.resources
+D:\OneDrive\PROJECT\DowChemical\DowChemical\obj\Debug\DowChemical.vbproj.GenerateResource.Cache
+D:\OneDrive\PROJECT\DowChemical\DowChemical\obj\Debug\DowChemical.dll.licenses
+D:\OneDrive\PROJECT\DowChemical\DowChemical\obj\Debug\DowChemical.dll
+D:\OneDrive\PROJECT\DowChemical\DowChemical\obj\Debug\WebForms_Basic.xml
+D:\OneDrive\PROJECT\DowChemical\DowChemical\obj\Debug\DowChemical.pdb
+D:\OneDrive\PROJECT\DowChemical\DowChemical\bin\Microsoft.AnalysisServices.AdomdClient.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ApplicationInsights.config
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\roslyn\csc.exe
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\roslyn\System.Collections.Immutable.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\roslyn\System.Reflection.Metadata.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\roslyn\vbc.exe
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\roslyn\VBCSCompiler.exe
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\roslyn\VBCSCompiler.exe.config
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DowChemical.dll.config
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DowChemical.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DowChemical.pdb
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\WebForms_Basic.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\AiLib.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Antlr3.Runtime.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\AspNet.ScriptManager.bootstrap.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\AspNet.ScriptManager.jQuery.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DevExpress.Data.v14.2.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DevExpress.Printing.v14.2.Core.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DevExpress.RichEdit.v14.2.Core.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DevExpress.Web.ASPxThemes.v14.2.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DevExpress.Web.v14.2.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\EntityFramework.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\EntityFramework.SqlServer.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AI.Agent.Intercept.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AI.DependencyCollector.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AI.Web.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AI.WindowsServer.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.ApplicationInsights.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Core.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Cookies.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Facebook.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Google.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.OAuth.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Twitter.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.ReportViewer.WebForms.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.ScriptManager.WebForms.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Web.Infrastructure.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Newtonsoft.Json.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Owin.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\System.Net.Http.Formatting.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\System.Web.Http.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\System.Web.Http.WebHost.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\System.Web.Optimization.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\System.Web.Providers.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Reporting.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Reporting.Services.WebApi.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Reporting.XpsRendering.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.ReportViewer.Html5.WebForms.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Web.Spreadsheet.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Web.UI.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Web.UI.Skins.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Core.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Flow.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Windows.Zip.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\WebGrease.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DevExpress.Office.v14.2.Core.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AnalysisServices.AdomdClient.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.SqlServer.Types.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\AiLib.pdb
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\AiLib.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DevExpress.Data.v14.2.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DevExpress.Printing.v14.2.Core.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DevExpress.RichEdit.v14.2.Core.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DevExpress.Web.v14.2.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\EntityFramework.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\EntityFramework.SqlServer.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AI.DependencyCollector.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AI.Web.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AI.WindowsServer.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.ApplicationInsights.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\System.Net.Http.Formatting.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\System.Web.Http.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\System.Web.Http.WebHost.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\System.Web.Optimization.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Reporting.pdb
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Reporting.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Reporting.Services.WebApi.pdb
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Reporting.Services.WebApi.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Reporting.XpsRendering.pdb
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Reporting.XpsRendering.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.ReportViewer.Html5.WebForms.pdb
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.ReportViewer.Html5.WebForms.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Web.Spreadsheet.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Web.UI.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Core.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Flow.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Telerik.Windows.Zip.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Antlr3.Runtime.pdb
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Newtonsoft.Json.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Core.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\System.Web.Providers.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Facebook.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Cookies.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Google.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Twitter.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\Microsoft.Owin.Security.OAuth.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\DevExpress.Office.v14.2.Core.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\de\DevExpress.Data.v14.2.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\es\DevExpress.Data.v14.2.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ja\DevExpress.Data.v14.2.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ru\DevExpress.Data.v14.2.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\de\DevExpress.Printing.v14.2.Core.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\es\DevExpress.Printing.v14.2.Core.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ja\DevExpress.Printing.v14.2.Core.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ru\DevExpress.Printing.v14.2.Core.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\de\DevExpress.RichEdit.v14.2.Core.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\es\DevExpress.RichEdit.v14.2.Core.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ja\DevExpress.RichEdit.v14.2.Core.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ru\DevExpress.RichEdit.v14.2.Core.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\de\DevExpress.Web.v14.2.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\es\DevExpress.Web.v14.2.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ja\DevExpress.Web.v14.2.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ru\DevExpress.Web.v14.2.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\de\DevExpress.Office.v14.2.Core.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\es\DevExpress.Office.v14.2.Core.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ja\DevExpress.Office.v14.2.Core.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ru\DevExpress.Office.v14.2.Core.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\obj\Debug\DowChemical.vbprojResolveAssemblyReference.cache
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\obj\Debug\DowChemical.vbproj.ResolveComReference.cache
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\obj\Debug\DowChemical.Resources.resources
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\obj\Debug\DowChemical.vbproj.GenerateResource.Cache
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\obj\Debug\DowChemical.dll.licenses
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\obj\Debug\DowChemical.dll
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\obj\Debug\WebForms_Basic.xml
+D:\OneDrive\DOW_EZPATH\DowChemical\DowChemical\obj\Debug\DowChemical.pdb
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\ApplicationInsights.config
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\roslyn\csc.exe
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\roslyn\System.Collections.Immutable.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\roslyn\System.Reflection.Metadata.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\roslyn\vbc.exe
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\roslyn\VBCSCompiler.exe
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\roslyn\VBCSCompiler.exe.config
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\DowChemical.dll.config
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\DowChemical.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\DowChemical.pdb
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\WebForms_Basic.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\AiLib.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Antlr3.Runtime.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\AspNet.ScriptManager.bootstrap.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\AspNet.ScriptManager.jQuery.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\EntityFramework.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\EntityFramework.SqlServer.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AI.Agent.Intercept.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AI.DependencyCollector.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AI.Web.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AI.WindowsServer.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.ApplicationInsights.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Core.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Cookies.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Facebook.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Google.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.OAuth.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Twitter.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.ScriptManager.WebForms.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Web.Infrastructure.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Newtonsoft.Json.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Owin.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\System.Net.Http.Formatting.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\System.Web.Http.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\System.Web.Http.WebHost.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\System.Web.Optimization.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\System.Web.Providers.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Web.Spreadsheet.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Web.UI.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Web.UI.Skins.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Core.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Flow.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Windows.Zip.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\WebGrease.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\AiLib.pdb
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\AiLib.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\EntityFramework.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\EntityFramework.SqlServer.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AI.DependencyCollector.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AI.Web.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AI.WindowsServer.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.ApplicationInsights.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\System.Net.Http.Formatting.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\System.Web.Http.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\System.Web.Http.WebHost.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\System.Web.Optimization.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Web.Spreadsheet.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Web.UI.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Core.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Flow.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Telerik.Windows.Zip.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Antlr3.Runtime.pdb
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Newtonsoft.Json.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Core.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\System.Web.Providers.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Facebook.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Cookies.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Google.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.Twitter.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\bin\Microsoft.Owin.Security.OAuth.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\obj\Debug\DowChemical.vbprojAssemblyReference.cache
+C:\ProjectPosOrange\DowChemical\DowChemical\obj\Debug\DowChemical.vbproj.ResolveComReference.cache
+C:\ProjectPosOrange\DowChemical\DowChemical\obj\Debug\DowChemical.Resources.resources
+C:\ProjectPosOrange\DowChemical\DowChemical\obj\Debug\DowChemical.vbproj.GenerateResource.cache
+C:\ProjectPosOrange\DowChemical\DowChemical\obj\Debug\DowChemical.dll.licenses
+C:\ProjectPosOrange\DowChemical\DowChemical\obj\Debug\DowChemical.vbproj.CoreCompileInputs.cache
+C:\ProjectPosOrange\DowChemical\DowChemical\obj\Debug\DowChemical.vbproj.CopyComplete
+C:\ProjectPosOrange\DowChemical\DowChemical\obj\Debug\DowChemical.dll
+C:\ProjectPosOrange\DowChemical\DowChemical\obj\Debug\WebForms_Basic.xml
+C:\ProjectPosOrange\DowChemical\DowChemical\obj\Debug\DowChemical.pdb

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report Width="7.67724609375in" Name="SampleReport" SnapGridSize="0.1cm" xmlns="http://schemas.telerik.com/reporting/2012/3.9">
+  <Items>
+    <PageHeaderSection Height="1.41732279459635in" Name="pageHeaderSection1">
+      <Items>
+        <TextBox Width="5.10000267465902cm" Height="0.699999848604207cm" Left="14.4002010536138cm" Top="0.599800258483085cm" Value="= Parameters.Date.Value" Format="{0:D}" Name="textBox1" />
+        <TextBox Width="2.00000060558317cm" Height="0.699999848604207cm" Left="12.4000002018611cm" Top="0.599800258483085cm" Value="Date:" Name="textBox3" />
+        <TextBox Width="4.89989982644996cm" Height="1.10019989291271cm" Left="0.399999798138942cm" Top="0.599800258483085cm" Value="Sample Report" Name="textBox5">
+          <Style>
+            <BorderStyle Bottom="Solid" />
+            <BorderColor Bottom="Black" />
+            <BorderWidth Bottom="1pt" />
+            <Font Size="18pt" />
+          </Style>
+        </TextBox>
+        <HtmlTextBox Width="18.6000011102358cm" Height="0.999999495347355cm" Left="0.399999798138942cm" Top="2.30000005046526cm" Value="This is a sample report to&amp;nbsp;demonstrate a working &lt;a href=&quot;http://www.telerik.com/help/reporting/webforms-report-viewer-controls-overview.html&quot;&gt;HTML5 Web Forms Report Viewer&lt;/a&gt; and &lt;a href=&quot;http://www.telerik.com/help/reporting/telerik-reporting-rest-conception.html&quot;&gt;REST Reporting Service&lt;/a&gt; with XML report definition (trdx). The report definition is created with the &lt;a href=&quot;http://www.telerik.com/help/reporting/standalone-report-designer.html&quot; target=&quot;_blank&quot;&gt;Standalone Report Designer&lt;/a&gt;." Name="htmlTextBox4" />
+      </Items>
+    </PageHeaderSection>
+    <DetailSection Height="7.00787353515625in" Name="detailSection1">
+      <Items>
+        <HtmlTextBox Width="18.0000006055832cm" Height="10.2998999273805cm" Left="0.999900162220001cm" Top="0.500100274480574cm" Value="&lt;p&gt;HTML5 Web Forms Report Viewer provides server-side wrappers for the HTML5 JavaScript ReportViewer. Developers comfortable with ASP.NET Web Forms can easily configure and work with the Report Viewer via their preferred server-side programming language.&#xD;&#xA;&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;The HTML5 Web Forms Report Viewer provides: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;interactive view that allows &lt;a href=&quot;http://www.telerik.com/help/reporting/designing-reports-interactivity-drill-down.html&quot; target=&quot;_blank&quot;&gt;drill-down&lt;/a&gt; and &lt;a href=&quot;http://www.telerik.com/help/reporting/designing-reports-interactivity-drill-through-report-links.html&quot; target=&quot;_blank&quot;&gt;drill-through&lt;/a&gt;, &lt;a href=&quot;http://www.telerik.com/help/reporting/designing-reports-interactivity-bookmark-action.html&quot; target=&quot;_blank&quot;&gt;navigation to bookmarks&lt;/a&gt; in the report and external URLs;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.telerik.com/help/reporting/report-viewers-interactive-print-view.html&quot; target=&quot;_blank&quot;&gt;print preview&lt;/a&gt; that displays the report as it would be printed;&lt;/li&gt;&lt;li&gt;ability to scale the pages for best viewing experience including full page, page width or custom scale factor;&lt;/li&gt;&lt;li&gt;exporting the reports in most popular &lt;a href=&quot;http://www.telerik.com/help/reporting/designing-reports-considerations-overview.html&quot; target=&quot;_blank&quot;&gt;document formats&lt;/a&gt; including PDF, Microsoft Office 2007’s Word, Excel and Power Point documents, Microsoft Excel ‘97, Rich Text Format, CSV, Image (Multipage TIFF, BMP, JPG, PNG, EMF), XPS;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.telerik.com/help/reporting/html5-report-viewer-direct-print.html&quot; target=&quot;_blank&quot;&gt;direct print&lt;/a&gt; on the client;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.telerik.com/help/reporting/designing-reports-parameters.html&quot; target=&quot;_blank&quot;&gt;report parameters&lt;/a&gt; intuitive UI for user input;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.telerik.com/help/reporting/designing-reports-document-map.html&quot; target=&quot;_blank&quot;&gt;document map&lt;/a&gt; for navigating in the report’s content;&lt;/li&gt;&lt;li&gt;history of the visited reports that allows navigation back and forward;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.telerik.com/help/reporting/html5-report-viewer-customization.html&quot; target=&quot;_blank&quot;&gt;customizable layout/styling&lt;/a&gt; based on pure HTML5 templates and CSS3 styles;&lt;/li&gt;&lt;li&gt;support for &lt;a href=&quot;http://www.telerik.com/help/reporting/html5-report-viewer-browser-support.html&quot; target=&quot;_blank&quot;&gt;mobile as well as desktop browsers&lt;/a&gt; - the default responsive layout adapts itself to the device display for best viewing experience;&lt;/li&gt;&lt;li&gt;color themes with the Kendo UI theming mechanism; &lt;/li&gt;&lt;/ul&gt;" Name="htmlTextBoxReportViewer" StyleName="Description">
+          <Style Visible="False" />
+        </HtmlTextBox>
+        <HtmlTextBox Width="18.0000006055832cm" Height="2.09999853650733cm" Left="1.00000030279159cm" Top="15.7000005551179cm" Value="The report definition is designed in a &lt;a href=&quot;http://www.telerik.com/help/reporting/report-designers.html&quot; target=&quot;_blank&quot;&gt;report designer&lt;/a&gt;. We provide two report designer options. Both report authoring environments include features such as WYSIWYG report design surface, enhanced support for expressions and wizards for creating graphs, maps, crosstabs, tables, band and label reports. This report definition is created with the &lt;a href=&quot;http://www.telerik.com/help/reporting/standalone-report-designer.html&quot;&gt;Standalone Report Designer&lt;/a&gt;." Name="htmlTextBoxReportDesigners" StyleName="Description">
+          <Style Visible="False" />
+        </HtmlTextBox>
+        <HtmlTextBox Width="18.0000006055832cm" Height="2.9999992934863cm" Left="1.00000030279159cm" Top="11.6998992208668cm" Value="The Telerik Reporting REST service provides a simple Application Programming Interface (API) to a report document engine using HTTP requests. This engine allows exporting report documents in all supported rendering formats. The server - client communication relies on simple &lt;a href=&quot;http://martinfowler.com/eaaCatalog/dataTransferObject.html&quot; target=&quot;_blank&quot;&gt;Data Transfer Objects&lt;/a&gt; (DTOs). All DTOs are JSON encoded. The service primary usage is in the HTML5 Report Viewer ecosystem where it leverages the pure client side implementation of the viewer. The service has two implementations &lt;a href=&quot;http://www.telerik.com/help/reporting/telerik-reporting-rest-service-web-api.html&quot; target=&quot;_blank&quot;&gt;ASP.NET Web API Implementation&lt;/a&gt; and &lt;a href=&quot;http://www.telerik.com/help/reporting/telerik-reporting-rest-service-service-stack.html&quot; target=&quot;_blank&quot;&gt;ServiceStack Implementation&lt;/a&gt;. For the current demonstration we have used the ASP.NET Web API Implementation." Name="htmlTextBoxRestService" StyleName="Description">
+          <Style Visible="False" />
+        </HtmlTextBox>
+        <TextBox Width="7.50010007261952cm" Height="0.499999646743148cm" Left="0.399899661540985cm" Top="0cm" Value="HTML5 Web Forms Report Viewer" Name="textBoxRV" StyleName="h2">
+          <Action>
+            <ToggleVisibilityAction DisplayExpandedMark="False">
+              <Targets>
+                <Target ItemName="htmlTextBoxReportViewer" />
+              </Targets>
+            </ToggleVisibilityAction>
+          </Action>
+        </TextBox>
+        <TextBox Width="7.50010007261952cm" Height="0.499999646743148cm" Left="0.399999798138942cm" Top="11.199899069471cm" Value="Telerik Reporting REST service " Name="textBoxRS" StyleName="h2">
+          <Action>
+            <ToggleVisibilityAction DisplayExpandedMark="False">
+              <Targets>
+                <Target ItemName="htmlTextBoxRestService" />
+              </Targets>
+            </ToggleVisibilityAction>
+          </Action>
+        </TextBox>
+        <TextBox Width="7.50010007261952cm" Height="0.499999670585006cm" Left="0.399999798138942cm" Top="15.1998001575526cm" Value="Report Designers" Name="textBoxRD" StyleName="h2">
+          <Action>
+            <ToggleVisibilityAction DisplayExpandedMark="False">
+              <Targets>
+                <Target ItemName="htmlTextBoxReportDesigners" />
+              </Targets>
+            </ToggleVisibilityAction>
+          </Action>
+        </TextBox>
+      </Items>
+      <Bindings>
+        <Binding Path="Height" Expression="=&quot;1in&quot;" />
+      </Bindings>
+    </DetailSection>
+    <PageFooterSection Height="0.629921595255534in" Name="pageFooterSection1">
+      <Items>
+        <TextBox Width="6.59999747673677cm" Height="0.700000857909497cm" Left="12.9002070589803cm" Top="0.500000151395794cm" Value="Page {PageNumber} of {PageCount}" Name="textBox6">
+          <Style TextAlign="Right" />
+        </TextBox>
+      </Items>
+    </PageFooterSection>
+  </Items>
+  <StyleSheet>
+    <StyleRule>
+      <Style>
+        <Font Name="Segoe UI" />
+        <Padding Left="2pt" Right="2pt" />
+      </Style>
+      <Selectors>
+        <TypeSelector Type="TextItemBase" />
+        <TypeSelector Type="HtmlTextBox" />
+      </Selectors>
+    </StyleRule>
+    <StyleRule>
+      <Style>
+        <Font Name="Segoe UI" Size="11pt" />
+      </Style>
+      <Selectors>
+        <StyleSelector Type="ReportItemBase" StyleName="h2" />
+      </Selectors>
+    </StyleRule>
+    <StyleRule>
+      <Style>
+        <BorderStyle Top="None" Bottom="Solid" />
+        <BorderWidth Bottom="1px" />
+        <Padding Top="3px" />
+      </Style>
+      <Selectors>
+        <StyleSelector Type="ReportItemBase" StyleName="Description" />
+      </Selectors>
+    </StyleRule>
+  </StyleSheet>
+  <PageSettings>
+    <PageSettings PaperKind="Letter" Landscape="False">
+      <Margins>
+        <MarginsU Left="1cm" Right="1cm" Top="1cm" Bottom="1cm" />
+      </Margins>
+    </PageSettings>
+  </PageSettings>
+  <ReportParameters>
+    <ReportParameter Name="Date" Type="DateTime" Visible="True" AutoRefresh="True">
+      <Value>
+        <String>= Today()</String>
+      </Value>
+    </ReportParameter>
+  </ReportParameters>
+</Report>

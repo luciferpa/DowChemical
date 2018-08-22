@@ -1,0 +1,208 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="SiteReport.Master.vb" Inherits="DowChemical.SiteReport" %>
+
+<%@ Import Namespace="DowChemical" %>
+<%@ Import Namespace="Microsoft.AspNet.Identity" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - MTP Operations EZ Path Tool</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Styles/site.css" rel="stylesheet" />
+    <link href="~/Styles/siteHeader.css" rel="stylesheet" />
+    <link href="~/Styles/siteUI.css" rel="stylesheet" />
+    <link href="~/Styles/site_devx.css" rel="stylesheet" />
+    <link href="~/Styles/grid_telerik.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .tboxheight {
+            height: 24px !important;
+        }
+
+        .lbChangePass {
+            font-size: small !important;
+        }
+        .footer {
+            text-align: right;
+            padding-right: 20px;
+            color: indianred;
+            font-size: xx-small;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function SessionExpireAlert(timeout) {
+            setTimeout(function () {
+                var btlogout = document.getElementById("LoginView1_LoggingOut")
+                btlogout.click()
+            }, timeout);
+        };
+    </script>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="600">
+            <Scripts>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js"></asp:ScriptReference>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js"></asp:ScriptReference>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js"></asp:ScriptReference>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #ffffff; border-bottom-style: solid; border-bottom-width: 3px; border-bottom-color: #444d58;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="title">
+                        <a runat="server" class="navbar-brand titleLogo" href="~/">MTP Operations EZ Path Tool&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav menutopleft">
+                    </ul>
+                    <ul class="nav navbar-nav menutopleft">
+                    </ul>
+                    <asp:LoginView ID="LoginView1" runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right loginDisplay">
+                                <li><span><a runat="server" href="~/Account/Login">Log in&nbsp;&nbsp;&nbsp;&nbsp;</a></span><img alt="" src="../Images/lock.png" /></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right logoffDisplay">
+                                <li class="menutopsetting">
+                                    <asp:LoginView ID="LoginView11" runat="server" ViewStateMode="Disabled">
+                                        <RoleGroups>
+                                            <asp:RoleGroup Roles="SYSTEM ADMIN">
+                                                <ContentTemplate>
+                                                    <a runat="server" href="~/em/setUser.aspx">Setting</a>
+                                                </ContentTemplate>
+                                            </asp:RoleGroup>
+                                        </RoleGroups>
+                                        <RoleGroups>
+                                            <asp:RoleGroup Roles="USER, FACILITY ADMIN">
+                                                <ContentTemplate>
+                                                </ContentTemplate>
+                                            </asp:RoleGroup>
+                                        </RoleGroups>
+                                    </asp:LoginView>
+                                </li>
+                                <li><span><a id="usermgr" runat="server">Welcome!, <%: Context.User.Identity.GetUserName()  %></a>&nbsp;&nbsp;<img alt="" src="../Images/bullet-green.png" />&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                                <li><span class="logoffButton">
+                                    <asp:LoginStatus id="LoggingOut" runat="server" LogoutAction="Redirect" LogoutText="&nbsp;&nbsp;&nbsp;Log off" LogoutPageUrl="~/Account/Login" OnLoggingOut="Unnamed_LoggingOut" />
+                                </span></li>
+                                <li></li>
+                            </ul>
+                            <telerik:RadToolTip ID="RadToolTip1" runat="server" RelativeTo="Element" ManualClose="True" TargetControlID="usermgr" ShowEvent="OnClick" OffsetX="-4">
+                                <asp:UpdatePanel runat="server" ID="UpdatePanel2" UpdateMode="Conditional">
+                                    <ContentTemplate>
+                                        <div class="form-horizontal" style="padding: 8px 12px 0 12px; width: 260px">
+                                            <div class="lbChangePass">Manage your account</div>
+                                            <h4>Change Password</h4>
+                                            <div style="border-top-style: solid; border-top-width: 2px; border-top-color: #cd5c5c; padding: 16px 0 0 0;"></div>
+                                            <asp:ValidationSummary runat="server" ShowModelStateErrors="true" CssClass="text-danger" />
+                                            <div class="form-group">
+                                                <asp:Label runat="server" ID="CurrentPasswordLabel" AssociatedControlID="CurrentPassword" CssClass="col-md-6">Current password</asp:Label>
+                                                <div class="col-md-10">
+                                                    <asp:TextBox runat="server" ID="CurrentPassword" TextMode="Password" CssClass="form-control input-sm tboxheight" />
+                                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="CurrentPassword"
+                                                        CssClass="text-danger" ErrorMessage="The current password field is required."
+                                                        ValidationGroup="ChangePassword" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <asp:Label runat="server" ID="NewPasswordLabel" AssociatedControlID="NewPassword" CssClass="col-md-6">New password</asp:Label>
+                                                <div class="col-md-10">
+                                                    <asp:TextBox runat="server" ID="NewPassword" TextMode="Password" CssClass="form-control input-sm tboxheight" />
+                                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="NewPassword"
+                                                        CssClass="text-danger" ErrorMessage="The new password is required."
+                                                        ValidationGroup="ChangePassword" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <asp:Label runat="server" ID="ConfirmNewPasswordLabel" AssociatedControlID="ConfirmNewPassword" CssClass="col-md-6">Confirm new password</asp:Label>
+                                                <div class="col-md-10">
+                                                    <asp:TextBox runat="server" ID="ConfirmNewPassword" TextMode="Password" CssClass="form-control input-sm tboxheight" />
+                                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="ConfirmNewPassword"
+                                                        CssClass="text-danger" Display="Dynamic" ErrorMessage="Confirm new password is required."
+                                                        ValidationGroup="ChangePassword" />
+                                                    <asp:CompareValidator runat="server" ControlToCompare="NewPassword" ControlToValidate="ConfirmNewPassword"
+                                                        CssClass="text-danger" Display="Dynamic" ErrorMessage="The new password and confirmation password do not match."
+                                                        ValidationGroup="ChangePassword" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-10" style="padding: 12px 0 0px 12px">
+                                                    <asp:Button runat="server" Text="Change Password" ValidationGroup="ChangePassword" CssClass="btn btn-default" OnClick="btnChange_Click" />
+                                                </div>
+                                                <div class="col-md-10" style="padding: 4px 0 8px 12px">
+                                                    <asp:Label ID="lbInfo" runat="server" Text="" ForeColor="#FF3300"></asp:Label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
+                            </telerik:RadToolTip>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                    <%--<asp:Timer ID="Timer1" runat="server" Interval="120000"></asp:Timer>--%>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer class="LeelawadeeFont" style="font-size: 1em; padding: 0 0 0 48px; margin-top: -16px;">
+                <div style="padding: 10px 0px 0px 0px;">
+                    Organizational Owner: Responsible Care ® Thailand
+                </div>
+                <div style="padding: 0px 0px 0px 0px;">
+                    Content Questions:
+                    <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="mailto:ksukanya@dow.com">Sukanya Kaownual</asp:LinkButton>
+                </div>
+                <div style="padding: 0px 0px 0px 0px;">
+                    Technical Questions:
+                    <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="mailto:fezpath@dow.com">EZ Path Administrator</asp:LinkButton>
+                </div>
+                <div style="padding: 0px 0px 0px 0px;">
+                    DOW RESTRICTED - For internal use only
+                </div>
+                <div style="padding: 0px 0px 16px 0px;">
+                    ® ™ Trademark of The Dow Chemical Company ("Dow") or an affiliated company of Dow
+                </div>
+            </footer>
+            <div class="footer"></div>
+        </div>
+    </form>
+</body>
+</html>

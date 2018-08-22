@@ -1,0 +1,235 @@
+﻿/* DEFAULTS FONT 
+----------------------------------------------------------*/
+@font-face {
+    font-family: "leelawadee";
+    src: url('../Fonts/leelawad.eot') format('embedded-opentype'), 
+        url('../Fonts/leelawad.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CenturyGothicEOT";
+    src: url('../Fonts/GOTHIC.eot') format('embedded-opentype'), 
+        url('../Fonts/GOTHIC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CenturyGothicBoldEOT";
+    src: url('../Fonts/GOTHICB.eot') format('embedded-opentype'), 
+        url('../Fonts/GOTHICB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "THFahkwangEOT";
+    src: url('../Fonts/THFahkwang.eot') format('embedded-opentype'), 
+        url('../Fonts/THFahkwang.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "THFahkwangBoldEOT";
+    src: url('../Fonts/THFahkwangBold.eot') format('embedded-opentype'), 
+        url('../Fonts/THFahkwangBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ThaiSansNeue-BoldEOT";
+    src: url('../Fonts/ThaiSansNeue-Bold.eot') format('embedded-opentype'), 
+        url('../Fonts/ThaiSansNeue-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ThaiSansNeue-LightEOT";
+    src: url('../Fonts/ThaiSansNeue-Light.eot') format('embedded-opentype'), 
+        url('../Fonts/ThaiSansNeue-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.LeelawadeeFont {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "leelawadee" !important;
+}
+
+body {
+    font-size: 1em; /* font-family: "Arial", sans-serif, Helvetica, Verdana; */
+    font-family: "leelawadee", "MS Sans Serif", "microsoft Sans Serif", Arial, Helvetica, Verdana;
+    margin: 0;
+    padding: 0 0 0 0;
+    color: #696969;
+    overflow-x: hidden;
+}
+
+a:link, a:visited {
+    color: #034af3;
+    top: 1px;
+    left: 0;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #034af3;
+}
+
+.plainText {
+    font-family: leelawadee;
+    font-size: 1.4em !important;
+}
+
+table { border-collapse: collapse; border-spacing: 0; }
+th, td { padding: 0; border-spacing: 0; }
+
+.page {
+    width: 99.8%;
+    background-color: #fff;
+    margin: 0 auto 0 auto;
+    border: 1px solid #496077;
+}
+
+.fontBold {
+    font-weight: bold;
+}
+
+.textAdjMagin {
+    margin-top: 6px;
+}
+
+.mainContainer {
+    padding: 0;
+    margin: 0;
+    min-height: 500px;
+}
+
+
+/* MENU 
+----------------------------------------------------------*/
+
+.menubarItem {
+    padding: 6px 8px 2px 8px !important;
+}
+.menubar2Item {
+    padding: 10px 12px 2px 12px !important;
+    font-size: 1.1em !important;
+    background-color: #FFFFFF !important;
+}
+.menubar2ItemSelected {
+    padding: 10px 12px 2px 12px !important;
+    font-size: 1.2em !important;
+    font-weight: bold;
+}
+.menubar3Item {
+    padding: 0px 16px 0px 12px !important;
+}
+
+
+/* SCREEN
+----------------------------------------------------------*/
+.containerScreen {
+    left: 0%;
+    position: fixed;
+    top: 85px;
+    transform: translate(0%, 0%);
+    font-family: "leelawadee" !important;
+    font-size: 1.4em;
+}
+
+.rowAdjScreen {
+    margin-left:-15px;
+    margin-right:-15px;
+}
+.colmarginR2m {
+    margin-right:-2px;
+}
+.colmarginL2 {
+    margin-left:2px;
+}
+.colmarginL3m {
+     margin-left:-3px;
+}
+.chkadjT2 {
+     margin-top: 0px !important;
+}
+
+
+/* Box
+----------------------------------------------------------*/
+.boxwell{
+    min-height: 16px;
+    padding: 6px 10px;
+    background-color: #f3f5f7;
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05)
+}
+
+.fieldset-box {
+    margin-left: 16px;
+    background: #fff;	
+    width: 95%;
+ }
+
+
+/* RadComboBox
+----------------------------------------------------------*/
+div.RadComboBox_Metro .rcbInputCell input.rcbInput {  
+    height: 28px !important;  
+    line-height: 24px !important;
+}
+div.RadComboBoxDropDown .rcbList .rcbItem, .rcbHovered {
+    padding-top: 8px !important;
+    height: 28px !important;
+}
+
+
+/* RadDatePicker
+----------------------------------------------------------*/
+.rcCalPopupAdj {
+    height: 28px !important;
+    margin-top: 1px !important;
+}.rcDateInputAdj {
+    height: 30px !important;
+    margin-top: 2px !important;
+}
+
+
+ /* Button Bootstrap
+----------------------------------------------------------*/
+.btn-mo30 {
+    padding-top: 4px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important; }
+
+.btn-mo31 {
+    height: 34px !important;
+    padding-top: 6px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    background-color: #e6e6e6 !important; }
+.btn-mo31:hover {
+    background-color: #ffffff !important; }
+
+.btn-mo32 {
+    height: 30px !important;
+    padding-top: 4px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    background-color: #e6e6e6 !important; }
+.btn-mo32:hover {
+    background-color: #f3f5f7 !important; }
+ 
