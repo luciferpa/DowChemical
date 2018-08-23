@@ -110,8 +110,7 @@
 WHERE c2.recActMonth =  MONTH(getdate()) AND c2.recActYear = YEAR(getdate()) AND c2.empId = a.empId) as totalObserve,
 (SELECT SUM(PSCE_ContainmentLoss) FROM tblRpEmpHistorical d1 where d1.empId = a.empId and d1.month = MONTH(getdate()) and d1.year = YEAR(getdate())) as PSCE_ContainmentLoss,
 (SELECT SUM(PSCE_PSNM) FROM tblRpEmpHistorical d2 where d2.empId = a.empId and d2.month = MONTH(getdate()) and d2.year = YEAR(getdate())) as PSCE_PSNM,
---(SELECT SUM(actionCompleted) FROM tblRpEmpHistorical d3 where d3.empId = a.empId and d3.month = MONTH(getdate()) and d3.year = YEAR(getdate())) as actionComplete,
-(SELECT SUM(case when d31.IsComplete = 1003 or d31.IsComplete = 1001 then 1 else 0 end) FROM tblRecord d31 where d31.empId = a.empId and d31.recActMonth = MONTH(getdate()) and d31.recActYear = YEAR(getdate())) as actionComplete,
+(SELECT SUM(actionCompleted) FROM tblRpEmpHistorical d3 where d3.empId = a.empId and d3.month = MONTH(getdate()) and d3.year = YEAR(getdate())) as actionComplete,
 (SELECT SUM(recognition) FROM tblRpEmpHistorical d4 where d4.empId = a.empId and d4.month = MONTH(getdate()) and d4.year = YEAR(getdate())) as actionRecognition,
 (SELECT SUM(leadershipVisibility) FROM tblRpEmpHistorical d5 where d5.empId = a.empId and d5.month = MONTH(getdate()) and d5.year = YEAR(getdate())) as leadershipVisibility_fsfl,
 (SELECT SUM(proactiveCompliance) FROM tblRpEmpHistorical d6 where d6.empId = a.empId and d6.month = MONTH(getdate()) and d6.year = YEAR(getdate())) as proactiveCompliance,
@@ -136,8 +135,7 @@ select 1 as rpId, a.empId, a.departId ,13 as month, YEAR(getdate()) as year, 'YT
 WHERE c2.recActYear = YEAR(getdate()) AND c2.empId = a.empId) as totalObserve,
 (SELECT SUM(PSCE_ContainmentLoss) FROM tblRpEmpHistorical d1 where d1.empId = a.empId and d1.year = YEAR(getdate())) as PSCE_ContainmentLoss,
 (SELECT SUM(PSCE_PSNM) FROM tblRpEmpHistorical d2 where d2.empId = a.empId and d2.year = YEAR(getdate())) as PSCE_PSNM,
---(SELECT SUM(actionCompleted) FROM tblRpEmpHistorical d3 where d3.empId = a.empId and d3.year = YEAR(getdate())) as actionComplete,
-(SELECT SUM(case when d31.IsComplete = 1003 or d31.IsComplete = 1001 then 1 else 0 end) FROM tblRecord d31 where d31.empId = a.empId and d31.recActYear = YEAR(getdate())) as actionComplete,
+(SELECT SUM(actionCompleted) FROM tblRpEmpHistorical d3 where d3.empId = a.empId and d3.year = YEAR(getdate())) as actionComplete,
 (SELECT SUM(recognition) FROM tblRpEmpHistorical d4 where d4.empId = a.empId and d4.year = YEAR(getdate())) as actionRecognition,
 (SELECT SUM(leadershipVisibility) FROM tblRpEmpHistorical d5 where d5.empId = a.empId and d5.year = YEAR(getdate())) as leadershipVisibility_fsfl,
 (SELECT SUM(proactiveCompliance) FROM tblRpEmpHistorical d6 where d6.empId = a.empId and d6.year = YEAR(getdate())) as proactiveCompliance,
@@ -154,7 +152,8 @@ WHERE c2.recActYear = YEAR(getdate()) AND c2.empId = a.empId) as totalObserve,
 (SELECT SUM(LCS) FROM tblRpEmpHistorical d16 where d16.empId = a.empId and d16.year = YEAR(getdate())) as LCS,
 getdate() as lastUpdate
 from tblEmployee a
-where a.empId = @empId">
+where a.empId = @empId
+">
                             <SelectParameters>
                                 <asp:ControlParameter ControlID="HdEmpId" DefaultValue="" Name="empId" PropertyName="Value" />
                             </SelectParameters>

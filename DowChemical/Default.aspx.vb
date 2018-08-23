@@ -75,7 +75,4 @@ Public Class _Default
         'End If
     End Sub
 
-    Protected Sub rlvIndicator_NeedDataSource(sender As Object, e As RadListViewNeedDataSourceEventArgs) Handles rlvIndicator.NeedDataSource
-
-    End Sub
 End Class
