@@ -4,6 +4,7 @@ Public Class _Default
     Inherits Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
+        Dim empId As Integer
         If Not Page.IsPostBack Then
             'https://
             If Not Request.IsLocal And Not HttpContext.Current.Request.IsSecureConnection Then
@@ -29,6 +30,7 @@ Public Class _Default
                     lbDepartName.Text = employee.DepartmentName
                     HdDepartId.Value = employee.DepartmentId
                     HdEmpId.Value = employee.EmployeeId
+                    empId = employee.EmployeeId
                     lbAccountType.Text = "[" & employee.AccountType & "]"
 
                 End If
@@ -56,6 +58,19 @@ Public Class _Default
             pnAvatar.Visible = False
         End If
 
+        'Load Data
+        Dim rp As New cReport2(Date.Today.Year)
+        rp.CountOffHourByEmpId(Date.Today.Month, empId)
+        Dim actionRecogAllMonth As Decimal = rp.CountRecogAll()
+        Dim offHourMonth As Integer = rp.CountOffHour()
+        rp.CountOffHourByEmpId(0, empId)
+        Dim actionRecogAll As Decimal = rp.CountRecogAll()
+        Dim offHour As Integer = rp.CountOffHour()
+        HdactionRecogAllMonth.Value = actionRecogAllMonth
+        HdoffHourMonth.Value = offHourMonth
+        HdactionRecogAll.Value = actionRecogAll
+        HdoffHour.Value = offHour
+
     End Sub
 
     Private Sub RadPanelBar1_ItemClick(sender As Object, e As RadPanelBarEventArgs) Handles RadPanelBar1.ItemClick
@@ -66,13 +81,6 @@ Public Class _Default
             End If
         End If
 
-        'If e.Item.Items.Count > 0 Then
-        '    If e.Item.Text = "SETTING" Or e.Item.Text = "REPORT" Then
-        '        RadPanelBar1.Items.FindItemByText("HOME").Selected = False
-        '        RadPanelBar1.Items.FindItemByText("OBSERVER").Selected = False
-        '        RadPanelBar1.Items.FindItemByText("FOLLOW UP").Selected = False
-        '    End If
-        'End If
     End Sub
 
 End Class

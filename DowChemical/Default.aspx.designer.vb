@@ -113,6 +113,42 @@ Partial Public Class _Default
     Protected WithEvents HdEmpId As Global.System.Web.UI.WebControls.HiddenField
     
     '''<summary>
+    '''HdactionRecogAllMonth control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HdactionRecogAllMonth As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''HdoffHourMonth control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HdoffHourMonth As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''HdactionRecogAll control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HdactionRecogAll As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''HdoffHour control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HdoffHour As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
     '''lbAccountType control.
     '''</summary>
     '''<remarks>

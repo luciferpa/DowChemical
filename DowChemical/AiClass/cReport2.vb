@@ -590,7 +590,7 @@ Public Class cReport2
                 Dim command As New SqlCommand(strSqlSum, connection)
                 Dim result As Object = command.ExecuteScalar()
 
-                If not IsDBNull(result) Then sumValueStatus = Cint(result)
+                If Not IsDBNull(result) Then sumValueStatus = CInt(result)
             End Using
             If IsRecogFromAllObserve(sumValueStatus) Then
                 recognitionCount = recognitionCount + 1
@@ -607,6 +607,60 @@ Public Class cReport2
         _recogAllObserveCount = recognitionCount
         _offHourCount = offHourCount
     End Sub
+
+    Public Sub CountOffHourByEmpId(Optional ByVal sMonth As Integer = 0, Optional ByVal empId As Integer = 0)
+        Dim strSql As String
+
+        If sMonth <> 0 Then
+            strSql = String.Format("SELECT recId, recActDate, recActTime FROM tblRecord WHERE tempFlag = 'false' AND recActMonth = '{0}' AND recActYear = YEAR(getdate()) ", sMonth.ToString)
+            strSql = strSql & String.Format("AND empId = '{0}'", empId)
+        Else
+            strSql = "SELECT recId, recActDate, recActTime FROM tblRecord WHERE tempFlag = 'false' AND recActYear = YEAR(getdate()) "
+            strSql = strSql & String.Format("AND empId = '{0}'", empId)
+        End If
+
+        Dim conn As New SqlConnection(ConnStr)
+        Dim adapter As New SqlDataAdapter()
+        adapter.SelectCommand = New SqlCommand(strSql, conn)
+        Dim tbActionNumber As New DataTable()
+        conn.Open()
+        Try
+            adapter.Fill(tbActionNumber)
+        Finally
+            conn.Close()
+        End Try
+
+        Dim recognitionCount As Integer = 0
+        Dim offHourCount As Integer = 0
+        Dim OffHour As New cOffHour
+        For Each row As DataRow In tbActionNumber.Rows
+            'count Recognition Opportunity Identify (cross function)
+            Dim recId As Integer = row.Field(Of Integer)(0)
+            Dim sumValueStatus As Integer = 0
+            Dim strSqlSum As String = String.Format("SELECT SUM(observComplete) AS sumValStatus FROM tblRecordDetail WHERE (recId = '{0}')", recId.ToString)
+            Using connection As New SqlConnection(ConnStr)
+                connection.Open()
+                Dim command As New SqlCommand(strSqlSum, connection)
+                Dim result As Object = command.ExecuteScalar()
+
+                If Not IsDBNull(result) Then sumValueStatus = CInt(result)
+            End Using
+            If IsRecogFromAllObserve(sumValueStatus) Then
+                recognitionCount = recognitionCount + 1
+            End If
+
+            'check OffHour
+            Dim sDate As Date = row.Field(Of Date)(1)
+            Dim sTime As TimeSpan = row.Field(Of TimeSpan)(2)
+            If OffHour.chkOffHour(sDate, sTime) Then
+                offHourCount = offHourCount + 1
+            End If
+        Next
+
+        _recogAllObserveCount = recognitionCount
+        _offHourCount = offHourCount
+    End Sub
+
     Private Function IsRecogFromAllObserve(ByVal sumValueStatus As Integer) As Boolean
         Dim observeCount1 As Integer = sumValueStatus \ 1000
         Dim observeCount2 As Integer = sumValueStatus - (observeCount1 * 1000)

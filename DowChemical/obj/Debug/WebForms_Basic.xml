@@ -231,6 +231,42 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:DowChemical._Default._HdactionRecogAllMonth">
+<summary>
+HdactionRecogAllMonth control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical._Default._HdoffHourMonth">
+<summary>
+HdoffHourMonth control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical._Default._HdactionRecogAll">
+<summary>
+HdactionRecogAll control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical._Default._HdoffHour">
+<summary>
+HdoffHour control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:DowChemical._Default._lbAccountType">
 <summary>
 lbAccountType control.

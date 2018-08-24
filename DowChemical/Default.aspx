@@ -112,7 +112,7 @@ WHERE c2.recActMonth =  MONTH(getdate()) AND c2.recActYear = YEAR(getdate()) AND
 (SELECT SUM(PSCE_PSNM) FROM tblRpEmpHistorical d2 where d2.empId = a.empId and d2.month = MONTH(getdate()) and d2.year = YEAR(getdate())) as PSCE_PSNM,
 (SELECT SUM(actionCompleted) FROM tblRpEmpHistorical d3 where d3.empId = a.empId and d3.month = MONTH(getdate()) and d3.year = YEAR(getdate())) as actionComplete,
 (SELECT SUM(recognition) FROM tblRpEmpHistorical d4 where d4.empId = a.empId and d4.month = MONTH(getdate()) and d4.year = YEAR(getdate())) as actionRecognition,
-(SELECT SUM(leadershipVisibility) FROM tblRpEmpHistorical d5 where d5.empId = a.empId and d5.month = MONTH(getdate()) and d5.year = YEAR(getdate())) as leadershipVisibility_fsfl,
+(SELECT case when count(leadershipVisibility) = 0 then 0 else SUM(leadershipVisibility) end FROM tblRpEmpHistorical d5 join tblEmployee d51 on d5.empId = d51.empId where d5.empId = a.empId and d5.month = MONTH(getdate()) and d5.year = YEAR(getdate()) and d51.joblvCode = 'fsfl') as leadershipVisibility_fsfl,
 (SELECT SUM(proactiveCompliance) FROM tblRpEmpHistorical d6 where d6.empId = a.empId and d6.month = MONTH(getdate()) and d6.year = YEAR(getdate())) as proactiveCompliance,
 (SELECT SUM(secondEye) FROM tblRpEmpHistorical d7 where d7.empId = a.empId and d7.month = MONTH(getdate()) and d7.year = YEAR(getdate())) as secondEye,
 (SELECT SUM(injuryNearMiss) FROM tblRpEmpHistorical d8 where d8.empId = a.empId and d8.month = MONTH(getdate()) and d8.year = YEAR(getdate())) as injuryNearMiss,
@@ -120,12 +120,10 @@ WHERE c2.recActMonth =  MONTH(getdate()) AND c2.recActYear = YEAR(getdate()) AND
 (SELECT SUM(quality_wHRO) FROM tblRpEmpHistorical d10 where d10.empId = a.empId and d10.month = MONTH(getdate()) and d10.year = YEAR(getdate())) as quality_wHRO,
 (SELECT SUM(reliability) FROM tblRpEmpHistorical d11 where d11.empId = a.empId and d11.month = MONTH(getdate()) and d11.year = YEAR(getdate())) as reliability,
 ((SELECT COUNT(*) FROM tblEmployee d15 WHERE d15.joblvCode = 'fsfl' AND d15.empEnable = 'true' AND d15.empId &gt; 100000 AND d15.departId = a.departId) * 9800) as ManPowerWorkingHourPerMonth,
-(SELECT COUNT(IsComplete) FROM tblRecord d12 WHERE (d12.tempFlag = 0) AND (d12.recActive = 1) AND (d12.IsComplete = 1001) AND d12.recActMonth = MONTH(getdate()) AND d12.recActYear = YEAR(getdate()) AND d12.empId = a.empId) AS AllRecog,
-(SELECT count(case when DATEPART(dw,d13.recActDate) = 7 or DATEPART(dw,d13.recActDate) = 1 then 1 else 0 end) FROM tblRecord d13 WHERE d13.tempFlag = 'false' AND d13.recActMonth = MONTH(getdate()) AND d13.recActYear = YEAR(getdate()) and d13.empId = a.empId) as CountOffHour,
 (SELECT SUM(procedureUsed) FROM tblRpEmpHistorical d14 where d14.empId = a.empId and d14.month = MONTH(getdate()) and d14.year = YEAR(getdate())) as procedureUsed,
 (SELECT SUM(safety) FROM tblRpEmpHistorical d15 where d15.empId = a.empId and d15.month = MONTH(getdate()) and d15.year = YEAR(getdate())) as safety,
 (SELECT SUM(LCS) FROM tblRpEmpHistorical d16 where d16.empId = a.empId and d16.month = MONTH(getdate()) and d16.year = YEAR(getdate())) as LCS,
-getdate() as lastUpdate
+getdate() as lastUpdate, @AllRecogMonth as AllRecog, @CountOffHourMonth as CountOffHour 
 from tblEmployee a
 where a.empId = @empId
 union
@@ -137,7 +135,7 @@ WHERE c2.recActYear = YEAR(getdate()) AND c2.empId = a.empId) as totalObserve,
 (SELECT SUM(PSCE_PSNM) FROM tblRpEmpHistorical d2 where d2.empId = a.empId and d2.year = YEAR(getdate())) as PSCE_PSNM,
 (SELECT SUM(actionCompleted) FROM tblRpEmpHistorical d3 where d3.empId = a.empId and d3.year = YEAR(getdate())) as actionComplete,
 (SELECT SUM(recognition) FROM tblRpEmpHistorical d4 where d4.empId = a.empId and d4.year = YEAR(getdate())) as actionRecognition,
-(SELECT SUM(leadershipVisibility) FROM tblRpEmpHistorical d5 where d5.empId = a.empId and d5.year = YEAR(getdate())) as leadershipVisibility_fsfl,
+(SELECT case when count(leadershipVisibility) = 0 then 0 else SUM(leadershipVisibility) end FROM tblRpEmpHistorical d5 join tblEmployee d51 on d5.empId = d51.empId where d5.empId = a.empId and d5.year = YEAR(getdate()) and d51.joblvCode = 'fsfl') as leadershipVisibility_fsfl,
 (SELECT SUM(proactiveCompliance) FROM tblRpEmpHistorical d6 where d6.empId = a.empId and d6.year = YEAR(getdate())) as proactiveCompliance,
 (SELECT SUM(secondEye) FROM tblRpEmpHistorical d7 where d7.empId = a.empId and d7.year = YEAR(getdate())) as secondEye,
 (SELECT SUM(injuryNearMiss) FROM tblRpEmpHistorical d8 where d8.empId = a.empId and d8.year = YEAR(getdate())) as injuryNearMiss,
@@ -145,17 +143,18 @@ WHERE c2.recActYear = YEAR(getdate()) AND c2.empId = a.empId) as totalObserve,
 (SELECT SUM(quality_wHRO) FROM tblRpEmpHistorical d10 where d10.empId = a.empId and d10.year = YEAR(getdate())) as quality_wHRO,
 (SELECT SUM(reliability) FROM tblRpEmpHistorical d11 where d11.empId = a.empId and d11.year = YEAR(getdate())) as reliability,
 ((SELECT COUNT(*) FROM tblEmployee d15 WHERE d15.joblvCode = 'fsfl' AND d15.empEnable = 'true' AND d15.empId &gt; 100000 AND d15.departId = a.departId) * 9800) as ManPowerWorkingHourPerMonth,
-(SELECT COUNT(IsComplete) FROM tblRecord d12 WHERE (d12.tempFlag = 0) AND (d12.recActive = 1) AND (d12.IsComplete = 1001) AND d12.recActYear = YEAR(getdate()) AND d12.empId = a.empId) AS AllRecog,
-(SELECT count(case when DATEPART(dw,d13.recActDate) = 7 or DATEPART(dw,d13.recActDate) = 1 then 1 else 0 end) FROM tblRecord d13 WHERE d13.tempFlag = 'false' AND d13.recActYear = YEAR(getdate()) and d13.empId = a.empId) as CountOffHour,
 (SELECT SUM(procedureUsed) FROM tblRpEmpHistorical d14 where d14.empId = a.empId and d14.year = YEAR(getdate())) as procedureUsed,
 (SELECT SUM(safety) FROM tblRpEmpHistorical d15 where d15.empId = a.empId and d15.year = YEAR(getdate())) as safety,
 (SELECT SUM(LCS) FROM tblRpEmpHistorical d16 where d16.empId = a.empId and d16.year = YEAR(getdate())) as LCS,
-getdate() as lastUpdate
+getdate() as lastUpdate, @AllRecog as AllRecog, @CountOffHour as CountOffHour 
 from tblEmployee a
-where a.empId = @empId
-">
+where a.empId = @empId">
                             <SelectParameters>
+                                <asp:ControlParameter ControlID="HdactionRecogAllMonth" Name="AllRecogMonth" PropertyName="Value" />
+                                <asp:ControlParameter ControlID="HdoffHourMonth" Name="CountOffHourMonth" PropertyName="Value" />
                                 <asp:ControlParameter ControlID="HdEmpId" DefaultValue="" Name="empId" PropertyName="Value" />
+                                <asp:ControlParameter ControlID="HdactionRecogAll" Name="AllRecog" PropertyName="Value" />
+                                <asp:ControlParameter ControlID="HdoffHour" Name="CountOffHour" PropertyName="Value" />
                             </SelectParameters>
                         </asp:SqlDataSource>
                         <div style="padding: 0px 0px 1px 1px;">
@@ -260,7 +259,7 @@ where a.empId = @empId
                                                 <asp:Label ID="PSCE_PSNMLabel" runat="server" Text='<%# Eval("PSCE_PSNM") %>' />
                                             </div>
                                             <div class="rlvItem">
-                                                <asp:Label ID="percentActionCompleteLabel" runat="server" Text='<%# String.Format("{0:0.### %}", Eval("actionComplete") / Eval("totalActionNumber")) %>' />
+                                                <asp:Label ID="percentActionCompleteLabel" runat="server" Text='<%# String.Format("{0:0.### %}", Eval("actionComplete") / (Eval("totalActionNumber") - Eval("actionRecognition"))) %>' />
                                             </div>
                                             <div class="rlvItem">
                                                 <asp:Label ID="percentLeadershipVisibilityLabel" runat="server" Text='<%# String.Format("{0:0.### %}", Eval("leadershipVisibility_fsfl") / Eval("ManPowerWorkingHourPerMonth")) %>' />
@@ -326,7 +325,7 @@ where a.empId = @empId
                                                 <asp:Label ID="PSCE_PSNMLabel" runat="server" Text='<%# Eval("PSCE_PSNM") %>' />
                                             </div>
                                             <div class="rlvItem">
-                                                <asp:Label ID="percentActionCompleteLabel" runat="server" Text='<%# String.Format("{0:0.### %}", Eval("actionComplete") / Eval("totalActionNumber")) %>' />
+                                                <asp:Label ID="percentActionCompleteLabel" runat="server" Text='<%# String.Format("{0:0.### %}", Eval("actionComplete") / (Eval("totalActionNumber") - Eval("actionRecognition"))) %>' />
                                             </div>
                                             <div class="rlvItem">
                                                 <asp:Label ID="percentLeadershipVisibilityLabel" runat="server" Text='<%# String.Format("{0:0.### %}", Eval("leadershipVisibility_fsfl") / Eval("ManPowerWorkingHourPerMonth")) %>' />
@@ -399,6 +398,10 @@ where a.empId = @empId
                                     <asp:Label ID="lbDepartName" Font-Bold="true" runat="server" Text=""></asp:Label>
                                     <asp:HiddenField ID="HdDepartId" runat="server" />
                                     <asp:HiddenField ID="HdEmpId" runat="server" />
+                                    <asp:HiddenField ID="HdactionRecogAllMonth" runat="server" />
+                                    <asp:HiddenField ID="HdoffHourMonth" runat="server" />
+                                    <asp:HiddenField ID="HdactionRecogAll" runat="server" />
+                                    <asp:HiddenField ID="HdoffHour" runat="server" />
                                     </div>
                                     <div>
                                         <asp:Label ID="lbAccountType" runat="server" Text=""></asp:Label>
