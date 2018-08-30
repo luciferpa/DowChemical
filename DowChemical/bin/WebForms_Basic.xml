@@ -159,6 +159,51 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:DowChemical._Default._lblTotalAction">
+<summary>
+lblTotalAction control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical._Default._lblCompleted">
+<summary>
+lblCompleted control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical._Default._lblInProgress">
+<summary>
+lblInProgress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical._Default._lblObservedPending">
+<summary>
+lblObservedPending control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical._Default._lblObservedComplete">
+<summary>
+lblObservedComplete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:DowChemical._Default._srcIndicator">
 <summary>
 srcIndicator control.

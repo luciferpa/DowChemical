@@ -76,9 +76,9 @@
                             <div class="rpHeader" style="background-color: #cccccc;text-align: left;">Observer-My Action Status</div>
                         </div>
                         <div class="row">
-                            <div class="column" style="flex: 33%;">xxx</div>
-                            <div class="column" style="flex: 33%;">xxx</div>
-                            <div class="column" style="flex: 33%;">xxx</div>
+                            <div class="column" style="flex: 33%;"><asp:Label ID="lblTotalAction" runat="server" /></div>
+                            <div class="column" style="flex: 33%;"><asp:Label ID="lblCompleted" runat="server" /></div>
+                            <div class="column" style="flex: 33%;"><asp:Label ID="lblInProgress" runat="server" /></div>
                         </div>
                         <div class="row">
                             <div class="column" style="flex: 33%;">Total Action</div>
@@ -90,14 +90,12 @@
                             <div class="rpHeader" style="background-color: #cccccc;text-align: left;">Follow up-My Responsible Owner</div>
                         </div>
                         <div class="row">
-                            <div class="column" style="flex: 33%;">xxx</div>
-                            <div class="column" style="flex: 33%;">xxx</div>
-                            <div class="column" style="flex: 33%;">xxx</div>
+                            <div class="column" style="flex: 33%;"><asp:Label ID="lblObservedPending" runat="server" /></div>
+                            <div class="column" style="flex: 33%;"><asp:Label ID="lblObservedComplete" runat="server" /></div>
                         </div>
                         <div class="row">
-                            <div class="column" style="flex: 33%;">Total Observation</div>
-                            <div class="column" style="flex: 33%;">Validated</div>
-                            <div class="column" style="flex: 33%;">Pending Validation</div>
+                            <div class="column" style="flex: 33%;">Observed Pending</div>
+                            <div class="column" style="flex: 33%;">Completed</div>
                         </div>
                         <%--end table1--%>
                     </div>
@@ -110,8 +108,8 @@
 WHERE c2.recActMonth =  MONTH(getdate()) AND c2.recActYear = YEAR(getdate()) AND c2.empId = a.empId) as totalObserve,
 (SELECT SUM(PSCE_ContainmentLoss) FROM tblRpEmpHistorical d1 where d1.empId = a.empId and d1.month = MONTH(getdate()) and d1.year = YEAR(getdate())) as PSCE_ContainmentLoss,
 (SELECT SUM(PSCE_PSNM) FROM tblRpEmpHistorical d2 where d2.empId = a.empId and d2.month = MONTH(getdate()) and d2.year = YEAR(getdate())) as PSCE_PSNM,
-(SELECT SUM(actionCompleted) FROM tblRpEmpHistorical d3 where d3.empId = a.empId and d3.month = MONTH(getdate()) and d3.year = YEAR(getdate())) as actionComplete,
-(SELECT SUM(recognition) FROM tblRpEmpHistorical d4 where d4.empId = a.empId and d4.month = MONTH(getdate()) and d4.year = YEAR(getdate())) as actionRecognition,
+(SELECT count(*) FROM tblRecord d3 WHERE d3.recActMonth = MONTH(getdate()) and d3.recActYear = YEAR(getdate()) and d3.IsComplete = 1003 and d3.empId = a.empId) as actionComplete,
+(SELECT count(*) FROM tblRecord d4 WHERE d4.recActMonth = MONTH(getdate()) and d4.recActYear = YEAR(getdate()) and d4.IsComplete = 1001 and d4.empId = a.empId) as actionRecognition,
 (SELECT case when count(leadershipVisibility) = 0 then 0 else SUM(leadershipVisibility) end FROM tblRpEmpHistorical d5 join tblEmployee d51 on d5.empId = d51.empId where d5.empId = a.empId and d5.month = MONTH(getdate()) and d5.year = YEAR(getdate()) and d51.joblvCode = 'fsfl') as leadershipVisibility_fsfl,
 (SELECT SUM(proactiveCompliance) FROM tblRpEmpHistorical d6 where d6.empId = a.empId and d6.month = MONTH(getdate()) and d6.year = YEAR(getdate())) as proactiveCompliance,
 (SELECT SUM(secondEye) FROM tblRpEmpHistorical d7 where d7.empId = a.empId and d7.month = MONTH(getdate()) and d7.year = YEAR(getdate())) as secondEye,
@@ -133,8 +131,8 @@ select 1 as rpId, a.empId, a.departId ,13 as month, YEAR(getdate()) as year, 'YT
 WHERE c2.recActYear = YEAR(getdate()) AND c2.empId = a.empId) as totalObserve,
 (SELECT SUM(PSCE_ContainmentLoss) FROM tblRpEmpHistorical d1 where d1.empId = a.empId and d1.year = YEAR(getdate())) as PSCE_ContainmentLoss,
 (SELECT SUM(PSCE_PSNM) FROM tblRpEmpHistorical d2 where d2.empId = a.empId and d2.year = YEAR(getdate())) as PSCE_PSNM,
-(SELECT SUM(actionCompleted) FROM tblRpEmpHistorical d3 where d3.empId = a.empId and d3.year = YEAR(getdate())) as actionComplete,
-(SELECT SUM(recognition) FROM tblRpEmpHistorical d4 where d4.empId = a.empId and d4.year = YEAR(getdate())) as actionRecognition,
+(SELECT count(*) FROM tblRecord d3 WHERE d3.recActYear = YEAR(getdate()) and d3.IsComplete = 1003 and d3.empId = a.empId) as actionComplete,
+(SELECT count(*) FROM tblRecord d4 WHERE d4.recActYear = YEAR(getdate()) and d4.IsComplete = 1001 and d4.empId = a.empId) as actionRecognition,
 (SELECT case when count(leadershipVisibility) = 0 then 0 else SUM(leadershipVisibility) end FROM tblRpEmpHistorical d5 join tblEmployee d51 on d5.empId = d51.empId where d5.empId = a.empId and d5.year = YEAR(getdate()) and d51.joblvCode = 'fsfl') as leadershipVisibility_fsfl,
 (SELECT SUM(proactiveCompliance) FROM tblRpEmpHistorical d6 where d6.empId = a.empId and d6.year = YEAR(getdate())) as proactiveCompliance,
 (SELECT SUM(secondEye) FROM tblRpEmpHistorical d7 where d7.empId = a.empId and d7.year = YEAR(getdate())) as secondEye,

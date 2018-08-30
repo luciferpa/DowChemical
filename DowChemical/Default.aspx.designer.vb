@@ -41,6 +41,51 @@ Partial Public Class _Default
     Protected WithEvents HyperLink1 As Global.System.Web.UI.WebControls.HyperLink
     
     '''<summary>
+    '''lblTotalAction control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblTotalAction As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblCompleted control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblCompleted As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblInProgress control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblInProgress As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblObservedPending control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblObservedPending As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblObservedComplete control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblObservedComplete As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''srcIndicator control.
     '''</summary>
     '''<remarks>
