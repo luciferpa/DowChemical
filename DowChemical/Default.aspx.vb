@@ -71,6 +71,22 @@ Public Class _Default
         HdactionRecogAll.Value = actionRecogAll
         HdoffHour.Value = offHour
 
+        'Observer-My Action Status
+        rp.getObserverMyActionStatus(empId)
+        Dim SumTotalAction As Integer = rp.getSumTotalAction
+        Dim SumCompleted As Integer = rp.getSumCompleted
+        Dim SumInProgress As Integer = rp.getSumInProgress
+        lblTotalAction.Text = SumTotalAction
+        lblCompleted.Text = SumCompleted
+        lblInProgress.Text = SumInProgress
+
+        'FollowupMyResponsibleOwner
+        rp.getFollowupMyResponsibleOwner(empId)
+        Dim SumObservedPending As Integer = rp.getSumObservedPending
+        Dim SumObservedCompleted As Integer = rp.getSumObservedCompleted
+        lblObservedPending.Text = SumObservedPending
+        lblObservedComplete.Text = SumObservedCompleted
+
     End Sub
 
     Private Sub RadPanelBar1_ItemClick(sender As Object, e As RadPanelBarEventArgs) Handles RadPanelBar1.ItemClick

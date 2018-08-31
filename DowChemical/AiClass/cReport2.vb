@@ -847,6 +847,13 @@ Public Class cReport2
     Private _sumprocedureUsed As Integer
     Private _sumsafety As Integer
     Private _sumLCS As Integer
+    'new
+    Private _SumTotalAction As Integer
+    Private _SumCompleted As Integer
+    Private _SumInProgress As Integer
+    Private _SumObservedPending As Integer
+    Private _SumObservedCompleted As Integer
+
     Public Sub getDepartmentData(ByVal departId As Integer, ByVal sMonth As Integer)
         Dim strSql As String = "SELECT SUM(pLifeNearMiss) AS sumpLifeNearMiss, SUM(PSCE_ContainmentLoss) AS sumPSCE_ContainmentLoss, SUM(PSCE_PSNM) AS sumPSCE_PSNM, 
                                     SUM(actionTotal) AS sumactionTotal, SUM(actionCompleted) AS sumactionCompleted, SUM(recognition) AS sumrecognition, SUM(leadershipVisibility) AS sumleadershipVisibility, 
@@ -930,6 +937,60 @@ Public Class cReport2
         Return SumLeadershipVisibility
     End Function
 
+    Public Sub getObserverMyActionStatus(ByVal empId As Integer)
+        Dim strSql As String = ""
+        strSql = "
+                select 1 as rpId, a.empId, a.departId , YEAR(getdate()) as year, 'YTD' as monthDesc,
+                (SELECT COUNT(*) FROM tblRecord b WHERE b.recActYear = YEAR(getdate()) and b.empId = a.empId) as totalActionNumber,
+                (SELECT count(*) FROM tblRecord d3 WHERE d3.recActYear = YEAR(getdate()) and d3.IsComplete = 1003 and d3.empId = a.empId) as actionComplete,
+                (SELECT count(*) FROM tblRecord d4 WHERE d4.recActYear = YEAR(getdate()) and d4.IsComplete = 1001 and d4.empId = a.empId) as actionRecognition
+                from tblEmployee a
+                where a.empId = @empId
+                "
+        Dim DataRead As SqlDataReader
+        Using conn As New SqlConnection(ConnStr)
+            conn.Open()
+            Dim command As New SqlCommand(strSql, conn)
+            command.Parameters.Add("@empId", SqlDbType.Int).Value = empId
+            DataRead = command.ExecuteReader()
+            If DataRead.HasRows() Then
+                DataRead.Read()
+                _SumTotalAction = CInt(DataRead("totalActionNumber"))
+                _SumCompleted = CInt(DataRead("actionComplete"))
+                _SumInProgress = CInt(DataRead("totalActionNumber")) - CInt(DataRead("actionComplete")) - CInt(DataRead("actionRecognition"))
+            End If
+        End Using
+    End Sub
+
+    Public Sub getFollowupMyResponsibleOwner(ByVal empId As Integer)
+        Dim strSql As String = ""
+        strSql = "
+                    select sum(pending) as totalpending, sum(completed) as totalcompleted
+                    from
+                    (
+	                    SELECT a.recId, a.IsComplete,
+	                    case when a.IsComplete = 1002 then 1 else 0 end as pending,
+	                    case when a.IsComplete = 1003 then 1 else 0 end as completed
+	                    FROM tblRecord a
+	                    join tblRecordDetail b on a.recId = b.recId 
+	                    where a.recActYear = YEAR(getdate()) and (b.proposeRespPerson_A = @empId or b.proposeRespPerson_B = @empId or b.proposeRespPerson_C = @empId)
+	                    group by a.recId, a.IsComplete
+                    ) AAA
+                "
+        Dim DataRead As SqlDataReader
+        Using conn As New SqlConnection(ConnStr)
+            conn.Open()
+            Dim command As New SqlCommand(strSql, conn)
+            command.Parameters.Add("@empId", SqlDbType.Int).Value = empId
+            DataRead = command.ExecuteReader()
+            If DataRead.HasRows() Then
+                DataRead.Read()
+                _SumObservedPending = CInt(DataRead("totalpending"))
+                _SumObservedCompleted = CInt(DataRead("totalcompleted"))
+            End If
+        End Using
+    End Sub
+
     Public Function getSumpLifeNearMiss() As Integer
         Return _sumpLifeNearMiss
     End Function
@@ -978,6 +1039,23 @@ Public Class cReport2
     Public Function getSumLCS() As Integer
         Return _sumLCS
     End Function
-    
+
+    'new
+    Public Function getSumTotalAction() As Integer
+        Return _SumTotalAction
+    End Function
+    Public Function getSumCompleted() As Integer
+        Return _SumCompleted
+    End Function
+    Public Function getSumInProgress() As Integer
+        Return _SumInProgress
+    End Function
+    Public Function getSumObservedPending() As Integer
+        Return _SumObservedPending
+    End Function
+    Public Function getSumObservedCompleted() As Integer
+        Return _SumObservedCompleted
+    End Function
+
 
 End Class
