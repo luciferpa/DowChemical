@@ -853,6 +853,7 @@ Public Class cReport2
     Private _SumInProgress As Integer
     Private _SumObservedPending As Integer
     Private _SumObservedCompleted As Integer
+    Private _SumactionRecognition As Integer
 
     Public Sub getDepartmentData(ByVal departId As Integer, ByVal sMonth As Integer)
         Dim strSql As String = "SELECT SUM(pLifeNearMiss) AS sumpLifeNearMiss, SUM(PSCE_ContainmentLoss) AS sumPSCE_ContainmentLoss, SUM(PSCE_PSNM) AS sumPSCE_PSNM, 
@@ -955,9 +956,22 @@ Public Class cReport2
             DataRead = command.ExecuteReader()
             If DataRead.HasRows() Then
                 DataRead.Read()
-                _SumTotalAction = CInt(DataRead("totalActionNumber"))
-                _SumCompleted = CInt(DataRead("actionComplete"))
-                _SumInProgress = CInt(DataRead("totalActionNumber")) - CInt(DataRead("actionComplete")) - CInt(DataRead("actionRecognition"))
+                If DataRead("totalActionNumber") IsNot DBNull.Value Then
+                    _SumTotalAction = CInt(DataRead("totalActionNumber"))
+                Else
+                    _SumTotalAction = 0
+                End If
+                If DataRead("actionComplete") IsNot DBNull.Value Then
+                    _SumCompleted = CInt(DataRead("actionComplete"))
+                Else
+                    _SumCompleted = 0
+                End If
+                If DataRead("actionRecognition") IsNot DBNull.Value Then
+                    _SumactionRecognition = CInt(DataRead("actionRecognition"))
+                Else
+                    _SumactionRecognition = 0
+                End If
+                _SumInProgress = _SumTotalAction - _SumCompleted - _SumactionRecognition
             End If
         End Using
     End Sub
@@ -985,8 +999,16 @@ Public Class cReport2
             DataRead = command.ExecuteReader()
             If DataRead.HasRows() Then
                 DataRead.Read()
-                _SumObservedPending = CInt(DataRead("totalpending"))
-                _SumObservedCompleted = CInt(DataRead("totalcompleted"))
+                If DataRead("totalpending") IsNot DBNull.Value Then
+                    _SumObservedPending = CInt(DataRead("totalpending"))
+                Else
+                    _SumObservedPending = 0
+                End If
+                If DataRead("totalcompleted") IsNot DBNull.Value Then
+                    _SumObservedCompleted = CInt(DataRead("totalcompleted"))
+                Else
+                    _SumObservedCompleted = 0
+                End If
             End If
         End Using
     End Sub

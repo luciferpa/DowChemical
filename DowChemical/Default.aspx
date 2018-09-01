@@ -106,21 +106,22 @@
 (SELECT COUNT(*) FROM tblRecord b WHERE b.recActMonth = MONTH(getdate()) and b.recActYear = YEAR(getdate()) and b.empId = a.empId) as totalActionNumber,
 (SELECT COUNT(c2.recActNo) FROM tblRecordDetail c1 INNER JOIN tblRecord c2 ON c1.recId = c2.recId
 WHERE c2.recActMonth =  MONTH(getdate()) AND c2.recActYear = YEAR(getdate()) AND c2.empId = a.empId) as totalObserve,
-(SELECT SUM(PSCE_ContainmentLoss) FROM tblRpEmpHistorical d1 where d1.empId = a.empId and d1.month = MONTH(getdate()) and d1.year = YEAR(getdate())) as PSCE_ContainmentLoss,
-(SELECT SUM(PSCE_PSNM) FROM tblRpEmpHistorical d2 where d2.empId = a.empId and d2.month = MONTH(getdate()) and d2.year = YEAR(getdate())) as PSCE_PSNM,
+(SELECT case when count(PSCE_ContainmentLoss) = 0 then 0 else SUM(PSCE_ContainmentLoss) end FROM tblRpEmpHistorical d1 
+where d1.empId = a.empId and d1.month = MONTH(getdate()) and d1.year = YEAR(getdate())) as PSCE_ContainmentLoss,
+(SELECT case when count(PSCE_PSNM) = 0 then 0 else SUM(PSCE_PSNM) end FROM tblRpEmpHistorical d2 where d2.empId = a.empId and d2.month = MONTH(getdate()) and d2.year = YEAR(getdate())) as PSCE_PSNM,
 (SELECT count(*) FROM tblRecord d3 WHERE d3.recActMonth = MONTH(getdate()) and d3.recActYear = YEAR(getdate()) and d3.IsComplete = 1003 and d3.empId = a.empId) as actionComplete,
 (SELECT count(*) FROM tblRecord d4 WHERE d4.recActMonth = MONTH(getdate()) and d4.recActYear = YEAR(getdate()) and d4.IsComplete = 1001 and d4.empId = a.empId) as actionRecognition,
 (SELECT case when count(leadershipVisibility) = 0 then 0 else SUM(leadershipVisibility) end FROM tblRpEmpHistorical d5 join tblEmployee d51 on d5.empId = d51.empId where d5.empId = a.empId and d5.month = MONTH(getdate()) and d5.year = YEAR(getdate()) and d51.joblvCode = 'fsfl') as leadershipVisibility_fsfl,
-(SELECT SUM(proactiveCompliance) FROM tblRpEmpHistorical d6 where d6.empId = a.empId and d6.month = MONTH(getdate()) and d6.year = YEAR(getdate())) as proactiveCompliance,
-(SELECT SUM(secondEye) FROM tblRpEmpHistorical d7 where d7.empId = a.empId and d7.month = MONTH(getdate()) and d7.year = YEAR(getdate())) as secondEye,
-(SELECT SUM(injuryNearMiss) FROM tblRpEmpHistorical d8 where d8.empId = a.empId and d8.month = MONTH(getdate()) and d8.year = YEAR(getdate())) as injuryNearMiss,
-(SELECT SUM(reliability_wHRO) FROM tblRpEmpHistorical d9 where d9.empId = a.empId and d9.month = MONTH(getdate()) and d9.year = YEAR(getdate())) as reliability_wHRO,
-(SELECT SUM(quality_wHRO) FROM tblRpEmpHistorical d10 where d10.empId = a.empId and d10.month = MONTH(getdate()) and d10.year = YEAR(getdate())) as quality_wHRO,
-(SELECT SUM(reliability) FROM tblRpEmpHistorical d11 where d11.empId = a.empId and d11.month = MONTH(getdate()) and d11.year = YEAR(getdate())) as reliability,
+(SELECT case when count(proactiveCompliance) = 0 then 0 else SUM(proactiveCompliance) end FROM tblRpEmpHistorical d6 where d6.empId = a.empId and d6.month = MONTH(getdate()) and d6.year = YEAR(getdate())) as proactiveCompliance,
+(SELECT case when count(secondEye) = 0 then 0 else SUM(secondEye) end FROM tblRpEmpHistorical d7 where d7.empId = a.empId and d7.month = MONTH(getdate()) and d7.year = YEAR(getdate())) as secondEye,
+(SELECT case when count(injuryNearMiss) = 0 then 0 else SUM(injuryNearMiss) end FROM tblRpEmpHistorical d8 where d8.empId = a.empId and d8.month = MONTH(getdate()) and d8.year = YEAR(getdate())) as injuryNearMiss,
+(SELECT case when count(reliability_wHRO) = 0 then 0 else SUM(reliability_wHRO) end FROM tblRpEmpHistorical d9 where d9.empId = a.empId and d9.month = MONTH(getdate()) and d9.year = YEAR(getdate())) as reliability_wHRO,
+(SELECT case when count(quality_wHRO) = 0 then 0 else SUM(quality_wHRO) end FROM tblRpEmpHistorical d10 where d10.empId = a.empId and d10.month = MONTH(getdate()) and d10.year = YEAR(getdate())) as quality_wHRO,
+(SELECT case when count(reliability) = 0 then 0 else SUM(reliability) end FROM tblRpEmpHistorical d11 where d11.empId = a.empId and d11.month = MONTH(getdate()) and d11.year = YEAR(getdate())) as reliability,
 ((SELECT COUNT(*) FROM tblEmployee d15 WHERE d15.joblvCode = 'fsfl' AND d15.empEnable = 'true' AND d15.empId &gt; 100000 AND d15.departId = a.departId) * 9800) as ManPowerWorkingHourPerMonth,
-(SELECT SUM(procedureUsed) FROM tblRpEmpHistorical d14 where d14.empId = a.empId and d14.month = MONTH(getdate()) and d14.year = YEAR(getdate())) as procedureUsed,
-(SELECT SUM(safety) FROM tblRpEmpHistorical d15 where d15.empId = a.empId and d15.month = MONTH(getdate()) and d15.year = YEAR(getdate())) as safety,
-(SELECT SUM(LCS) FROM tblRpEmpHistorical d16 where d16.empId = a.empId and d16.month = MONTH(getdate()) and d16.year = YEAR(getdate())) as LCS,
+(SELECT case when count(procedureUsed) = 0 then 0 else SUM(procedureUsed) end FROM tblRpEmpHistorical d14 where d14.empId = a.empId and d14.month = MONTH(getdate()) and d14.year = YEAR(getdate())) as procedureUsed,
+(SELECT case when count(safety) = 0 then 0 else SUM(safety) end FROM tblRpEmpHistorical d15 where d15.empId = a.empId and d15.month = MONTH(getdate()) and d15.year = YEAR(getdate())) as safety,
+(SELECT case when count(LCS) = 0 then 0 else SUM(LCS) end FROM tblRpEmpHistorical d16 where d16.empId = a.empId and d16.month = MONTH(getdate()) and d16.year = YEAR(getdate())) as LCS,
 getdate() as lastUpdate, @AllRecogMonth as AllRecog, @CountOffHourMonth as CountOffHour 
 from tblEmployee a
 where a.empId = @empId
@@ -418,7 +419,7 @@ where a.empId = @empId">
                             <Items>
                                 <telerik:RadPanelItem runat="server" Text="HOME" Height="36px" NavigateUrl="~/Default.aspx" Selected="true">
                                 </telerik:RadPanelItem>
-                                <telerik:RadPanelItem runat="server" NavigateUrl="~/observer/observer.aspx" Text="CREATE NEW OBSERVATION">
+                                <telerik:RadPanelItem runat="server" Text="CREATE NEW OBSERVATION" Height="36px" NavigateUrl="~/observer/observer.aspx">
                                 </telerik:RadPanelItem>
                                 <telerik:RadPanelItem runat="server" Text="OBSERVER" Height="36px" NavigateUrl="~/observer/observationList.aspx">
                                 </telerik:RadPanelItem>
