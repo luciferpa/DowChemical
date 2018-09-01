@@ -534,6 +534,8 @@ Public Class observer
 
             If pnRespon1b.Visible Then tbAction1b.Text = MsgRecognition : tbAction1b.Enabled = False
             If pnRespon1c.Visible Then tbAction1c.Text = MsgRecognition : tbAction1c.Enabled = False
+
+            chkNonRecognition1.Checked = True
         Else
             tbAction1a.Text = ""
             tbAction1a.Enabled = True
@@ -543,8 +545,35 @@ Public Class observer
 
             If pnRespon1b.Visible Then tbAction1b.Text = "" : tbAction1b.Enabled = True
             If pnRespon1c.Visible Then tbAction1c.Text = "" : tbAction1c.Enabled = True
+
+            chkNonRecognition1.Checked = False
         End If
     End Sub
+
+    Private Sub chkNonRecognition1_CheckedChanged(sender As Object, e As EventArgs) Handles chkNonRecognition1.CheckedChanged
+        If chkNonRecognition1.Checked Then
+            tbAction1a.Text = MsgRecognition
+            tbAction1a.Enabled = False
+
+            racRespon1a.Enabled = False
+            imbtFindRespon1a.Enabled = False
+
+            If pnRespon1b.Visible Then tbAction1b.Text = MsgRecognition : tbAction1b.Enabled = False
+            If pnRespon1c.Visible Then tbAction1c.Text = MsgRecognition : tbAction1c.Enabled = False
+            chkRecognition1.Checked = True
+        Else
+            tbAction1a.Text = ""
+            tbAction1a.Enabled = True
+
+            racRespon1a.Enabled = True
+            imbtFindRespon1a.Enabled = True
+
+            If pnRespon1b.Visible Then tbAction1b.Text = "" : tbAction1b.Enabled = True
+            If pnRespon1c.Visible Then tbAction1c.Text = "" : tbAction1c.Enabled = True
+            chkRecognition1.Checked = False
+        End If
+    End Sub
+
     Protected Sub rcbObserveType1_SelectedIndexChanged(sender As Object, e As RadComboBoxSelectedIndexChangedEventArgs) Handles rcbObserveType1.SelectedIndexChanged
         If rcbObserveType1.SelectedIndex = 1 Then rcbContractor1.Visible = True Else rcbContractor1.Visible = False
     End Sub
@@ -575,6 +604,9 @@ Public Class observer
             If chkRecognition1.Checked Then tbAction1b.Text = MsgRecognition Else tbAction1b.Text = ""
             tbAction1b.Enabled = Not chkRecognition1.Checked
             chkRecognition1.Enabled = False
+            If chkNonRecognition1.Checked Then tbAction1b.Text = MsgRecognition Else tbAction1b.Text = ""
+            tbAction1b.Enabled = Not chkNonRecognition1.Checked
+            chkNonRecognition1.Enabled = False
         End If
     End Sub
     Protected Sub imbtOtherAction1b_Click(sender As Object, e As EventArgs) Handles imbtOtherAction1b.Click
@@ -585,10 +617,13 @@ Public Class observer
             imbtOtherAction1b.Visible = False
             If chkRecognition1.Checked Then tbAction1c.Text = MsgRecognition Else tbAction1c.Text = ""
             tbAction1c.Enabled = Not chkRecognition1.Checked
+            If chkNonRecognition1.Checked Then tbAction1c.Text = MsgRecognition Else tbAction1c.Text = ""
+            tbAction1c.Enabled = Not chkNonRecognition1.Checked
         End If
     End Sub
     Protected Sub imbtCloseAction1b_Click(sender As Object, e As EventArgs) Handles imbtCloseAction1b.Click
         chkRecognition1.Enabled = True
+        chkNonRecognition1.Enabled = True
 
         pnRespon1b.Visible = False
         imbtOtherAction1a.Visible = True
@@ -1364,6 +1399,7 @@ Public Class observer
             Dim rcbCateSub As RadComboBox = RadMultiPage1.FindControl("rcbCategorySub" & i.ToString)
             Dim rcbFailurePoint As RadComboBox = RadMultiPage1.FindControl("rcbFailurePoint" & i.ToString)
             Dim tbEquipment As TextBox = RadMultiPage1.FindControl("tbEquipment" & i.ToString)
+            Dim rcbLocation As RadComboBox = RadMultiPage1.FindControl("RCBLocation" & i.ToString)
             Dim chkHRO As CheckBox = RadMultiPage1.FindControl("chkHRO" & i.ToString)
             Dim chkHRO_op1 As CheckBox = RadMultiPage1.FindControl("chkHRO" & i.ToString & "op1")
             Dim chkHRO_op2 As CheckBox = RadMultiPage1.FindControl("chkHRO" & i.ToString & "op2")
@@ -1407,7 +1443,7 @@ Public Class observer
                 Else command.Parameters.Add("@categorySub", SqlDbType.Int).Value = DBNull.Value
             If rcbFailurePoint.SelectedValue <> "" Then command.Parameters.Add("@failurePoint", SqlDbType.Int).Value = CInt(rcbFailurePoint.SelectedValue) _
                 Else command.Parameters.Add("@failurePoint", SqlDbType.Int).Value = DBNull.Value
-            command.Parameters.Add("@equipment", SqlDbType.NVarChar).Value = tbEquipment.Text
+            command.Parameters.Add("@equipment", SqlDbType.NVarChar).Value = rcbLocation.Text & "|" & tbEquipment.Text
             command.Parameters.Add("@IsHRO", SqlDbType.Bit).Value = chkHRO.Checked
             command.Parameters.Add("@hroChk1", SqlDbType.Bit).Value = chkHRO_op1.Checked
             command.Parameters.Add("@hroChk2", SqlDbType.Bit).Value = chkHRO_op2.Checked

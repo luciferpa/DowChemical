@@ -29,8 +29,14 @@
             var pn3 = $("#<%=pnHRO3.ClientID %>");
             var pn4 = $("#<%=pnHRO4.ClientID %>");
             var pn5 = $("#<%=pnHRO5.ClientID %>");
-            var pn6 = $("#<%=pnHRO6.ClientID %>");
+            var pn6 = $("#<%=pnHRO6.ClientID %>");            
             pn1.hide(); pn2.hide(); pn3.hide(); pn4.hide(); pn5.hide(); pn6.hide();
+
+            var pnEye1 = $("#<%=pnEye1.ClientID %>");
+            pnEye1.hide();
+
+            var pnNon1 = $("#<%=pnNon1.ClientID %>");
+            pnNon1.hide();
         }
 
         function showPanelHRO1(show) {
@@ -64,6 +70,18 @@
             if (show) { pn.show(); hf.value = "1"; } else { pn.hide(); hf.value = "0"; }
         }
 
+        function showPanelEye1(show) {
+            var pn = $("#<%=pnEye1.ClientID %>");
+            var hf = document.getElementById("<%=hfPnEye1.ClientID%>");
+            if (show) { pn.show(); hf.value = "1"; } else { pn.hide(); hf.value = "0"; }
+        }
+
+        function showPanelNon1(show) {
+            var pn = $("#<%=pnNon1.ClientID %>");
+            var hf = document.getElementById("<%=hfPnNon1.ClientID%>");
+            if (show) { pn.show(); hf.value = "1"; } else { pn.hide(); hf.value = "0"; }
+        }
+
         function pnHideCaseHRO1() {
             var pn = $("#<%=pnHRO1.ClientID %>");
             var hf = document.getElementById("<%=hfPnHRO1.ClientID%>");
@@ -92,6 +110,18 @@
         function pnHideCaseHRO6() {
             var pn = $("#<%=pnHRO6.ClientID %>");
             var hf = document.getElementById("<%=hfPnHRO6.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
+
+        function pnHideCaseEye1() {
+            var pn = $("#<%=pnEye1.ClientID %>");
+            var hf = document.getElementById("<%=hfPnEye1.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
+
+        function pnHideCaseNon1() {
+            var pn = $("#<%=pnNon1.ClientID %>");
+            var hf = document.getElementById("<%=hfPnNon1.ClientID%>");
             pn.hide(); hf.value = "0"
         }
 
@@ -564,7 +594,7 @@
                             <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Location : </div>
                             <div class="col-md-9">
                                 <div style="display: block; float: left; width: 172px;">
-                                    <telerik:RadComboBox ID="RCBLocation1" runat="server" Skin="Metro" Width="172px" AutoPostBack="True">
+                                    <telerik:RadComboBox ID="RCBLocation1" runat="server" Skin="Metro" Width="172px" >
                                         <Items>
                                             <telerik:RadComboBoxItem runat="server" Text="AIE" Value="AIE" />
                                             <telerik:RadComboBoxItem runat="server" Text="MTP" Value="MTP" />
@@ -580,28 +610,60 @@
                                         <asp:CheckBox ID="chkSendEmail1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Send email this observe" Font-Bold="True" Checked="true" />
                                     </div>                                    
                                 </div>
-                            </div>
-                            </div>
+                            </div>                            
                         </div>
                         <div class="row" style="padding: 4px 16px 4px 16px">
                             <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">&nbsp;&nbsp;</div>
                             <div class="col-md-9">
                                 <div>
-                                    <div style="display: block; float: left; width: 180px; padding: 8px 0px 4px 16px;">
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chk2Eye1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Behavior Observation [2<small>nd</small> Eye]" OnClick="showPanelEye1(this.checked);" />
+                                    </div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chkNonBehavior1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Field Inspection [Non-Behavior]" OnClick="showPanelNon1(this.checked);" />
+                                    </div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
                                         <asp:CheckBox ID="chkHRO1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;HRO" OnClick="showPanelHRO1(this.checked);" />
-                                    </div>
-                                    <div style="display: block; float: left; width: 180px; padding: 8px 0px 4px 16px;">
-                                        <asp:CheckBox ID="chk2Eye1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;2<small>nd</small> Eye /Interaction" />
-                                    </div>
-                                    <div style="display: block; float: left; width: 180px; padding: 8px 0px 4px 16px;">
-                                        <asp:CheckBox ID="chkRecognition1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk1(this.checked);" />
-                                    </div>
-                                    <div style="display: block; float: left; width: 172px; padding: 8px 0px 4px 16px; background-color: #f6f6f6">
-                                       
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <asp:HiddenField ID="hfPnEye1" runat="server" Value="0" />
+                        <asp:Panel ID="pnEye1" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkRecognition1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk1(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkEyeOfi" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkEyeInteraction" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" />
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+
+                        <asp:HiddenField ID="hfPnNon1" runat="server" Value="0" />
+                        <asp:Panel ID="pnNon1" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkNonRecognition1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk1(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkNonOfi1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" />
+                                    </div>                                 
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+
                         <asp:HiddenField ID="hfPnHRO1" runat="server" Value="0" />
                         <asp:Panel ID="pnHRO1" runat="server">
                             <div class="row" style="padding: 0px 0px 8px 11px;">
@@ -626,6 +688,7 @@
                             </div>
                             <div style="padding: 2px 16px 2px 16px"></div>
                         </asp:Panel>
+                        
                         <div class="row" style="padding: 4px 16px 4px 16px">
                             <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Observed Type : </div>
                             <div class="col-md-9">
@@ -2178,6 +2241,17 @@
                     <telerik:AjaxUpdatedControl ControlID="tbAction1c" />
                     <telerik:AjaxUpdatedControl ControlID="racRespon1a" />
                     <telerik:AjaxUpdatedControl ControlID="imbtFindRespon1a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition1" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkNonRecognition1">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction1a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction1b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction1c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon1a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon1a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition1" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="btUploadImg1">
@@ -2189,11 +2263,13 @@
             <telerik:AjaxSetting AjaxControlID="imbtOtherAction1a">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition1" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition1" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="imbtCloseAction1b">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition1" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition1" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
 

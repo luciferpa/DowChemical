@@ -446,15 +446,6 @@ Partial Public Class observer
     Protected WithEvents chkSendEmail1 As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
-    '''chkHRO1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents chkHRO1 As Global.System.Web.UI.WebControls.CheckBox
-    
-    '''<summary>
     '''chk2Eye1 control.
     '''</summary>
     '''<remarks>
@@ -464,6 +455,42 @@ Partial Public Class observer
     Protected WithEvents chk2Eye1 As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
+    '''chkNonBehavior1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkNonBehavior1 As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''chkHRO1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkHRO1 As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''hfPnEye1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hfPnEye1 As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''pnEye1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnEye1 As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
     '''chkRecognition1 control.
     '''</summary>
     '''<remarks>
@@ -471,6 +498,60 @@ Partial Public Class observer
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkRecognition1 As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''chkEyeOfi control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkEyeOfi As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''chkEyeInteraction control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkEyeInteraction As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''hfPnNon1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hfPnNon1 As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''pnNon1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnNon1 As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''chkNonRecognition1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkNonRecognition1 As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''chkNonOfi1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkNonOfi1 As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
     '''hfPnHRO1 control.
