@@ -506,7 +506,7 @@
                                 </telerik:RadTab>
                                 <telerik:RadTab runat="server" Height="38px" Text="Observe 5" Visible="False" TabIndex="4">
                                 </telerik:RadTab>
-                                <telerik:RadTab runat="server" Height="38px" Text="Observe 6" Visible="False" TabIndex="4">
+                                <telerik:RadTab runat="server" Height="38px" Text="Observe 6" Visible="False" TabIndex="5">
                                 </telerik:RadTab>
                             </Tabs>
                         </telerik:RadTabStrip>
@@ -540,23 +540,47 @@
                                 </div>
                             </div>
                         </div>
+                        <%--new design--%>
                         <div class="row" style="padding: 4px 16px 4px 16px">
                             <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Failure Point : </div>
                             <div class="col-md-9">
-                                <div style="display: block; float: left; width: 712px;">
-                                    <telerik:RadComboBox ID="rcbFailurePoint1" runat="server" Skin="Metro" Width="712px" DataSourceID="srcFailurePoint1" DataTextField="failpointName" DataValueField="failpointId" EnableItemCaching="True"></telerik:RadComboBox>
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="rcbFailurePoint1" runat="server" Skin="Metro" Width="172px" DataSourceID="srcFailurePoint1" DataTextField="failpointName" DataValueField="failpointId" EnableItemCaching="True"></telerik:RadComboBox>
                                     <asp:SqlDataSource ID="srcFailurePoint1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT failpointId, failpointName FROM tblObsvFailPoint WHERE (catesubId = @catesubId) OR (failpointId = 1000)">
                                         <SelectParameters>
                                             <asp:ControlParameter ControlID="rcbCategorySub1" Name="catesubId" PropertyName="SelectedValue" />
                                         </SelectParameters>
                                     </asp:SqlDataSource>
                                 </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;">Equipment : </div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <asp:TextBox ID="tbEquipment1" runat="server" CssClass="form-control input-sm" Width="352px"></asp:TextBox>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row" style="padding: 4px 16px 4px 16px">
-                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Equipment/Location : </div>
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Location : </div>
                             <div class="col-md-9">
-                                <asp:TextBox ID="tbEquipment1" runat="server" CssClass="form-control input-sm" Width="712px"></asp:TextBox>
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="RCBLocation1" runat="server" Skin="Metro" Width="172px" AutoPostBack="True">
+                                        <Items>
+                                            <telerik:RadComboBoxItem runat="server" Text="AIE" Value="AIE" />
+                                            <telerik:RadComboBoxItem runat="server" Text="MTP" Value="MTP" />
+                                            <telerik:RadComboBoxItem runat="server" Text="COT1" Value="COT1" />
+                                            <telerik:RadComboBoxItem runat="server" Text="COT2" Value="COT2" />
+                                            <telerik:RadComboBoxItem runat="server" Text="ATC" Value="ATC" />
+                                        </Items>
+                                    </telerik:RadComboBox>
+                                </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;"></div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <asp:CheckBox ID="chkSendEmail1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Send email this observe" Font-Bold="True" Checked="true" />
+                                    </div>                                    
+                                </div>
+                            </div>
                             </div>
                         </div>
                         <div class="row" style="padding: 4px 16px 4px 16px">
@@ -573,7 +597,7 @@
                                         <asp:CheckBox ID="chkRecognition1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk1(this.checked);" />
                                     </div>
                                     <div style="display: block; float: left; width: 172px; padding: 8px 0px 4px 16px; background-color: #f6f6f6">
-                                        <asp:CheckBox ID="chkSendEmail1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Send email this observe" Font-Bold="True" Checked="true" />
+                                       
                                     </div>
                                 </div>
                             </div>

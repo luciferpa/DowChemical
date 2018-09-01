@@ -428,6 +428,24 @@ Partial Public Class observer
     Protected WithEvents tbEquipment1 As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
+    '''RCBLocation1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RCBLocation1 As Global.Telerik.Web.UI.RadComboBox
+    
+    '''<summary>
+    '''chkSendEmail1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkSendEmail1 As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
     '''chkHRO1 control.
     '''</summary>
     '''<remarks>
@@ -453,15 +471,6 @@ Partial Public Class observer
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkRecognition1 As Global.System.Web.UI.WebControls.CheckBox
-    
-    '''<summary>
-    '''chkSendEmail1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents chkSendEmail1 As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
     '''hfPnHRO1 control.

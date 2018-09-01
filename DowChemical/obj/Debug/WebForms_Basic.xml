@@ -2472,6 +2472,24 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:DowChemical.observer._RCBLocation1">
+<summary>
+RCBLocation1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._chkSendEmail1">
+<summary>
+chkSendEmail1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:DowChemical.observer._chkHRO1">
 <summary>
 chkHRO1 control.
@@ -2493,15 +2511,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:DowChemical.observer._chkRecognition1">
 <summary>
 chkRecognition1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:DowChemical.observer._chkSendEmail1">
-<summary>
-chkSendEmail1 control.
 </summary>
 <remarks>
 Auto-generated field.
