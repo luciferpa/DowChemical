@@ -617,6 +617,24 @@ Partial Public Class observer
     Protected WithEvents chkHRO1op5 As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
+    '''hfPnContract1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hfPnContract1 As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''pnContract1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnContract1 As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
     '''rcbObserveType1 control.
     '''</summary>
     '''<remarks>
@@ -743,6 +761,15 @@ Partial Public Class observer
     Protected WithEvents racRespon1a As Global.Telerik.Web.UI.RadAutoCompleteBox
     
     '''<summary>
+    '''cbActionCompleted1a control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cbActionCompleted1a As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
     '''imbtOtherAction1a control.
     '''</summary>
     '''<remarks>
@@ -786,6 +813,15 @@ Partial Public Class observer
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents racRespon1b As Global.Telerik.Web.UI.RadAutoCompleteBox
+    
+    '''<summary>
+    '''cbActionCompleted1b control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cbActionCompleted1b As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
     '''imbtCloseAction1b control.
@@ -840,6 +876,15 @@ Partial Public Class observer
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents racRespon1c As Global.Telerik.Web.UI.RadAutoCompleteBox
+    
+    '''<summary>
+    '''cbActionCompleted1c control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cbActionCompleted1c As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
     '''imbtCloseAction1c control.

@@ -37,6 +37,9 @@
 
             var pnNon1 = $("#<%=pnNon1.ClientID %>");
             pnNon1.hide();
+
+            var pnContract1 = $("#<%=pnContract1.ClientID %>");
+            pnContract1.hide();
         }
 
         function showPanelHRO1(show) {
@@ -73,13 +76,43 @@
         function showPanelEye1(show) {
             var pn = $("#<%=pnEye1.ClientID %>");
             var hf = document.getElementById("<%=hfPnEye1.ClientID%>");
-            if (show) { pn.show(); hf.value = "1"; } else { pn.hide(); hf.value = "0"; }
+            var pn1 = $("#<%=pnContract1.ClientID %>");
+            var hf1 = document.getElementById("<%=hfPnContract1.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction.ClientID%>");
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi.ClientID%>");
+            if (show) {
+                pn.show();
+                hf.value = "1";
+            } else {
+                pn.hide();
+                hf.value = "0";
+                pn1.hide();
+                hf1.value = "0";
+                chkEyeInteraction.checked = false;
+                chkEyeOfi.checked = false;
+            }
         }
 
         function showPanelNon1(show) {
             var pn = $("#<%=pnNon1.ClientID %>");
             var hf = document.getElementById("<%=hfPnNon1.ClientID%>");
             if (show) { pn.show(); hf.value = "1"; } else { pn.hide(); hf.value = "0"; }
+        }
+
+        function showPanelContract1(show) {
+            var pn = $("#<%=pnContract1.ClientID %>");
+            var hf = document.getElementById("<%=hfPnContract1.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction.ClientID%>");
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi.ClientID%>");
+            if (show) {
+                pn.show();
+                hf.value = "1";
+            } else {
+                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false) {
+                    pn.hide();
+                    hf.value = "0";
+                }                
+            }
         }
 
         function pnHideCaseHRO1() {
@@ -122,6 +155,12 @@
         function pnHideCaseNon1() {
             var pn = $("#<%=pnNon1.ClientID %>");
             var hf = document.getElementById("<%=hfPnNon1.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
+
+        function pnHideCaseContract1() {
+            var pn = $("#<%=pnContract1.ClientID %>");
+            var hf = document.getElementById("<%=hfPnContract1.ClientID%>");
             pn.hide(); hf.value = "0"
         }
 
@@ -638,10 +677,10 @@
                                         <asp:CheckBox ID="chkRecognition1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk1(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeOfi" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" />
+                                        <asp:CheckBox ID="chkEyeOfi" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract1(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeInteraction" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" />
+                                        <asp:CheckBox ID="chkEyeInteraction" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract1(this.checked);" />
                                     </div>                                    
                                 </div>
                             </div>
@@ -689,8 +728,11 @@
                             <div style="padding: 2px 16px 2px 16px"></div>
                         </asp:Panel>
                         
+                        <%--Interaction Panel--%>
+                        <asp:HiddenField ID="hfPnContract1" runat="server" Value="0" />
+                        <asp:Panel ID="pnContract1" runat="server">
                         <div class="row" style="padding: 4px 16px 4px 16px">
-                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Observed Type : </div>
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Observed Group : </div>
                             <div class="col-md-9">
                                 <div style="display: block; float: left; width: 180px;">
                                     <telerik:RadComboBox ID="rcbObserveType1" runat="server" Skin="Metro" Width="172px" AutoPostBack="True">
@@ -708,18 +750,18 @@
                             </div>
                         </div>
                         <div class="row" style="padding: 4px 16px 4px 16px">
-                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Picture : </div>
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Attachment File : </div>
                             <div class="col-md-9">
                                 <telerik:RadAjaxPanel ID="RadAjaxPanel12" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
                                     <div class="row">
                                         <div style="display: block; float: left; width: 360px;">
-                                            <telerik:RadAsyncUpload ID="RadUpload1" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp"
+                                            <telerik:RadAsyncUpload ID="RadUpload1" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp,xlsx,xls,pdf"
                                                 MultipleFileSelection="Automatic" Skin="Bootstrap" TemporaryFolder="~/ImagesUpload" MaxFileInputsCount="1" UploadedFilesRendering="BelowFileInput">
                                             </telerik:RadAsyncUpload>
-                                            <asp:Label ID="lbUploadInfo1" Text="File Size limit 1000KB, (jpg, bmp, png, gif)" runat="server" Font-Size="X-Small" />
+                                            <asp:Label ID="lbUploadInfo1" Text="File Size limit 1000KB, (jpg, bmp, png, gif, xlsm, xls, pdf)" runat="server" Font-Size="X-Small" />
                                         </div>
                                         <div style="display: block; float: left; width: 200px;">
-                                            <asp:Button ID="btUploadImg1" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload Image" CommandName="uploadimg" Width="100px" /><span id="asyncUpload1" style="color: Red; line-height: 15px; font-size: x-small;"></span>
+                                            <asp:Button ID="btUploadImg1" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload File" CommandName="uploadimg" Width="100px" /><span id="asyncUpload1" style="color: Red; line-height: 15px; font-size: x-small;"></span>
                                         </div>
                                     </div>
                                     <asp:Panel ID="pnShowImage1" runat="server" Visible="false">
@@ -749,6 +791,9 @@
                                 </telerik:RadAjaxPanel>
                             </div>
                         </div>
+                        </asp:Panel>
+                        <%--Interaction Panel--%>
+
                         <div class="row" style="padding: 8px 16px 4px 16px">
                             <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Description :</div>
                             <div class="col-md-9">
@@ -768,6 +813,7 @@
                                                 DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
                                                 DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
                                             </telerik:RadAutoCompleteBox>
+                                            <asp:CheckBox ID="cbActionCompleted1a" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
                                         </div>
                                         <div style="display: block; float: left; width: 60px; margin-top: 28px; margin-left: 0px;">
                                             <asp:Button ID="imbtOtherAction1a" runat="server" CssClass="btn btn-sm btn-primary" Text="Add Action" Width="97px" />
@@ -791,6 +837,7 @@
                                                     DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
                                                     DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
                                                 </telerik:RadAutoCompleteBox>
+                                                <asp:CheckBox ID="cbActionCompleted1b" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
                                             </div>
                                             <div style="display: block; float: left; width: 180px; margin-top: 28px; margin-left: 0px;">
                                                 <asp:Button ID="imbtCloseAction1b" runat="server" CssClass="btn btn-sm btn-warning" Text="Close" Width="66px" />&nbsp;
@@ -816,6 +863,7 @@
                                                     DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
                                                     DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
                                                 </telerik:RadAutoCompleteBox>
+                                                <asp:CheckBox ID="cbActionCompleted1c" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
                                             </div>
                                             <div style="display: block; float: left; width: 60px; margin-top: 28px; margin-left: 0px;">
                                                 <asp:Button ID="imbtCloseAction1c" runat="server" CssClass="btn btn-sm btn-warning" Text="Close" Width="66px" />
@@ -2242,6 +2290,9 @@
                     <telerik:AjaxUpdatedControl ControlID="racRespon1a" />
                     <telerik:AjaxUpdatedControl ControlID="imbtFindRespon1a" />
                     <telerik:AjaxUpdatedControl ControlID="chkNonRecognition1" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1c" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="chkNonRecognition1">
@@ -2252,6 +2303,9 @@
                     <telerik:AjaxUpdatedControl ControlID="racRespon1a" />
                     <telerik:AjaxUpdatedControl ControlID="imbtFindRespon1a" />
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition1" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1c" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="btUploadImg1">

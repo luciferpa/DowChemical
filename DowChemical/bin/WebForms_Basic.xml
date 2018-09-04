@@ -2661,6 +2661,24 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:DowChemical.observer._hfPnContract1">
+<summary>
+hfPnContract1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._pnContract1">
+<summary>
+pnContract1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:DowChemical.observer._rcbObserveType1">
 <summary>
 rcbObserveType1 control.
@@ -2787,6 +2805,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:DowChemical.observer._cbActionCompleted1a">
+<summary>
+cbActionCompleted1a control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:DowChemical.observer._imbtOtherAction1a">
 <summary>
 imbtOtherAction1a control.
@@ -2826,6 +2853,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:DowChemical.observer._racRespon1b">
 <summary>
 racRespon1b control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._cbActionCompleted1b">
+<summary>
+cbActionCompleted1b control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -2880,6 +2916,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:DowChemical.observer._racRespon1c">
 <summary>
 racRespon1c control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._cbActionCompleted1c">
+<summary>
+cbActionCompleted1c control.
 </summary>
 <remarks>
 Auto-generated field.

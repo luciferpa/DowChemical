@@ -531,6 +531,9 @@ Public Class observer
 
             racRespon1a.Enabled = False
             imbtFindRespon1a.Enabled = False
+            cbActionCompleted1a.Enabled = False
+            cbActionCompleted1b.Enabled = False
+            cbActionCompleted1c.Enabled = False
 
             If pnRespon1b.Visible Then tbAction1b.Text = MsgRecognition : tbAction1b.Enabled = False
             If pnRespon1c.Visible Then tbAction1c.Text = MsgRecognition : tbAction1c.Enabled = False
@@ -542,6 +545,9 @@ Public Class observer
 
             racRespon1a.Enabled = True
             imbtFindRespon1a.Enabled = True
+            cbActionCompleted1a.Enabled = True
+            cbActionCompleted1b.Enabled = True
+            cbActionCompleted1c.Enabled = True
 
             If pnRespon1b.Visible Then tbAction1b.Text = "" : tbAction1b.Enabled = True
             If pnRespon1c.Visible Then tbAction1c.Text = "" : tbAction1c.Enabled = True
@@ -557,6 +563,9 @@ Public Class observer
 
             racRespon1a.Enabled = False
             imbtFindRespon1a.Enabled = False
+            cbActionCompleted1a.Enabled = False
+            cbActionCompleted1b.Enabled = False
+            cbActionCompleted1c.Enabled = False
 
             If pnRespon1b.Visible Then tbAction1b.Text = MsgRecognition : tbAction1b.Enabled = False
             If pnRespon1c.Visible Then tbAction1c.Text = MsgRecognition : tbAction1c.Enabled = False
@@ -567,6 +576,9 @@ Public Class observer
 
             racRespon1a.Enabled = True
             imbtFindRespon1a.Enabled = True
+            cbActionCompleted1a.Enabled = True
+            cbActionCompleted1b.Enabled = True
+            cbActionCompleted1c.Enabled = True
 
             If pnRespon1b.Visible Then tbAction1b.Text = "" : tbAction1b.Enabled = True
             If pnRespon1c.Visible Then tbAction1c.Text = "" : tbAction1c.Enabled = True
