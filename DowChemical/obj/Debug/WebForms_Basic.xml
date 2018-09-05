@@ -2544,18 +2544,18 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:DowChemical.observer._chkEyeOfi">
+<member name="F:DowChemical.observer._chkEyeOfi1">
 <summary>
-chkEyeOfi control.
+chkEyeOfi1 control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:DowChemical.observer._chkEyeInteraction">
+<member name="F:DowChemical.observer._chkEyeInteraction1">
 <summary>
-chkEyeInteraction control.
+chkEyeInteraction1 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -3021,9 +3021,18 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:DowChemical.observer._chkHRO2">
+<member name="F:DowChemical.observer._RCBLocation2">
 <summary>
-chkHRO2 control.
+RCBLocation2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._chkSendEmail2">
+<summary>
+chkSendEmail2 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -3039,6 +3048,42 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:DowChemical.observer._chkNonBehavior2">
+<summary>
+chkNonBehavior2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._chkHRO2">
+<summary>
+chkHRO2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._hfPnEye2">
+<summary>
+hfPnEye2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._pnEye2">
+<summary>
+pnEye2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:DowChemical.observer._chkRecognition2">
 <summary>
 chkRecognition2 control.
@@ -3048,9 +3093,54 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:DowChemical.observer._chkSendEmail2">
+<member name="F:DowChemical.observer._chkEyeOfi2">
 <summary>
-chkSendEmail2 control.
+chkEyeOfi2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._chkEyeInteraction2">
+<summary>
+chkEyeInteraction2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._hfPnNon2">
+<summary>
+hfPnNon2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._pnNon2">
+<summary>
+pnNon2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._chkNonRecognition2">
+<summary>
+chkNonRecognition2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._chkNonOfi2">
+<summary>
+chkNonOfi2 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -3114,6 +3204,24 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:DowChemical.observer._chkHRO2op5">
 <summary>
 chkHRO2op5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._hfPnContract2">
+<summary>
+hfPnContract2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._pnContract2">
+<summary>
+pnContract2 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -3246,6 +3354,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:DowChemical.observer._cbActionCompleted2a">
+<summary>
+cbActionCompleted2a control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:DowChemical.observer._imbtOtherAction2a">
 <summary>
 imbtOtherAction2a control.
@@ -3285,6 +3402,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:DowChemical.observer._racRespon2b">
 <summary>
 racRespon2b control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._cbActionCompleted2b">
+<summary>
+cbActionCompleted2b control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -3339,6 +3465,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:DowChemical.observer._racRespon2c">
 <summary>
 racRespon2c control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._cbActionCompleted2c">
+<summary>
+cbActionCompleted2c control.
 </summary>
 <remarks>
 Auto-generated field.

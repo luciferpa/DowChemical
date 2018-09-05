@@ -500,22 +500,22 @@ Partial Public Class observer
     Protected WithEvents chkRecognition1 As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
-    '''chkEyeOfi control.
+    '''chkEyeOfi1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents chkEyeOfi As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents chkEyeOfi1 As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
-    '''chkEyeInteraction control.
+    '''chkEyeInteraction1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents chkEyeInteraction As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents chkEyeInteraction1 As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
     '''hfPnNon1 control.
@@ -977,13 +977,22 @@ Partial Public Class observer
     Protected WithEvents tbEquipment2 As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''chkHRO2 control.
+    '''RCBLocation2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents chkHRO2 As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents RCBLocation2 As Global.Telerik.Web.UI.RadComboBox
+    
+    '''<summary>
+    '''chkSendEmail2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkSendEmail2 As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
     '''chk2Eye2 control.
@@ -995,6 +1004,42 @@ Partial Public Class observer
     Protected WithEvents chk2Eye2 As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
+    '''chkNonBehavior2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkNonBehavior2 As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''chkHRO2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkHRO2 As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''hfPnEye2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hfPnEye2 As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''pnEye2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnEye2 As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
     '''chkRecognition2 control.
     '''</summary>
     '''<remarks>
@@ -1004,13 +1049,58 @@ Partial Public Class observer
     Protected WithEvents chkRecognition2 As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
-    '''chkSendEmail2 control.
+    '''chkEyeOfi2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents chkSendEmail2 As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents chkEyeOfi2 As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''chkEyeInteraction2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkEyeInteraction2 As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''hfPnNon2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hfPnNon2 As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''pnNon2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnNon2 As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''chkNonRecognition2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkNonRecognition2 As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''chkNonOfi2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents chkNonOfi2 As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
     '''hfPnHRO2 control.
@@ -1074,6 +1164,24 @@ Partial Public Class observer
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkHRO2op5 As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''hfPnContract2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hfPnContract2 As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''pnContract2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnContract2 As Global.System.Web.UI.WebControls.Panel
     
     '''<summary>
     '''rcbObserveType2 control.
@@ -1202,6 +1310,15 @@ Partial Public Class observer
     Protected WithEvents racRespon2a As Global.Telerik.Web.UI.RadAutoCompleteBox
     
     '''<summary>
+    '''cbActionCompleted2a control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cbActionCompleted2a As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
     '''imbtOtherAction2a control.
     '''</summary>
     '''<remarks>
@@ -1245,6 +1362,15 @@ Partial Public Class observer
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents racRespon2b As Global.Telerik.Web.UI.RadAutoCompleteBox
+    
+    '''<summary>
+    '''cbActionCompleted2b control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cbActionCompleted2b As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
     '''imbtCloseAction2b control.
@@ -1299,6 +1425,15 @@ Partial Public Class observer
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents racRespon2c As Global.Telerik.Web.UI.RadAutoCompleteBox
+    
+    '''<summary>
+    '''cbActionCompleted2c control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cbActionCompleted2c As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
     '''imbtCloseAction2c control.

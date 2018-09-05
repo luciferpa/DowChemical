@@ -664,6 +664,10 @@ Public Class observer
 
             racRespon2a.Enabled = False
             imbtFindRespon2a.Enabled = False
+            cbActionCompleted2a.Enabled = False
+            cbActionCompleted2b.Enabled = False
+            cbActionCompleted2c.Enabled = False
+            chkNonRecognition2.Checked = True
 
             If pnRespon2b.Visible Then tbAction2b.Text = MsgRecognition : tbAction2b.Enabled = False
             If pnRespon2c.Visible Then tbAction2c.Text = MsgRecognition : tbAction2c.Enabled = False
@@ -673,11 +677,46 @@ Public Class observer
 
             racRespon2a.Enabled = True
             imbtFindRespon2a.Enabled = True
+            cbActionCompleted2a.Enabled = True
+            cbActionCompleted2b.Enabled = True
+            cbActionCompleted2c.Enabled = True
+            chkNonRecognition2.Checked = False
 
             If pnRespon2b.Visible Then tbAction2b.Text = "" : tbAction2b.Enabled = True
             If pnRespon2c.Visible Then tbAction2c.Text = "" : tbAction2c.Enabled = True
         End If
     End Sub
+    Private Sub chkNonRecognition2_CheckedChanged(sender As Object, e As EventArgs) Handles chkNonRecognition2.CheckedChanged
+        If chkNonRecognition2.Checked Then
+            tbAction2a.Text = MsgRecognition
+            tbAction2a.Enabled = False
+
+            racRespon2a.Enabled = False
+            imbtFindRespon2a.Enabled = False
+            cbActionCompleted2a.Enabled = False
+            cbActionCompleted2b.Enabled = False
+            cbActionCompleted2c.Enabled = False
+            chkRecognition2.Checked = True
+
+            If pnRespon2b.Visible Then tbAction2b.Text = MsgRecognition : tbAction2b.Enabled = False
+            If pnRespon2c.Visible Then tbAction2c.Text = MsgRecognition : tbAction2c.Enabled = False
+        Else
+            tbAction2a.Text = ""
+            tbAction2a.Enabled = True
+
+            racRespon2a.Enabled = True
+            imbtFindRespon2a.Enabled = True
+            cbActionCompleted2a.Enabled = True
+            cbActionCompleted2b.Enabled = True
+            cbActionCompleted2c.Enabled = True
+            chkRecognition2.Checked = False
+
+            If pnRespon2b.Visible Then tbAction2b.Text = "" : tbAction2b.Enabled = True
+            If pnRespon2c.Visible Then tbAction2c.Text = "" : tbAction2c.Enabled = True
+        End If
+    End Sub
+
+
     Protected Sub rcbObserveType2_SelectedIndexChanged(sender As Object, e As RadComboBoxSelectedIndexChangedEventArgs) Handles rcbObserveType2.SelectedIndexChanged
         If rcbObserveType2.SelectedIndex = 1 Then rcbContractor2.Visible = True Else rcbContractor2.Visible = False
     End Sub
