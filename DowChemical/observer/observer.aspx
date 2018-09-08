@@ -34,15 +34,27 @@
 
             var pnEye1 = $("#<%=pnEye1.ClientID %>");
             var pnEye2 = $("#<%=pnEye2.ClientID %>");
-            pnEye1.hide(); pnEye2.hide();
+            var pnEye3 = $("#<%=pnEye3.ClientID %>");
+            var pnEye4 = $("#<%=pnEye4.ClientID %>");
+            var pnEye5 = $("#<%=pnEye5.ClientID %>");
+            var pnEye6 = $("#<%=pnEye6.ClientID %>");
+            pnEye1.hide(); pnEye2.hide(); pnEye3.hide(); pnEye4.hide(); pnEye5.hide(); pnEye6.hide();
 
             var pnNon1 = $("#<%=pnNon1.ClientID %>");
             var pnNon2 = $("#<%=pnNon2.ClientID %>");
-            pnNon1.hide(); pnNon2.hide();
+            var pnNon3 = $("#<%=pnNon3.ClientID %>");
+            var pnNon4 = $("#<%=pnNon4.ClientID %>");
+            var pnNon5 = $("#<%=pnNon5.ClientID %>");
+            var pnNon6 = $("#<%=pnNon6.ClientID %>");
+            pnNon1.hide(); pnNon2.hide(); pnNon3.hide(); pnNon4.hide(); pnNon5.hide(); pnNon6.hide();
 
             var pnContract1 = $("#<%=pnContract1.ClientID %>");
             var pnContract2 = $("#<%=pnContract2.ClientID %>");
-            pnContract1.hide(); pnContract2.hide();
+            var pnContract3 = $("#<%=pnContract3.ClientID %>");
+            var pnContract4 = $("#<%=pnContract4.ClientID %>");
+            var pnContract5 = $("#<%=pnContract5.ClientID %>");
+            var pnContract6 = $("#<%=pnContract6.ClientID %>");
+            pnContract1.hide(); pnContract2.hide(); pnContract3.hide(); pnContract4.hide(); pnContract5.hide(); pnContract6.hide();
         }
 
         function showPanelHRO1(show) {
@@ -114,6 +126,82 @@
                 chkEyeOfi.checked = false;
             }
         }
+        function showPanelEye3(show) {
+            var pn = $("#<%=pnEye3.ClientID %>");
+            var hf = document.getElementById("<%=hfPnEye3.ClientID%>");
+            var pn1 = $("#<%=pnContract3.ClientID %>");
+            var hf1 = document.getElementById("<%=hfPnContract3.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction3.ClientID%>");
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi3.ClientID%>");
+            if (show) {
+                pn.show();
+                hf.value = "1";
+            } else {
+                pn.hide();
+                hf.value = "0";
+                pn1.hide();
+                hf1.value = "0";
+                chkEyeInteraction.checked = false;
+                chkEyeOfi.checked = false;
+            }
+        }
+        function showPanelEye4(show) {
+            var pn = $("#<%=pnEye4.ClientID %>");
+            var hf = document.getElementById("<%=hfPnEye4.ClientID%>");
+            var pn1 = $("#<%=pnContract4.ClientID %>");
+            var hf1 = document.getElementById("<%=hfPnContract4.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction4.ClientID%>");
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi4.ClientID%>");
+            if (show) {
+                pn.show();
+                hf.value = "1";
+            } else {
+                pn.hide();
+                hf.value = "0";
+                pn1.hide();
+                hf1.value = "0";
+                chkEyeInteraction.checked = false;
+                chkEyeOfi.checked = false;
+            }
+        }
+        function showPanelEye5(show) {
+            var pn = $("#<%=pnEye5.ClientID %>");
+            var hf = document.getElementById("<%=hfPnEye5.ClientID%>");
+            var pn1 = $("#<%=pnContract5.ClientID %>");
+            var hf1 = document.getElementById("<%=hfPnContract5.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction5.ClientID%>");
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi5.ClientID%>");
+            if (show) {
+                pn.show();
+                hf.value = "1";
+            } else {
+                pn.hide();
+                hf.value = "0";
+                pn1.hide();
+                hf1.value = "0";
+                chkEyeInteraction.checked = false;
+                chkEyeOfi.checked = false;
+            }
+        }
+        function showPanelEye6(show) {
+            var pn = $("#<%=pnEye6.ClientID %>");
+            var hf = document.getElementById("<%=hfPnEye6.ClientID%>");
+            var pn1 = $("#<%=pnContract6.ClientID %>");
+            var hf1 = document.getElementById("<%=hfPnContract6.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction6.ClientID%>");
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi6.ClientID%>");
+            if (show) {
+                pn.show();
+                hf.value = "1";
+            } else {
+                pn.hide();
+                hf.value = "0";
+                pn1.hide();
+                hf1.value = "0";
+                chkEyeInteraction.checked = false;
+                chkEyeOfi.checked = false;
+            }
+        }
 
         function showPanelNon1(show) {
             var pn = $("#<%=pnNon1.ClientID %>");
@@ -123,6 +211,26 @@
         function showPanelNon2(show) {
             var pn = $("#<%=pnNon2.ClientID %>");
             var hf = document.getElementById("<%=hfPnNon2.ClientID%>");
+            if (show) { pn.show(); hf.value = "1"; } else { pn.hide(); hf.value = "0"; }
+        }
+        function showPanelNon3(show) {
+            var pn = $("#<%=pnNon3.ClientID %>");
+            var hf = document.getElementById("<%=hfPnNon3.ClientID%>");
+            if (show) { pn.show(); hf.value = "1"; } else { pn.hide(); hf.value = "0"; }
+        }
+        function showPanelNon4(show) {
+            var pn = $("#<%=pnNon4.ClientID %>");
+            var hf = document.getElementById("<%=hfPnNon4.ClientID%>");
+            if (show) { pn.show(); hf.value = "1"; } else { pn.hide(); hf.value = "0"; }
+        }
+        function showPanelNon5(show) {
+            var pn = $("#<%=pnNon5.ClientID %>");
+            var hf = document.getElementById("<%=hfPnNon5.ClientID%>");
+            if (show) { pn.show(); hf.value = "1"; } else { pn.hide(); hf.value = "0"; }
+        }
+        function showPanelNon6(show) {
+            var pn = $("#<%=pnNon6.ClientID %>");
+            var hf = document.getElementById("<%=hfPnNon6.ClientID%>");
             if (show) { pn.show(); hf.value = "1"; } else { pn.hide(); hf.value = "0"; }
         }
 
@@ -146,6 +254,66 @@
             var hf = document.getElementById("<%=hfPnContract2.ClientID%>");
             var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction2.ClientID%>");
             var chkEyeOfi = document.getElementById("<%=chkEyeOfi2.ClientID%>");
+            if (show) {
+                pn.show();
+                hf.value = "1";
+            } else {
+                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false) {
+                    pn.hide();
+                    hf.value = "0";
+                }                
+            }
+        }
+        function showPanelContract3(show) {
+            var pn = $("#<%=pnContract3.ClientID %>");
+            var hf = document.getElementById("<%=hfPnContract3.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction3.ClientID%>");
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi3.ClientID%>");
+            if (show) {
+                pn.show();
+                hf.value = "1";
+            } else {
+                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false) {
+                    pn.hide();
+                    hf.value = "0";
+                }                
+            }
+        }
+        function showPanelContract4(show) {
+            var pn = $("#<%=pnContract4.ClientID %>");
+            var hf = document.getElementById("<%=hfPnContract4.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction4.ClientID%>");
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi4.ClientID%>");
+            if (show) {
+                pn.show();
+                hf.value = "1";
+            } else {
+                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false) {
+                    pn.hide();
+                    hf.value = "0";
+                }                
+            }
+        }
+        function showPanelContract5(show) {
+            var pn = $("#<%=pnContract5.ClientID %>");
+            var hf = document.getElementById("<%=hfPnContract5.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction5.ClientID%>");
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi5.ClientID%>");
+            if (show) {
+                pn.show();
+                hf.value = "1";
+            } else {
+                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false) {
+                    pn.hide();
+                    hf.value = "0";
+                }                
+            }
+        }
+        function showPanelContract6(show) {
+            var pn = $("#<%=pnContract6.ClientID %>");
+            var hf = document.getElementById("<%=hfPnContract6.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction6.ClientID%>");
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi6.ClientID%>");
             if (show) {
                 pn.show();
                 hf.value = "1";
@@ -198,6 +366,26 @@
             var hf = document.getElementById("<%=hfPnEye2.ClientID%>");
             pn.hide(); hf.value = "0"
         }
+        function pnHideCaseEye3() {
+            var pn = $("#<%=pnEye3.ClientID %>");
+            var hf = document.getElementById("<%=hfPnEye3.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
+        function pnHideCaseEye4() {
+            var pn = $("#<%=pnEye4.ClientID %>");
+            var hf = document.getElementById("<%=hfPnEye4.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
+        function pnHideCaseEye5() {
+            var pn = $("#<%=pnEye5.ClientID %>");
+            var hf = document.getElementById("<%=hfPnEye5.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
+        function pnHideCaseEye6() {
+            var pn = $("#<%=pnEye6.ClientID %>");
+            var hf = document.getElementById("<%=hfPnEye6.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
 
         function pnHideCaseNon1() {
             var pn = $("#<%=pnNon1.ClientID %>");
@@ -209,6 +397,26 @@
             var hf = document.getElementById("<%=hfPnNon2.ClientID%>");
             pn.hide(); hf.value = "0"
         }
+        function pnHideCaseNon3() {
+            var pn = $("#<%=pnNon3.ClientID %>");
+            var hf = document.getElementById("<%=hfPnNon3.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
+        function pnHideCaseNon4() {
+            var pn = $("#<%=pnNon4.ClientID %>");
+            var hf = document.getElementById("<%=hfPnNon4.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
+        function pnHideCaseNon5() {
+            var pn = $("#<%=pnNon5.ClientID %>");
+            var hf = document.getElementById("<%=hfPnNon5.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
+        function pnHideCaseNon6() {
+            var pn = $("#<%=pnNon6.ClientID %>");
+            var hf = document.getElementById("<%=hfPnNon6.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
 
         function pnHideCaseContract1() {
             var pn = $("#<%=pnContract1.ClientID %>");
@@ -218,6 +426,26 @@
         function pnHideCaseContract2() {
             var pn = $("#<%=pnContract2.ClientID %>");
             var hf = document.getElementById("<%=hfPnContract2.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
+        function pnHideCaseContract3() {
+            var pn = $("#<%=pnContract3.ClientID %>");
+            var hf = document.getElementById("<%=hfPnContract3.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
+        function pnHideCaseContract4() {
+            var pn = $("#<%=pnContract4.ClientID %>");
+            var hf = document.getElementById("<%=hfPnContract4.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
+        function pnHideCaseContract5() {
+            var pn = $("#<%=pnContract5.ClientID %>");
+            var hf = document.getElementById("<%=hfPnContract5.ClientID%>");
+            pn.hide(); hf.value = "0"
+        }
+        function pnHideCaseContract6() {
+            var pn = $("#<%=pnContract6.ClientID %>");
+            var hf = document.getElementById("<%=hfPnContract6.ClientID%>");
             pn.hide(); hf.value = "0"
         }
 
@@ -640,7 +868,7 @@
                 </div>
                 <asp:SqlDataSource ID="srcCategory0" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT cateId, cateName FROM tblObsvCate"></asp:SqlDataSource>
                 <telerik:RadMultiPage ID="RadMultiPage1" runat="server" Width="100%" SelectedIndex="0" TabIndex="1">
-                    <telerik:RadPageView ID="RadPageView1" runat="server" TabIndex="1" Selected="True">
+                    <telerik:RadPageView ID="RadPageView1" runat="server" TabIndex="0" Selected="True">
                         <div class="row" style="padding: 16px 16px 4px 16px;">
                             <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Title : </div>
                             <div class="col-md-9">
@@ -935,7 +1163,7 @@
                             <div class="row" style="padding: 12px 16px 20px 32px"></div>
                         </telerik:RadAjaxPanel>
                     </telerik:RadPageView>
-                    <telerik:RadPageView ID="RadPageView2" runat="server" TabIndex="1" Selected="True">
+                    <telerik:RadPageView ID="RadPageView2" runat="server" >
                         <div class="row" style="padding: 16px 16px 4px 16px;">
                             <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Title : </div>
                             <div class="col-md-9">
@@ -1230,6 +1458,1187 @@
                             <div class="row" style="padding: 12px 16px 20px 32px"></div>
                         </telerik:RadAjaxPanel>
                     </telerik:RadPageView>
+                    <telerik:RadPageView ID="RadPageView3" runat="server" >
+                        <div class="row" style="padding: 16px 16px 4px 16px;">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Title : </div>
+                            <div class="col-md-9">
+                                <asp:TextBox ID="tbTitle3" runat="server" CssClass="form-control input-sm" Width="712px"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Category : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="rcbCategory3" runat="server" Skin="Metro" Width="172px" DataSourceID="srcCategory0" DataTextField="cateName" DataValueField="cateId" AutoPostBack="True" EnableItemCaching="True"></telerik:RadComboBox>
+                                </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;">Sub Category : </div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <telerik:RadComboBox ID="rcbCategorySub3" runat="server" Skin="Metro" Width="352px" DataSourceID="srcCategorySub3" DataTextField="catesubName" DataValueField="catesubId" AutoPostBack="True" EnableItemCaching="True"></telerik:RadComboBox>
+                                        <asp:SqlDataSource ID="srcCategorySub3" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT catesubId, catesubName FROM tblObsvCateSub WHERE (cateId = @CateId) OR (catesubId = 1000)">
+                                            <SelectParameters>
+                                                <asp:ControlParameter ControlID="rcbCategory3" Name="CateId" PropertyName="SelectedValue" />
+                                            </SelectParameters>
+                                        </asp:SqlDataSource>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <%--new design--%>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Failure Point : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="rcbFailurePoint3" runat="server" Skin="Metro" Width="172px" DataSourceID="srcFailurePoint3" DataTextField="failpointName" DataValueField="failpointId" EnableItemCaching="True"></telerik:RadComboBox>
+                                    <asp:SqlDataSource ID="srcFailurePoint3" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT failpointId, failpointName FROM tblObsvFailPoint WHERE (catesubId = @catesubId) OR (failpointId = 1000)">
+                                        <SelectParameters>
+                                            <asp:ControlParameter ControlID="rcbCategorySub3" Name="catesubId" PropertyName="SelectedValue" />
+                                        </SelectParameters>
+                                    </asp:SqlDataSource>
+                                </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;">Equipment : </div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <asp:TextBox ID="tbEquipment3" runat="server" CssClass="form-control input-sm" Width="352px"></asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Location : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="RCBLocation3" runat="server" Skin="Metro" Width="172px" >
+                                        <Items>
+                                            <telerik:RadComboBoxItem runat="server" Text="AIE" Value="AIE" />
+                                            <telerik:RadComboBoxItem runat="server" Text="MTP" Value="MTP" />
+                                            <telerik:RadComboBoxItem runat="server" Text="COT1" Value="COT1" />
+                                            <telerik:RadComboBoxItem runat="server" Text="COT2" Value="COT2" />
+                                            <telerik:RadComboBoxItem runat="server" Text="ATC" Value="ATC" />
+                                        </Items>
+                                    </telerik:RadComboBox>
+                                </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;"></div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <asp:CheckBox ID="chkSendEmail3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Send email this observe" Font-Bold="True" Checked="true" />
+                                    </div>                                    
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">&nbsp;&nbsp;</div>
+                            <div class="col-md-9">
+                                <div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chk2Eye3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Behavior Observation [2<small>nd</small> Eye]" OnClick="showPanelEye3(this.checked);" />
+                                    </div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chkNonBehavior3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Field Inspection [Non-Behavior]" OnClick="showPanelNon3(this.checked);" />
+                                    </div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chkHRO3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;HRO" OnClick="showPanelHRO3(this.checked);" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <asp:HiddenField ID="hfPnEye3" runat="server" Value="0" />
+                        <asp:Panel ID="pnEye3" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkRecognition3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk3(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkEyeOfi3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract3(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkEyeInteraction3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract3(this.checked);" />
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+
+                        <asp:HiddenField ID="hfPnNon3" runat="server" Value="0" />
+                        <asp:Panel ID="pnNon3" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkNonRecognition3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk3(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkNonOfi3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" />
+                                    </div>                                 
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+
+                        <asp:HiddenField ID="hfPnHRO3" runat="server" Value="0" />
+                        <asp:Panel ID="pnHRO3" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO3op1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Expect the Unexpected (คาดคะเนในสิ่งที่ไม่น่าจะเกิดขึ้น)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO3op2" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Do Not Generalize (ไม่ทำสิ่งที่ไม่ปกติให้เป็นสิ่งปกติ)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO3op3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Identify Trend & Anticipate Impact (ระบุแนวโน้มและคาดการณ์ถึงผลที่จะกระทบ)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO3op4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Engage & Apply Expertise (ปรึกษาและให้ผู้เชี่ยวชาญร่วมแก้ปัญหา)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO3op5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Commit to Resilience (หาทางกลับมาสถานะเดิมอย่างรวดเร็ว)" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+                        
+                        <%--Interaction Panel--%>
+                        <asp:HiddenField ID="hfPnContract3" runat="server" Value="0" />
+                        <asp:Panel ID="pnContract3" runat="server">
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Observed Group : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 180px;">
+                                    <telerik:RadComboBox ID="rcbObserveType3" runat="server" Skin="Metro" Width="172px" AutoPostBack="True">
+                                        <Items>
+                                            <telerik:RadComboBoxItem runat="server" Text="Employee" Value="0" />
+                                            <telerik:RadComboBoxItem runat="server" Text="Contractor" Value="1" />
+                                        </Items>
+                                    </telerik:RadComboBox>
+                                </div>
+                                <div style="display: block; float: left; width: 532px;">
+                                    <telerik:RadAjaxPanel ID="RadAjaxPanel31" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
+                                        <telerik:RadComboBox ID="rcbContractor3" runat="server" Skin="Metro" Width="532px" Visible="False" DataSourceID="srcContractor" DataTextField="contractorName" DataValueField="contractorId"></telerik:RadComboBox>
+                                    </telerik:RadAjaxPanel>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Attachment File : </div>
+                            <div class="col-md-9">
+                                <telerik:RadAjaxPanel ID="RadAjaxPanel32" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
+                                    <div class="row">
+                                        <div style="display: block; float: left; width: 360px;">
+                                            <telerik:RadAsyncUpload ID="RadUpload3" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp,xlsx,xls,pdf"
+                                                MultipleFileSelection="Automatic" Skin="Bootstrap" TemporaryFolder="~/ImagesUpload" MaxFileInputsCount="1" UploadedFilesRendering="BelowFileInput">
+                                            </telerik:RadAsyncUpload>
+                                            <asp:Label ID="lbUploadInfo3" Text="File Size limit 1000KB, (jpg, bmp, png, gif, xlsm, xls, pdf)" runat="server" Font-Size="X-Small" />
+                                        </div>
+                                        <div style="display: block; float: left; width: 200px;">
+                                            <asp:Button ID="btUploadImg3" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload File" CommandName="uploadimg" Width="100px" /><span id="asyncUpload3" style="color: Red; line-height: 15px; font-size: x-small;"></span>
+                                        </div>
+                                    </div>
+                                    <asp:Panel ID="pnShowImage3" runat="server" Visible="false">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <asp:DataList ID="PictureList3" runat="server" RepeatDirection="Horizontal" DataSourceID="srcPicture3">
+                                                    <ItemTemplate>
+                                                        <div style="display: block; float: left; width: 178px; margin-top: 4px;">
+                                                            <div style="position: absolute; margin-left: 160px;">
+                                                                <asp:ImageButton ID="imbtClose3" runat="server" ImageUrl="~/Images/bt_close-dark.png" ToolTip="Cancel Upload" OnClick="imbtClose3_Click" />
+                                                            </div>
+                                                            <asp:Image ID="Image3" runat="server" ImageUrl='<%# Eval("picUrl") %>' Width="176px" />
+                                                            <telerik:RadToolTip ID="RadToolTip3" runat="server" ManualClose="True" Modal="True" Position="Center" RelativeTo="Element" ShowEvent="OnClick" TargetControlID="Image3">
+                                                                <asp:Image ID="ImageView3" runat="server" ImageUrl='<%# Eval("picUrl") %>' Height="480px" />
+                                                            </telerik:RadToolTip>
+                                                        </div>
+                                                    </ItemTemplate>
+                                                </asp:DataList>
+                                                <asp:SqlDataSource ID="srcPicture3" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '0')">
+                                                    <SelectParameters>
+                                                        <asp:ControlParameter ControlID="hfRecId" Name="recId" PropertyName="Value" />
+                                                    </SelectParameters>
+                                                </asp:SqlDataSource>
+                                            </div>
+                                        </div>
+                                    </asp:Panel>
+                                </telerik:RadAjaxPanel>
+                            </div>
+                        </div>
+                        </asp:Panel>
+                        <%--Interaction Panel--%>
+
+                        <div class="row" style="padding: 8px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Description :</div>
+                            <div class="col-md-9">
+                                <asp:TextBox ID="tbDescription3" runat="server" CssClass="form-control input-sm" Height="68px" Width="712px" TextMode="MultiLine"></asp:TextBox>
+                            </div>
+                        </div>
+                        <telerik:RadAjaxPanel ID="RadAjaxPanel33" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1" PostBackControls="tbAction3a">
+                            <div class="row" style="padding: 4px 16px 4px 16px">
+                                <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Propose Action #1</div>
+                                <div class="col-md-9">
+                                    <div style="display: block; float: left; width: 360px;">
+                                        <asp:TextBox ID="tbAction3a" runat="server" CssClass="form-control input-sm" Height="88px" Width="352px" TextMode="MultiLine"></asp:TextBox>
+                                    </div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <div style="display: block; float: left; width: 352px;">
+                                            <telerik:RadAutoCompleteBox ID="racRespon3a" runat="server" Width="352px" RenderMode="Lightweight" Skin="Bootstrap"
+                                                DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
+                                                DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
+                                            </telerik:RadAutoCompleteBox>
+                                            <asp:CheckBox ID="cbActionCompleted3a" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
+                                        </div>
+                                        <div style="display: block; float: left; width: 60px; margin-top: 28px; margin-left: 0px;">
+                                            <asp:Button ID="imbtOtherAction3a" runat="server" CssClass="btn btn-sm btn-primary" Text="Add Action" Width="97px" />
+                                        </div>
+                                    </div>
+                                    <div style="display: block; float: left; width: 60px; margin-top: 4px; margin-left: 8px;">
+                                        <asp:ImageButton ID="imbtFindRespon3a" runat="server" ImageUrl="~/Images/search-18h.png" OnClientClick="OpenEmployeeListWndPara(1,1);return false;" Visible="false"></asp:ImageButton>
+                                    </div>
+                                </div>
+                            </div>
+                            <asp:Panel ID="pnRespon3b" runat="server" Visible="false">
+                                <div class="row" style="padding: 4px 16px 4px 16px">
+                                    <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Propose Action #2</div>
+                                    <div class="col-md-9">
+                                        <div style="display: block; float: left; width: 360px;">
+                                            <asp:TextBox ID="tbAction3b" runat="server" CssClass="form-control input-sm" Height="88px" Width="352px" TextMode="MultiLine"></asp:TextBox>
+                                        </div>
+                                        <div style="display: block; float: left; width: 352px;">
+                                            <div style="display: block; float: left; width: 352px;">
+                                                <telerik:RadAutoCompleteBox ID="racRespon3b" runat="server" Width="352px" RenderMode="Lightweight" Skin="Bootstrap"
+                                                    DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
+                                                    DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
+                                                </telerik:RadAutoCompleteBox>
+                                                <asp:CheckBox ID="cbActionCompleted3b" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
+                                            </div>
+                                            <div style="display: block; float: left; width: 180px; margin-top: 28px; margin-left: 0px;">
+                                                <asp:Button ID="imbtCloseAction3b" runat="server" CssClass="btn btn-sm btn-warning" Text="Close" Width="66px" />&nbsp;
+                                                    <asp:Button ID="imbtOtherAction3b" runat="server" CssClass="btn btn-sm btn-primary" Text="Add Action" Width="100px" />
+                                            </div>
+                                        </div>
+                                        <div style="display: block; float: left; width: 60px; margin-top: 4px; margin-left: 8px;">
+                                            <asp:ImageButton ID="imbtFindRespon3b" runat="server" ImageUrl="~/Images/search-18h.png" OnClientClick="OpenEmployeeListWndPara(1, 2);return false;" Visible="false"></asp:ImageButton>
+                                        </div>
+                                    </div>
+                                </div>
+                            </asp:Panel>
+                            <asp:Panel ID="pnRespon3c" runat="server" Visible="false">
+                                <div class="row" style="padding: 4px 16px 4px 16px">
+                                    <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Propose Action #3</div>
+                                    <div class="col-md-9">
+                                        <div style="display: block; float: left; width: 360px;">
+                                            <asp:TextBox ID="tbAction3c" runat="server" CssClass="form-control input-sm" Height="88px" Width="352px" TextMode="MultiLine"></asp:TextBox>
+                                        </div>
+                                        <div style="display: block; float: left; width: 352px;">
+                                            <div style="display: block; float: left; width: 352px;">
+                                                <telerik:RadAutoCompleteBox ID="racRespon3c" runat="server" Width="352px" RenderMode="Lightweight" Skin="Bootstrap"
+                                                    DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
+                                                    DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
+                                                </telerik:RadAutoCompleteBox>
+                                                <asp:CheckBox ID="cbActionCompleted3c" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
+                                            </div>
+                                            <div style="display: block; float: left; width: 60px; margin-top: 28px; margin-left: 0px;">
+                                                <asp:Button ID="imbtCloseAction3c" runat="server" CssClass="btn btn-sm btn-warning" Text="Close" Width="66px" />
+                                            </div>
+                                        </div>
+                                        <div style="display: block; float: left; width: 60px; margin-top: 4px; margin-left: 8px;">
+                                            <asp:ImageButton ID="imbtFindRespon3c" runat="server" ImageUrl="~/Images/search-18h.png" OnClientClick="OpenEmployeeListWndPara(1,3);return false;" Visible="false"></asp:ImageButton>
+                                        </div>
+                                    </div>
+                                </div>
+                            </asp:Panel>
+                            <div class="row" style="padding: 12px 16px 20px 32px"></div>
+                        </telerik:RadAjaxPanel>
+                    </telerik:RadPageView>
+                    <telerik:RadPageView ID="RadPageView4" runat="server" >
+                        <div class="row" style="padding: 16px 16px 4px 16px;">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Title : </div>
+                            <div class="col-md-9">
+                                <asp:TextBox ID="tbTitle4" runat="server" CssClass="form-control input-sm" Width="712px"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Category : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="rcbCategory4" runat="server" Skin="Metro" Width="172px" DataSourceID="srcCategory0" DataTextField="cateName" DataValueField="cateId" AutoPostBack="True" EnableItemCaching="True"></telerik:RadComboBox>
+                                </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;">Sub Category : </div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <telerik:RadComboBox ID="rcbCategorySub4" runat="server" Skin="Metro" Width="352px" DataSourceID="srcCategorySub4" DataTextField="catesubName" DataValueField="catesubId" AutoPostBack="True" EnableItemCaching="True"></telerik:RadComboBox>
+                                        <asp:SqlDataSource ID="srcCategorySub4" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT catesubId, catesubName FROM tblObsvCateSub WHERE (cateId = @CateId) OR (catesubId = 1000)">
+                                            <SelectParameters>
+                                                <asp:ControlParameter ControlID="rcbCategory4" Name="CateId" PropertyName="SelectedValue" />
+                                            </SelectParameters>
+                                        </asp:SqlDataSource>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <%--new design--%>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Failure Point : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="rcbFailurePoint4" runat="server" Skin="Metro" Width="172px" DataSourceID="srcFailurePoint4" DataTextField="failpointName" DataValueField="failpointId" EnableItemCaching="True"></telerik:RadComboBox>
+                                    <asp:SqlDataSource ID="srcFailurePoint4" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT failpointId, failpointName FROM tblObsvFailPoint WHERE (catesubId = @catesubId) OR (failpointId = 1000)">
+                                        <SelectParameters>
+                                            <asp:ControlParameter ControlID="rcbCategorySub4" Name="catesubId" PropertyName="SelectedValue" />
+                                        </SelectParameters>
+                                    </asp:SqlDataSource>
+                                </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;">Equipment : </div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <asp:TextBox ID="tbEquipment4" runat="server" CssClass="form-control input-sm" Width="352px"></asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Location : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="RCBLocation4" runat="server" Skin="Metro" Width="172px" >
+                                        <Items>
+                                            <telerik:RadComboBoxItem runat="server" Text="AIE" Value="AIE" />
+                                            <telerik:RadComboBoxItem runat="server" Text="MTP" Value="MTP" />
+                                            <telerik:RadComboBoxItem runat="server" Text="COT1" Value="COT1" />
+                                            <telerik:RadComboBoxItem runat="server" Text="COT2" Value="COT2" />
+                                            <telerik:RadComboBoxItem runat="server" Text="ATC" Value="ATC" />
+                                        </Items>
+                                    </telerik:RadComboBox>
+                                </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;"></div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <asp:CheckBox ID="chkSendEmail4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Send email this observe" Font-Bold="True" Checked="true" />
+                                    </div>                                    
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">&nbsp;&nbsp;</div>
+                            <div class="col-md-9">
+                                <div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chk2Eye4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Behavior Observation [2<small>nd</small> Eye]" OnClick="showPanelEye4(this.checked);" />
+                                    </div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chkNonBehavior4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Field Inspection [Non-Behavior]" OnClick="showPanelNon4(this.checked);" />
+                                    </div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chkHRO4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;HRO" OnClick="showPanelHRO4(this.checked);" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <asp:HiddenField ID="hfPnEye4" runat="server" Value="0" />
+                        <asp:Panel ID="pnEye4" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkRecognition4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk4(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkEyeOfi4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract4(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkEyeInteraction4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract4(this.checked);" />
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+
+                        <asp:HiddenField ID="hfPnNon4" runat="server" Value="0" />
+                        <asp:Panel ID="pnNon4" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkNonRecognition4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk4(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkNonOfi4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" />
+                                    </div>                                 
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+
+                        <asp:HiddenField ID="hfPnHRO4" runat="server" Value="0" />
+                        <asp:Panel ID="pnHRO4" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO4op1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Expect the Unexpected (คาดคะเนในสิ่งที่ไม่น่าจะเกิดขึ้น)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO4op2" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Do Not Generalize (ไม่ทำสิ่งที่ไม่ปกติให้เป็นสิ่งปกติ)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO4op3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Identify Trend & Anticipate Impact (ระบุแนวโน้มและคาดการณ์ถึงผลที่จะกระทบ)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO4op4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Engage & Apply Expertise (ปรึกษาและให้ผู้เชี่ยวชาญร่วมแก้ปัญหา)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO4op5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Commit to Resilience (หาทางกลับมาสถานะเดิมอย่างรวดเร็ว)" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+                        
+                        <%--Interaction Panel--%>
+                        <asp:HiddenField ID="hfPnContract4" runat="server" Value="0" />
+                        <asp:Panel ID="pnContract4" runat="server">
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Observed Group : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 180px;">
+                                    <telerik:RadComboBox ID="rcbObserveType4" runat="server" Skin="Metro" Width="172px" AutoPostBack="True">
+                                        <Items>
+                                            <telerik:RadComboBoxItem runat="server" Text="Employee" Value="0" />
+                                            <telerik:RadComboBoxItem runat="server" Text="Contractor" Value="1" />
+                                        </Items>
+                                    </telerik:RadComboBox>
+                                </div>
+                                <div style="display: block; float: left; width: 532px;">
+                                    <telerik:RadAjaxPanel ID="RadAjaxPanel41" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
+                                        <telerik:RadComboBox ID="rcbContractor4" runat="server" Skin="Metro" Width="532px" Visible="False" DataSourceID="srcContractor" DataTextField="contractorName" DataValueField="contractorId"></telerik:RadComboBox>
+                                    </telerik:RadAjaxPanel>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Attachment File : </div>
+                            <div class="col-md-9">
+                                <telerik:RadAjaxPanel ID="RadAjaxPanel42" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
+                                    <div class="row">
+                                        <div style="display: block; float: left; width: 360px;">
+                                            <telerik:RadAsyncUpload ID="RadUpload4" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp,xlsx,xls,pdf"
+                                                MultipleFileSelection="Automatic" Skin="Bootstrap" TemporaryFolder="~/ImagesUpload" MaxFileInputsCount="1" UploadedFilesRendering="BelowFileInput">
+                                            </telerik:RadAsyncUpload>
+                                            <asp:Label ID="lbUploadInfo4" Text="File Size limit 1000KB, (jpg, bmp, png, gif, xlsm, xls, pdf)" runat="server" Font-Size="X-Small" />
+                                        </div>
+                                        <div style="display: block; float: left; width: 200px;">
+                                            <asp:Button ID="btUploadImg4" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload File" CommandName="uploadimg" Width="100px" /><span id="asyncUpload4" style="color: Red; line-height: 15px; font-size: x-small;"></span>
+                                        </div>
+                                    </div>
+                                    <asp:Panel ID="pnShowImage4" runat="server" Visible="false">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <asp:DataList ID="PictureList4" runat="server" RepeatDirection="Horizontal" DataSourceID="srcPicture4">
+                                                    <ItemTemplate>
+                                                        <div style="display: block; float: left; width: 178px; margin-top: 4px;">
+                                                            <div style="position: absolute; margin-left: 160px;">
+                                                                <asp:ImageButton ID="imbtClose4" runat="server" ImageUrl="~/Images/bt_close-dark.png" ToolTip="Cancel Upload" OnClick="imbtClose4_Click" />
+                                                            </div>
+                                                            <asp:Image ID="Image4" runat="server" ImageUrl='<%# Eval("picUrl") %>' Width="176px" />
+                                                            <telerik:RadToolTip ID="RadToolTip4" runat="server" ManualClose="True" Modal="True" Position="Center" RelativeTo="Element" ShowEvent="OnClick" TargetControlID="Image4">
+                                                                <asp:Image ID="ImageView4" runat="server" ImageUrl='<%# Eval("picUrl") %>' Height="480px" />
+                                                            </telerik:RadToolTip>
+                                                        </div>
+                                                    </ItemTemplate>
+                                                </asp:DataList>
+                                                <asp:SqlDataSource ID="srcPicture4" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '0')">
+                                                    <SelectParameters>
+                                                        <asp:ControlParameter ControlID="hfRecId" Name="recId" PropertyName="Value" />
+                                                    </SelectParameters>
+                                                </asp:SqlDataSource>
+                                            </div>
+                                        </div>
+                                    </asp:Panel>
+                                </telerik:RadAjaxPanel>
+                            </div>
+                        </div>
+                        </asp:Panel>
+                        <%--Interaction Panel--%>
+
+                        <div class="row" style="padding: 8px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Description :</div>
+                            <div class="col-md-9">
+                                <asp:TextBox ID="tbDescription4" runat="server" CssClass="form-control input-sm" Height="68px" Width="712px" TextMode="MultiLine"></asp:TextBox>
+                            </div>
+                        </div>
+                        <telerik:RadAjaxPanel ID="RadAjaxPanel43" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1" PostBackControls="tbAction4a">
+                            <div class="row" style="padding: 4px 16px 4px 16px">
+                                <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Propose Action #1</div>
+                                <div class="col-md-9">
+                                    <div style="display: block; float: left; width: 360px;">
+                                        <asp:TextBox ID="tbAction4a" runat="server" CssClass="form-control input-sm" Height="88px" Width="352px" TextMode="MultiLine"></asp:TextBox>
+                                    </div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <div style="display: block; float: left; width: 352px;">
+                                            <telerik:RadAutoCompleteBox ID="racRespon4a" runat="server" Width="352px" RenderMode="Lightweight" Skin="Bootstrap"
+                                                DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
+                                                DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
+                                            </telerik:RadAutoCompleteBox>
+                                            <asp:CheckBox ID="cbActionCompleted4a" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
+                                        </div>
+                                        <div style="display: block; float: left; width: 60px; margin-top: 28px; margin-left: 0px;">
+                                            <asp:Button ID="imbtOtherAction4a" runat="server" CssClass="btn btn-sm btn-primary" Text="Add Action" Width="97px" />
+                                        </div>
+                                    </div>
+                                    <div style="display: block; float: left; width: 60px; margin-top: 4px; margin-left: 8px;">
+                                        <asp:ImageButton ID="imbtFindRespon4a" runat="server" ImageUrl="~/Images/search-18h.png" OnClientClick="OpenEmployeeListWndPara(1,1);return false;" Visible="false"></asp:ImageButton>
+                                    </div>
+                                </div>
+                            </div>
+                            <asp:Panel ID="pnRespon4b" runat="server" Visible="false">
+                                <div class="row" style="padding: 4px 16px 4px 16px">
+                                    <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Propose Action #2</div>
+                                    <div class="col-md-9">
+                                        <div style="display: block; float: left; width: 360px;">
+                                            <asp:TextBox ID="tbAction4b" runat="server" CssClass="form-control input-sm" Height="88px" Width="352px" TextMode="MultiLine"></asp:TextBox>
+                                        </div>
+                                        <div style="display: block; float: left; width: 352px;">
+                                            <div style="display: block; float: left; width: 352px;">
+                                                <telerik:RadAutoCompleteBox ID="racRespon4b" runat="server" Width="352px" RenderMode="Lightweight" Skin="Bootstrap"
+                                                    DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
+                                                    DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
+                                                </telerik:RadAutoCompleteBox>
+                                                <asp:CheckBox ID="cbActionCompleted4b" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
+                                            </div>
+                                            <div style="display: block; float: left; width: 180px; margin-top: 28px; margin-left: 0px;">
+                                                <asp:Button ID="imbtCloseAction4b" runat="server" CssClass="btn btn-sm btn-warning" Text="Close" Width="66px" />&nbsp;
+                                                    <asp:Button ID="imbtOtherAction4b" runat="server" CssClass="btn btn-sm btn-primary" Text="Add Action" Width="100px" />
+                                            </div>
+                                        </div>
+                                        <div style="display: block; float: left; width: 60px; margin-top: 4px; margin-left: 8px;">
+                                            <asp:ImageButton ID="imbtFindRespon4b" runat="server" ImageUrl="~/Images/search-18h.png" OnClientClick="OpenEmployeeListWndPara(1, 2);return false;" Visible="false"></asp:ImageButton>
+                                        </div>
+                                    </div>
+                                </div>
+                            </asp:Panel>
+                            <asp:Panel ID="pnRespon4c" runat="server" Visible="false">
+                                <div class="row" style="padding: 4px 16px 4px 16px">
+                                    <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Propose Action #3</div>
+                                    <div class="col-md-9">
+                                        <div style="display: block; float: left; width: 360px;">
+                                            <asp:TextBox ID="tbAction4c" runat="server" CssClass="form-control input-sm" Height="88px" Width="352px" TextMode="MultiLine"></asp:TextBox>
+                                        </div>
+                                        <div style="display: block; float: left; width: 352px;">
+                                            <div style="display: block; float: left; width: 352px;">
+                                                <telerik:RadAutoCompleteBox ID="racRespon4c" runat="server" Width="352px" RenderMode="Lightweight" Skin="Bootstrap"
+                                                    DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
+                                                    DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
+                                                </telerik:RadAutoCompleteBox>
+                                                <asp:CheckBox ID="cbActionCompleted4c" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
+                                            </div>
+                                            <div style="display: block; float: left; width: 60px; margin-top: 28px; margin-left: 0px;">
+                                                <asp:Button ID="imbtCloseAction4c" runat="server" CssClass="btn btn-sm btn-warning" Text="Close" Width="66px" />
+                                            </div>
+                                        </div>
+                                        <div style="display: block; float: left; width: 60px; margin-top: 4px; margin-left: 8px;">
+                                            <asp:ImageButton ID="imbtFindRespon4c" runat="server" ImageUrl="~/Images/search-18h.png" OnClientClick="OpenEmployeeListWndPara(1,3);return false;" Visible="false"></asp:ImageButton>
+                                        </div>
+                                    </div>
+                                </div>
+                            </asp:Panel>
+                            <div class="row" style="padding: 12px 16px 20px 32px"></div>
+                        </telerik:RadAjaxPanel>
+                    </telerik:RadPageView>
+                    <telerik:RadPageView ID="RadPageView5" runat="server" >
+                        <div class="row" style="padding: 16px 16px 4px 16px;">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Title : </div>
+                            <div class="col-md-9">
+                                <asp:TextBox ID="tbTitle5" runat="server" CssClass="form-control input-sm" Width="712px"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Category : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="rcbCategory5" runat="server" Skin="Metro" Width="172px" DataSourceID="srcCategory0" DataTextField="cateName" DataValueField="cateId" AutoPostBack="True" EnableItemCaching="True"></telerik:RadComboBox>
+                                </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;">Sub Category : </div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <telerik:RadComboBox ID="rcbCategorySub5" runat="server" Skin="Metro" Width="352px" DataSourceID="srcCategorySub5" DataTextField="catesubName" DataValueField="catesubId" AutoPostBack="True" EnableItemCaching="True"></telerik:RadComboBox>
+                                        <asp:SqlDataSource ID="srcCategorySub5" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT catesubId, catesubName FROM tblObsvCateSub WHERE (cateId = @CateId) OR (catesubId = 1000)">
+                                            <SelectParameters>
+                                                <asp:ControlParameter ControlID="rcbCategory5" Name="CateId" PropertyName="SelectedValue" />
+                                            </SelectParameters>
+                                        </asp:SqlDataSource>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <%--new design--%>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Failure Point : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="rcbFailurePoint5" runat="server" Skin="Metro" Width="172px" DataSourceID="srcFailurePoint5" DataTextField="failpointName" DataValueField="failpointId" EnableItemCaching="True"></telerik:RadComboBox>
+                                    <asp:SqlDataSource ID="srcFailurePoint5" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT failpointId, failpointName FROM tblObsvFailPoint WHERE (catesubId = @catesubId) OR (failpointId = 1000)">
+                                        <SelectParameters>
+                                            <asp:ControlParameter ControlID="rcbCategorySub5" Name="catesubId" PropertyName="SelectedValue" />
+                                        </SelectParameters>
+                                    </asp:SqlDataSource>
+                                </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;">Equipment : </div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <asp:TextBox ID="tbEquipment5" runat="server" CssClass="form-control input-sm" Width="352px"></asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Location : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="RCBLocation5" runat="server" Skin="Metro" Width="172px" >
+                                        <Items>
+                                            <telerik:RadComboBoxItem runat="server" Text="AIE" Value="AIE" />
+                                            <telerik:RadComboBoxItem runat="server" Text="MTP" Value="MTP" />
+                                            <telerik:RadComboBoxItem runat="server" Text="COT1" Value="COT1" />
+                                            <telerik:RadComboBoxItem runat="server" Text="COT2" Value="COT2" />
+                                            <telerik:RadComboBoxItem runat="server" Text="ATC" Value="ATC" />
+                                        </Items>
+                                    </telerik:RadComboBox>
+                                </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;"></div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <asp:CheckBox ID="chkSendEmail5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Send email this observe" Font-Bold="True" Checked="true" />
+                                    </div>                                    
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">&nbsp;&nbsp;</div>
+                            <div class="col-md-9">
+                                <div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chk2Eye5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Behavior Observation [2<small>nd</small> Eye]" OnClick="showPanelEye5(this.checked);" />
+                                    </div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chkNonBehavior5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Field Inspection [Non-Behavior]" OnClick="showPanelNon5(this.checked);" />
+                                    </div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chkHRO5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;HRO" OnClick="showPanelHRO5(this.checked);" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <asp:HiddenField ID="hfPnEye5" runat="server" Value="0" />
+                        <asp:Panel ID="pnEye5" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkRecognition5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk5(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkEyeOfi5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract5(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkEyeInteraction5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract5(this.checked);" />
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+
+                        <asp:HiddenField ID="hfPnNon5" runat="server" Value="0" />
+                        <asp:Panel ID="pnNon5" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkNonRecognition5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk5(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkNonOfi5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" />
+                                    </div>                                 
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+
+                        <asp:HiddenField ID="hfPnHRO5" runat="server" Value="0" />
+                        <asp:Panel ID="pnHRO5" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO5op1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Expect the Unexpected (คาดคะเนในสิ่งที่ไม่น่าจะเกิดขึ้น)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO5op2" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Do Not Generalize (ไม่ทำสิ่งที่ไม่ปกติให้เป็นสิ่งปกติ)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO5op3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Identify Trend & Anticipate Impact (ระบุแนวโน้มและคาดการณ์ถึงผลที่จะกระทบ)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO5op4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Engage & Apply Expertise (ปรึกษาและให้ผู้เชี่ยวชาญร่วมแก้ปัญหา)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO5op5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Commit to Resilience (หาทางกลับมาสถานะเดิมอย่างรวดเร็ว)" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+                        
+                        <%--Interaction Panel--%>
+                        <asp:HiddenField ID="hfPnContract5" runat="server" Value="0" />
+                        <asp:Panel ID="pnContract5" runat="server">
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Observed Group : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 180px;">
+                                    <telerik:RadComboBox ID="rcbObserveType5" runat="server" Skin="Metro" Width="172px" AutoPostBack="True">
+                                        <Items>
+                                            <telerik:RadComboBoxItem runat="server" Text="Employee" Value="0" />
+                                            <telerik:RadComboBoxItem runat="server" Text="Contractor" Value="1" />
+                                        </Items>
+                                    </telerik:RadComboBox>
+                                </div>
+                                <div style="display: block; float: left; width: 532px;">
+                                    <telerik:RadAjaxPanel ID="RadAjaxPanel51" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
+                                        <telerik:RadComboBox ID="rcbContractor5" runat="server" Skin="Metro" Width="532px" Visible="False" DataSourceID="srcContractor" DataTextField="contractorName" DataValueField="contractorId"></telerik:RadComboBox>
+                                    </telerik:RadAjaxPanel>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Attachment File : </div>
+                            <div class="col-md-9">
+                                <telerik:RadAjaxPanel ID="RadAjaxPanel52" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
+                                    <div class="row">
+                                        <div style="display: block; float: left; width: 360px;">
+                                            <telerik:RadAsyncUpload ID="RadUpload5" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp,xlsx,xls,pdf"
+                                                MultipleFileSelection="Automatic" Skin="Bootstrap" TemporaryFolder="~/ImagesUpload" MaxFileInputsCount="1" UploadedFilesRendering="BelowFileInput">
+                                            </telerik:RadAsyncUpload>
+                                            <asp:Label ID="lbUploadInfo5" Text="File Size limit 1000KB, (jpg, bmp, png, gif, xlsm, xls, pdf)" runat="server" Font-Size="X-Small" />
+                                        </div>
+                                        <div style="display: block; float: left; width: 200px;">
+                                            <asp:Button ID="btUploadImg5" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload File" CommandName="uploadimg" Width="100px" /><span id="asyncUpload5" style="color: Red; line-height: 15px; font-size: x-small;"></span>
+                                        </div>
+                                    </div>
+                                    <asp:Panel ID="pnShowImage5" runat="server" Visible="false">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <asp:DataList ID="PictureList5" runat="server" RepeatDirection="Horizontal" DataSourceID="srcPicture5">
+                                                    <ItemTemplate>
+                                                        <div style="display: block; float: left; width: 178px; margin-top: 4px;">
+                                                            <div style="position: absolute; margin-left: 160px;">
+                                                                <asp:ImageButton ID="imbtClose5" runat="server" ImageUrl="~/Images/bt_close-dark.png" ToolTip="Cancel Upload" OnClick="imbtClose5_Click" />
+                                                            </div>
+                                                            <asp:Image ID="Image5" runat="server" ImageUrl='<%# Eval("picUrl") %>' Width="176px" />
+                                                            <telerik:RadToolTip ID="RadToolTip5" runat="server" ManualClose="True" Modal="True" Position="Center" RelativeTo="Element" ShowEvent="OnClick" TargetControlID="Image5">
+                                                                <asp:Image ID="ImageView5" runat="server" ImageUrl='<%# Eval("picUrl") %>' Height="480px" />
+                                                            </telerik:RadToolTip>
+                                                        </div>
+                                                    </ItemTemplate>
+                                                </asp:DataList>
+                                                <asp:SqlDataSource ID="srcPicture5" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '0')">
+                                                    <SelectParameters>
+                                                        <asp:ControlParameter ControlID="hfRecId" Name="recId" PropertyName="Value" />
+                                                    </SelectParameters>
+                                                </asp:SqlDataSource>
+                                            </div>
+                                        </div>
+                                    </asp:Panel>
+                                </telerik:RadAjaxPanel>
+                            </div>
+                        </div>
+                        </asp:Panel>
+                        <%--Interaction Panel--%>
+
+                        <div class="row" style="padding: 8px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Description :</div>
+                            <div class="col-md-9">
+                                <asp:TextBox ID="tbDescription5" runat="server" CssClass="form-control input-sm" Height="68px" Width="712px" TextMode="MultiLine"></asp:TextBox>
+                            </div>
+                        </div>
+                        <telerik:RadAjaxPanel ID="RadAjaxPanel53" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1" PostBackControls="tbAction5a">
+                            <div class="row" style="padding: 4px 16px 4px 16px">
+                                <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Propose Action #1</div>
+                                <div class="col-md-9">
+                                    <div style="display: block; float: left; width: 360px;">
+                                        <asp:TextBox ID="tbAction5a" runat="server" CssClass="form-control input-sm" Height="88px" Width="352px" TextMode="MultiLine"></asp:TextBox>
+                                    </div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <div style="display: block; float: left; width: 352px;">
+                                            <telerik:RadAutoCompleteBox ID="racRespon5a" runat="server" Width="352px" RenderMode="Lightweight" Skin="Bootstrap"
+                                                DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
+                                                DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
+                                            </telerik:RadAutoCompleteBox>
+                                            <asp:CheckBox ID="cbActionCompleted5a" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
+                                        </div>
+                                        <div style="display: block; float: left; width: 60px; margin-top: 28px; margin-left: 0px;">
+                                            <asp:Button ID="imbtOtherAction5a" runat="server" CssClass="btn btn-sm btn-primary" Text="Add Action" Width="97px" />
+                                        </div>
+                                    </div>
+                                    <div style="display: block; float: left; width: 60px; margin-top: 4px; margin-left: 8px;">
+                                        <asp:ImageButton ID="imbtFindRespon5a" runat="server" ImageUrl="~/Images/search-18h.png" OnClientClick="OpenEmployeeListWndPara(1,1);return false;" Visible="false"></asp:ImageButton>
+                                    </div>
+                                </div>
+                            </div>
+                            <asp:Panel ID="pnRespon5b" runat="server" Visible="false">
+                                <div class="row" style="padding: 4px 16px 4px 16px">
+                                    <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Propose Action #2</div>
+                                    <div class="col-md-9">
+                                        <div style="display: block; float: left; width: 360px;">
+                                            <asp:TextBox ID="tbAction5b" runat="server" CssClass="form-control input-sm" Height="88px" Width="352px" TextMode="MultiLine"></asp:TextBox>
+                                        </div>
+                                        <div style="display: block; float: left; width: 352px;">
+                                            <div style="display: block; float: left; width: 352px;">
+                                                <telerik:RadAutoCompleteBox ID="racRespon5b" runat="server" Width="352px" RenderMode="Lightweight" Skin="Bootstrap"
+                                                    DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
+                                                    DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
+                                                </telerik:RadAutoCompleteBox>
+                                                <asp:CheckBox ID="cbActionCompleted5b" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
+                                            </div>
+                                            <div style="display: block; float: left; width: 180px; margin-top: 28px; margin-left: 0px;">
+                                                <asp:Button ID="imbtCloseAction5b" runat="server" CssClass="btn btn-sm btn-warning" Text="Close" Width="66px" />&nbsp;
+                                                    <asp:Button ID="imbtOtherAction5b" runat="server" CssClass="btn btn-sm btn-primary" Text="Add Action" Width="100px" />
+                                            </div>
+                                        </div>
+                                        <div style="display: block; float: left; width: 60px; margin-top: 4px; margin-left: 8px;">
+                                            <asp:ImageButton ID="imbtFindRespon5b" runat="server" ImageUrl="~/Images/search-18h.png" OnClientClick="OpenEmployeeListWndPara(1, 2);return false;" Visible="false"></asp:ImageButton>
+                                        </div>
+                                    </div>
+                                </div>
+                            </asp:Panel>
+                            <asp:Panel ID="pnRespon5c" runat="server" Visible="false">
+                                <div class="row" style="padding: 4px 16px 4px 16px">
+                                    <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Propose Action #3</div>
+                                    <div class="col-md-9">
+                                        <div style="display: block; float: left; width: 360px;">
+                                            <asp:TextBox ID="tbAction5c" runat="server" CssClass="form-control input-sm" Height="88px" Width="352px" TextMode="MultiLine"></asp:TextBox>
+                                        </div>
+                                        <div style="display: block; float: left; width: 352px;">
+                                            <div style="display: block; float: left; width: 352px;">
+                                                <telerik:RadAutoCompleteBox ID="racRespon5c" runat="server" Width="352px" RenderMode="Lightweight" Skin="Bootstrap"
+                                                    DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
+                                                    DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
+                                                </telerik:RadAutoCompleteBox>
+                                                <asp:CheckBox ID="cbActionCompleted5c" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
+                                            </div>
+                                            <div style="display: block; float: left; width: 60px; margin-top: 28px; margin-left: 0px;">
+                                                <asp:Button ID="imbtCloseAction5c" runat="server" CssClass="btn btn-sm btn-warning" Text="Close" Width="66px" />
+                                            </div>
+                                        </div>
+                                        <div style="display: block; float: left; width: 60px; margin-top: 4px; margin-left: 8px;">
+                                            <asp:ImageButton ID="imbtFindRespon5c" runat="server" ImageUrl="~/Images/search-18h.png" OnClientClick="OpenEmployeeListWndPara(1,3);return false;" Visible="false"></asp:ImageButton>
+                                        </div>
+                                    </div>
+                                </div>
+                            </asp:Panel>
+                            <div class="row" style="padding: 12px 16px 20px 32px"></div>
+                        </telerik:RadAjaxPanel>
+                    </telerik:RadPageView>
+                    <telerik:RadPageView ID="RadPageView6" runat="server">
+                        <div class="row" style="padding: 16px 16px 4px 16px;">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Title : </div>
+                            <div class="col-md-9">
+                                <asp:TextBox ID="tbTitle6" runat="server" CssClass="form-control input-sm" Width="712px"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Category : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="rcbCategory6" runat="server" Skin="Metro" Width="172px" DataSourceID="srcCategory0" DataTextField="cateName" DataValueField="cateId" AutoPostBack="True" EnableItemCaching="True"></telerik:RadComboBox>
+                                </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;">Sub Category : </div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <telerik:RadComboBox ID="rcbCategorySub6" runat="server" Skin="Metro" Width="352px" DataSourceID="srcCategorySub6" DataTextField="catesubName" DataValueField="catesubId" AutoPostBack="True" EnableItemCaching="True"></telerik:RadComboBox>
+                                        <asp:SqlDataSource ID="srcCategorySub6" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT catesubId, catesubName FROM tblObsvCateSub WHERE (cateId = @CateId) OR (catesubId = 1000)">
+                                            <SelectParameters>
+                                                <asp:ControlParameter ControlID="rcbCategory6" Name="CateId" PropertyName="SelectedValue" />
+                                            </SelectParameters>
+                                        </asp:SqlDataSource>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <%--new design--%>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Failure Point : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="rcbFailurePoint6" runat="server" Skin="Metro" Width="172px" DataSourceID="srcFailurePoint6" DataTextField="failpointName" DataValueField="failpointId" EnableItemCaching="True"></telerik:RadComboBox>
+                                    <asp:SqlDataSource ID="srcFailurePoint6" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT failpointId, failpointName FROM tblObsvFailPoint WHERE (catesubId = @catesubId) OR (failpointId = 1000)">
+                                        <SelectParameters>
+                                            <asp:ControlParameter ControlID="rcbCategorySub6" Name="catesubId" PropertyName="SelectedValue" />
+                                        </SelectParameters>
+                                    </asp:SqlDataSource>
+                                </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;">Equipment : </div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <asp:TextBox ID="tbEquipment6" runat="server" CssClass="form-control input-sm" Width="352px"></asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Location : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 172px;">
+                                    <telerik:RadComboBox ID="RCBLocation6" runat="server" Skin="Metro" Width="172px" >
+                                        <Items>
+                                            <telerik:RadComboBoxItem runat="server" Text="AIE" Value="AIE" />
+                                            <telerik:RadComboBoxItem runat="server" Text="MTP" Value="MTP" />
+                                            <telerik:RadComboBoxItem runat="server" Text="COT1" Value="COT1" />
+                                            <telerik:RadComboBoxItem runat="server" Text="COT2" Value="COT2" />
+                                            <telerik:RadComboBoxItem runat="server" Text="ATC" Value="ATC" />
+                                        </Items>
+                                    </telerik:RadComboBox>
+                                </div>
+                                <div style="display: block; float: left; width: 540px;">
+                                    <div style="display: block; float: left; width: 174px; text-align: right; margin-top: 7px; margin-right: 14px;"></div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <asp:CheckBox ID="chkSendEmail6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Send email this observe" Font-Bold="True" Checked="true" />
+                                    </div>                                    
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">&nbsp;&nbsp;</div>
+                            <div class="col-md-9">
+                                <div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chk2Eye6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Behavior Observation [2<small>nd</small> Eye]" OnClick="showPanelEye6(this.checked);" />
+                                    </div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chkNonBehavior6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Field Inspection [Non-Behavior]" OnClick="showPanelNon6(this.checked);" />
+                                    </div>
+                                    <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
+                                        <asp:CheckBox ID="chkHRO6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;HRO" OnClick="showPanelHRO6(this.checked);" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <asp:HiddenField ID="hfPnEye6" runat="server" Value="0" />
+                        <asp:Panel ID="pnEye6" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkRecognition6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk6(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkEyeOfi6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract6(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkEyeInteraction6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract6(this.checked);" />
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+
+                        <asp:HiddenField ID="hfPnNon6" runat="server" Value="0" />
+                        <asp:Panel ID="pnNon6" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkNonRecognition6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk6(this.checked);" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkNonOfi6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" />
+                                    </div>                                 
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+
+                        <asp:HiddenField ID="hfPnHRO6" runat="server" Value="0" />
+                        <asp:Panel ID="pnHRO6" runat="server">
+                            <div class="row" style="padding: 0px 0px 8px 11px;">
+                                <div style="display: block; float: left; width: 180px; text-align: right; margin-top: 7px;">&#160;&#160;</div>
+                                <div class="col-md-9" style="padding: 8px 16px 8px 48px; width: 712px; background-color: #f9f9f9">
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO6op1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Expect the Unexpected (คาดคะเนในสิ่งที่ไม่น่าจะเกิดขึ้น)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO6op2" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Do Not Generalize (ไม่ทำสิ่งที่ไม่ปกติให้เป็นสิ่งปกติ)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO6op3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Identify Trend & Anticipate Impact (ระบุแนวโน้มและคาดการณ์ถึงผลที่จะกระทบ)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO6op4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Engage & Apply Expertise (ปรึกษาและให้ผู้เชี่ยวชาญร่วมแก้ปัญหา)" />
+                                    </div>
+                                    <div>
+                                        <asp:CheckBox ID="chkHRO6op5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Commit to Resilience (หาทางกลับมาสถานะเดิมอย่างรวดเร็ว)" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 2px 16px 2px 16px"></div>
+                        </asp:Panel>
+                        
+                        <%--Interaction Panel--%>
+                        <asp:HiddenField ID="hfPnContract6" runat="server" Value="0" />
+                        <asp:Panel ID="pnContract6" runat="server">
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Observed Group : </div>
+                            <div class="col-md-9">
+                                <div style="display: block; float: left; width: 180px;">
+                                    <telerik:RadComboBox ID="rcbObserveType6" runat="server" Skin="Metro" Width="172px" AutoPostBack="True">
+                                        <Items>
+                                            <telerik:RadComboBoxItem runat="server" Text="Employee" Value="0" />
+                                            <telerik:RadComboBoxItem runat="server" Text="Contractor" Value="1" />
+                                        </Items>
+                                    </telerik:RadComboBox>
+                                </div>
+                                <div style="display: block; float: left; width: 532px;">
+                                    <telerik:RadAjaxPanel ID="RadAjaxPanel61" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
+                                        <telerik:RadComboBox ID="rcbContractor6" runat="server" Skin="Metro" Width="532px" Visible="False" DataSourceID="srcContractor" DataTextField="contractorName" DataValueField="contractorId"></telerik:RadComboBox>
+                                    </telerik:RadAjaxPanel>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 4px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Attachment File : </div>
+                            <div class="col-md-9">
+                                <telerik:RadAjaxPanel ID="RadAjaxPanel62" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
+                                    <div class="row">
+                                        <div style="display: block; float: left; width: 360px;">
+                                            <telerik:RadAsyncUpload ID="RadUpload6" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp,xlsx,xls,pdf"
+                                                MultipleFileSelection="Automatic" Skin="Bootstrap" TemporaryFolder="~/ImagesUpload" MaxFileInputsCount="1" UploadedFilesRendering="BelowFileInput">
+                                            </telerik:RadAsyncUpload>
+                                            <asp:Label ID="lbUploadInfo6" Text="File Size limit 1000KB, (jpg, bmp, png, gif, xlsm, xls, pdf)" runat="server" Font-Size="X-Small" />
+                                        </div>
+                                        <div style="display: block; float: left; width: 200px;">
+                                            <asp:Button ID="btUploadImg6" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload File" CommandName="uploadimg" Width="100px" /><span id="asyncUpload6" style="color: Red; line-height: 15px; font-size: x-small;"></span>
+                                        </div>
+                                    </div>
+                                    <asp:Panel ID="pnShowImage6" runat="server" Visible="false">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <asp:DataList ID="PictureList6" runat="server" RepeatDirection="Horizontal" DataSourceID="srcPicture6">
+                                                    <ItemTemplate>
+                                                        <div style="display: block; float: left; width: 178px; margin-top: 4px;">
+                                                            <div style="position: absolute; margin-left: 160px;">
+                                                                <asp:ImageButton ID="imbtClose6" runat="server" ImageUrl="~/Images/bt_close-dark.png" ToolTip="Cancel Upload" OnClick="imbtClose6_Click" />
+                                                            </div>
+                                                            <asp:Image ID="Image6" runat="server" ImageUrl='<%# Eval("picUrl") %>' Width="176px" />
+                                                            <telerik:RadToolTip ID="RadToolTip6" runat="server" ManualClose="True" Modal="True" Position="Center" RelativeTo="Element" ShowEvent="OnClick" TargetControlID="Image6">
+                                                                <asp:Image ID="ImageView6" runat="server" ImageUrl='<%# Eval("picUrl") %>' Height="480px" />
+                                                            </telerik:RadToolTip>
+                                                        </div>
+                                                    </ItemTemplate>
+                                                </asp:DataList>
+                                                <asp:SqlDataSource ID="srcPicture6" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '0')">
+                                                    <SelectParameters>
+                                                        <asp:ControlParameter ControlID="hfRecId" Name="recId" PropertyName="Value" />
+                                                    </SelectParameters>
+                                                </asp:SqlDataSource>
+                                            </div>
+                                        </div>
+                                    </asp:Panel>
+                                </telerik:RadAjaxPanel>
+                            </div>
+                        </div>
+                        </asp:Panel>
+                        <%--Interaction Panel--%>
+
+                        <div class="row" style="padding: 8px 16px 4px 16px">
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Description :</div>
+                            <div class="col-md-9">
+                                <asp:TextBox ID="tbDescription6" runat="server" CssClass="form-control input-sm" Height="68px" Width="712px" TextMode="MultiLine"></asp:TextBox>
+                            </div>
+                        </div>
+                        <telerik:RadAjaxPanel ID="RadAjaxPanel63" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1" PostBackControls="tbAction6a">
+                            <div class="row" style="padding: 4px 16px 4px 16px">
+                                <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Propose Action #1</div>
+                                <div class="col-md-9">
+                                    <div style="display: block; float: left; width: 360px;">
+                                        <asp:TextBox ID="tbAction6a" runat="server" CssClass="form-control input-sm" Height="88px" Width="352px" TextMode="MultiLine"></asp:TextBox>
+                                    </div>
+                                    <div style="display: block; float: left; width: 352px;">
+                                        <div style="display: block; float: left; width: 352px;">
+                                            <telerik:RadAutoCompleteBox ID="racRespon6a" runat="server" Width="352px" RenderMode="Lightweight" Skin="Bootstrap"
+                                                DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
+                                                DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
+                                            </telerik:RadAutoCompleteBox>
+                                            <asp:CheckBox ID="cbActionCompleted6a" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
+                                        </div>
+                                        <div style="display: block; float: left; width: 60px; margin-top: 28px; margin-left: 0px;">
+                                            <asp:Button ID="imbtOtherAction6a" runat="server" CssClass="btn btn-sm btn-primary" Text="Add Action" Width="97px" />
+                                        </div>
+                                    </div>
+                                    <div style="display: block; float: left; width: 60px; margin-top: 4px; margin-left: 8px;">
+                                        <asp:ImageButton ID="imbtFindRespon6a" runat="server" ImageUrl="~/Images/search-18h.png" OnClientClick="OpenEmployeeListWndPara(1,1);return false;" Visible="false"></asp:ImageButton>
+                                    </div>
+                                </div>
+                            </div>
+                            <asp:Panel ID="pnRespon6b" runat="server" Visible="false">
+                                <div class="row" style="padding: 4px 16px 4px 16px">
+                                    <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Propose Action #2</div>
+                                    <div class="col-md-9">
+                                        <div style="display: block; float: left; width: 360px;">
+                                            <asp:TextBox ID="tbAction6b" runat="server" CssClass="form-control input-sm" Height="88px" Width="352px" TextMode="MultiLine"></asp:TextBox>
+                                        </div>
+                                        <div style="display: block; float: left; width: 352px;">
+                                            <div style="display: block; float: left; width: 352px;">
+                                                <telerik:RadAutoCompleteBox ID="racRespon6b" runat="server" Width="352px" RenderMode="Lightweight" Skin="Bootstrap"
+                                                    DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
+                                                    DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
+                                                </telerik:RadAutoCompleteBox>
+                                                <asp:CheckBox ID="cbActionCompleted6b" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
+                                            </div>
+                                            <div style="display: block; float: left; width: 180px; margin-top: 28px; margin-left: 0px;">
+                                                <asp:Button ID="imbtCloseAction6b" runat="server" CssClass="btn btn-sm btn-warning" Text="Close" Width="66px" />&nbsp;
+                                                    <asp:Button ID="imbtOtherAction6b" runat="server" CssClass="btn btn-sm btn-primary" Text="Add Action" Width="100px" />
+                                            </div>
+                                        </div>
+                                        <div style="display: block; float: left; width: 60px; margin-top: 4px; margin-left: 8px;">
+                                            <asp:ImageButton ID="imbtFindRespon6b" runat="server" ImageUrl="~/Images/search-18h.png" OnClientClick="OpenEmployeeListWndPara(1, 2);return false;" Visible="false"></asp:ImageButton>
+                                        </div>
+                                    </div>
+                                </div>
+                            </asp:Panel>
+                            <asp:Panel ID="pnRespon6c" runat="server" Visible="false">
+                                <div class="row" style="padding: 4px 16px 4px 16px">
+                                    <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 8px;">Propose Action #3</div>
+                                    <div class="col-md-9">
+                                        <div style="display: block; float: left; width: 360px;">
+                                            <asp:TextBox ID="tbAction6c" runat="server" CssClass="form-control input-sm" Height="88px" Width="352px" TextMode="MultiLine"></asp:TextBox>
+                                        </div>
+                                        <div style="display: block; float: left; width: 352px;">
+                                            <div style="display: block; float: left; width: 352px;">
+                                                <telerik:RadAutoCompleteBox ID="racRespon6c" runat="server" Width="352px" RenderMode="Lightweight" Skin="Bootstrap"
+                                                    DataSourceID="srcAutoName" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Responsible Person"
+                                                    DropDownPosition="Static" MaxResultCount="10" OnClientEntryAdding="OnClientEntryAddingProposeAction">
+                                                </telerik:RadAutoCompleteBox>
+                                                <asp:CheckBox ID="cbActionCompleted6c" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Action Completed" />
+                                            </div>
+                                            <div style="display: block; float: left; width: 60px; margin-top: 28px; margin-left: 0px;">
+                                                <asp:Button ID="imbtCloseAction6c" runat="server" CssClass="btn btn-sm btn-warning" Text="Close" Width="66px" />
+                                            </div>
+                                        </div>
+                                        <div style="display: block; float: left; width: 60px; margin-top: 4px; margin-left: 8px;">
+                                            <asp:ImageButton ID="imbtFindRespon6c" runat="server" ImageUrl="~/Images/search-18h.png" OnClientClick="OpenEmployeeListWndPara(1,3);return false;" Visible="false"></asp:ImageButton>
+                                        </div>
+                                    </div>
+                                </div>
+                            </asp:Panel>
+                            <div class="row" style="padding: 12px 16px 20px 32px"></div>
+                        </telerik:RadAjaxPanel>
+                    </telerik:RadPageView>
+
                     <%--<telerik:RadPageView ID="RadPageView2" runat="server">
                         <div class="row" style="padding: 16px 16px 4px 16px;">
                             <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Title : </div>
@@ -1457,7 +2866,7 @@
                             </asp:Panel>
                             <div class="row" style="padding: 12px 16px 20px 32px"></div>
                         </telerik:RadAjaxPanel>
-                    </telerik:RadPageView>--%>
+                    </telerik:RadPageView>
                     <telerik:RadPageView ID="RadPageView3" runat="server">
                         <div class="row" style="padding: 16px 16px 4px 16px;">
                             <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Title : </div>
@@ -2371,6 +3780,8 @@
                             <div class="row" style="padding: 12px 16px 20px 32px"></div>
                         </telerik:RadAjaxPanel>
                     </telerik:RadPageView>
+                    --%>
+
                 </telerik:RadMultiPage>
             </div>
             <div style="border-style: solid none none none; border-width: 2px; border-color: #00AEDB; padding: 0px 16px 0px 16px;">
@@ -2763,6 +4174,23 @@
                     <telerik:AjaxUpdatedControl ControlID="tbAction3c" />
                     <telerik:AjaxUpdatedControl ControlID="racRespon3a" />
                     <telerik:AjaxUpdatedControl ControlID="imbtFindRespon3a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition3" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkNonRecognition3">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon3a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon3a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition3" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3c" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="btUploadImg3">
@@ -2774,11 +4202,13 @@
             <telerik:AjaxSetting AjaxControlID="imbtOtherAction3a">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition3" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition3" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="imbtCloseAction3b">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition3" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition3" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
 
@@ -2805,6 +4235,23 @@
                     <telerik:AjaxUpdatedControl ControlID="tbAction4c" />
                     <telerik:AjaxUpdatedControl ControlID="racRespon4a" />
                     <telerik:AjaxUpdatedControl ControlID="imbtFindRespon4a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition4" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkNonRecognition4">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction4a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction4b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction4c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon4a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon4a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition4" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4c" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="btUploadImg4">
@@ -2816,11 +4263,13 @@
             <telerik:AjaxSetting AjaxControlID="imbtOtherAction4a">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition4" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition4" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="imbtCloseAction4b">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition4" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition4" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
 
@@ -2847,6 +4296,23 @@
                     <telerik:AjaxUpdatedControl ControlID="tbAction5c" />
                     <telerik:AjaxUpdatedControl ControlID="racRespon5a" />
                     <telerik:AjaxUpdatedControl ControlID="imbtFindRespon5a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition5" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkNonRecognition5">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction5a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction5b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction5c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon5a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon5a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition5" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5c" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="btUploadImg5">
@@ -2858,11 +4324,13 @@
             <telerik:AjaxSetting AjaxControlID="imbtOtherAction5a">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition5" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition5" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="imbtCloseAction5b">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition5" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition5" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
 
@@ -2889,6 +4357,23 @@
                     <telerik:AjaxUpdatedControl ControlID="tbAction6c" />
                     <telerik:AjaxUpdatedControl ControlID="racRespon6a" />
                     <telerik:AjaxUpdatedControl ControlID="imbtFindRespon6a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition6" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkNonRecognition6">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction6a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction6b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction6c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon6a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon6a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition6" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6c" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="btUploadImg6">
@@ -2900,11 +4385,13 @@
             <telerik:AjaxSetting AjaxControlID="imbtOtherAction6a">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition6" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition6" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="imbtCloseAction6b">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition6" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition6" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
 
@@ -2940,6 +4427,14 @@
                     <telerik:AjaxUpdatedControl ControlID="RadUpload1" />
                     <telerik:AjaxUpdatedControl ControlID="btUploadImg1" />
                     <telerik:AjaxUpdatedControl ControlID="tbDescription1" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonBehavior1" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeOfi1" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeInteraction1" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition1" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonOfi1" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1c" />
 
                     <telerik:AjaxUpdatedControl ControlID="tbTitle2" />
                     <telerik:AjaxUpdatedControl ControlID="rcbCategory2" />
@@ -2960,6 +4455,14 @@
                     <telerik:AjaxUpdatedControl ControlID="RadUpload2" />
                     <telerik:AjaxUpdatedControl ControlID="btUploadImg2" />
                     <telerik:AjaxUpdatedControl ControlID="tbDescription2" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonBehavior2" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeOfi2" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeInteraction2" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition2" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonOfi2" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2c" />
 
                     <telerik:AjaxUpdatedControl ControlID="tbTitle3" />
                     <telerik:AjaxUpdatedControl ControlID="rcbCategory3" />
@@ -2980,6 +4483,14 @@
                     <telerik:AjaxUpdatedControl ControlID="RadUpload3" />
                     <telerik:AjaxUpdatedControl ControlID="btUploadImg3" />
                     <telerik:AjaxUpdatedControl ControlID="tbDescription3" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonBehavior3" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeOfi3" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeInteraction3" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition3" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonOfi3" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3c" />
 
                     <telerik:AjaxUpdatedControl ControlID="tbTitle4" />
                     <telerik:AjaxUpdatedControl ControlID="rcbCategory4" />
@@ -3000,6 +4511,14 @@
                     <telerik:AjaxUpdatedControl ControlID="RadUpload4" />
                     <telerik:AjaxUpdatedControl ControlID="btUploadImg4" />
                     <telerik:AjaxUpdatedControl ControlID="tbDescription4" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonBehavior4" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeOfi4" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeInteraction4" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition4" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonOfi4" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4c" />
 
                     <telerik:AjaxUpdatedControl ControlID="tbTitle5" />
                     <telerik:AjaxUpdatedControl ControlID="rcbCategory5" />
@@ -3020,6 +4539,14 @@
                     <telerik:AjaxUpdatedControl ControlID="RadUpload5" />
                     <telerik:AjaxUpdatedControl ControlID="btUploadImg5" />
                     <telerik:AjaxUpdatedControl ControlID="tbDescription5" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonBehavior5" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeOfi5" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeInteraction5" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition5" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonOfi5" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5c" />
 
                     <telerik:AjaxUpdatedControl ControlID="tbTitle6" />
                     <telerik:AjaxUpdatedControl ControlID="rcbCategory6" />
@@ -3040,6 +4567,15 @@
                     <telerik:AjaxUpdatedControl ControlID="RadUpload6" />
                     <telerik:AjaxUpdatedControl ControlID="btUploadImg6" />
                     <telerik:AjaxUpdatedControl ControlID="tbDescription6" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonBehavior6" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeOfi6" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeInteraction6" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition6" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonOfi6" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6c" />
+
                 </UpdatedControls>
             </telerik:AjaxSetting>
         </AjaxSettings>

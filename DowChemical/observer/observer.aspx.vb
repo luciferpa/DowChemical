@@ -534,11 +534,10 @@ Public Class observer
             cbActionCompleted1a.Enabled = False
             cbActionCompleted1b.Enabled = False
             cbActionCompleted1c.Enabled = False
+            chkNonRecognition1.Checked = True
 
             If pnRespon1b.Visible Then tbAction1b.Text = MsgRecognition : tbAction1b.Enabled = False
             If pnRespon1c.Visible Then tbAction1c.Text = MsgRecognition : tbAction1c.Enabled = False
-
-            chkNonRecognition1.Checked = True
         Else
             tbAction1a.Text = ""
             tbAction1a.Enabled = True
@@ -548,11 +547,10 @@ Public Class observer
             cbActionCompleted1a.Enabled = True
             cbActionCompleted1b.Enabled = True
             cbActionCompleted1c.Enabled = True
+            chkNonRecognition1.Checked = False
 
             If pnRespon1b.Visible Then tbAction1b.Text = "" : tbAction1b.Enabled = True
             If pnRespon1c.Visible Then tbAction1c.Text = "" : tbAction1c.Enabled = True
-
-            chkNonRecognition1.Checked = False
         End If
     End Sub
 
@@ -789,6 +787,10 @@ Public Class observer
 
             racRespon3a.Enabled = False
             imbtFindRespon3a.Enabled = False
+            cbActionCompleted3a.Enabled = False
+            cbActionCompleted3b.Enabled = False
+            cbActionCompleted3c.Enabled = False
+            chkNonRecognition3.Checked = True
 
             If pnRespon3b.Visible Then tbAction3b.Text = MsgRecognition : tbAction3b.Enabled = False
             If pnRespon3c.Visible Then tbAction3c.Text = MsgRecognition : tbAction3c.Enabled = False
@@ -798,11 +800,18 @@ Public Class observer
 
             racRespon3a.Enabled = True
             imbtFindRespon3a.Enabled = True
+            cbActionCompleted3a.Enabled = True
+            cbActionCompleted3b.Enabled = True
+            cbActionCompleted3c.Enabled = True
+            chkNonRecognition3.Checked = False
 
             If pnRespon3b.Visible Then tbAction1b.Text = "" : tbAction3b.Enabled = True
             If pnRespon3c.Visible Then tbAction1c.Text = "" : tbAction3c.Enabled = True
         End If
     End Sub
+
+
+
     Protected Sub rcbObserveType3_SelectedIndexChanged(sender As Object, e As RadComboBoxSelectedIndexChangedEventArgs) Handles rcbObserveType3.SelectedIndexChanged
         If rcbObserveType3.SelectedIndex = 1 Then rcbContractor3.Visible = True Else rcbContractor3.Visible = False
     End Sub
@@ -875,6 +884,10 @@ Public Class observer
 
             racRespon4a.Enabled = False
             imbtFindRespon4a.Enabled = False
+            cbActionCompleted4a.Enabled = False
+            cbActionCompleted4b.Enabled = False
+            cbActionCompleted4c.Enabled = False
+            chkNonRecognition4.Checked = True
 
             If pnRespon4b.Visible Then tbAction4b.Text = MsgRecognition : tbAction4b.Enabled = False
             If pnRespon4c.Visible Then tbAction4c.Text = MsgRecognition : tbAction4c.Enabled = False
@@ -884,6 +897,10 @@ Public Class observer
 
             racRespon4a.Enabled = True
             imbtFindRespon4a.Enabled = True
+            cbActionCompleted4a.Enabled = True
+            cbActionCompleted4b.Enabled = True
+            cbActionCompleted4c.Enabled = True
+            chkNonRecognition4.Checked = False
 
             If pnRespon4b.Visible Then tbAction4b.Text = "" : tbAction4b.Enabled = True
             If pnRespon4c.Visible Then tbAction4c.Text = "" : tbAction4c.Enabled = True
@@ -961,6 +978,10 @@ Public Class observer
 
             racRespon5a.Enabled = False
             imbtFindRespon5a.Enabled = False
+            cbActionCompleted5a.Enabled = False
+            cbActionCompleted5b.Enabled = False
+            cbActionCompleted5c.Enabled = False
+            chkNonRecognition5.Checked = True
 
             If pnRespon5b.Visible Then tbAction5b.Text = MsgRecognition : tbAction5b.Enabled = False
             If pnRespon5c.Visible Then tbAction5c.Text = MsgRecognition : tbAction5c.Enabled = False
@@ -970,6 +991,10 @@ Public Class observer
 
             racRespon5a.Enabled = True
             imbtFindRespon5a.Enabled = True
+            cbActionCompleted5a.Enabled = True
+            cbActionCompleted5b.Enabled = True
+            cbActionCompleted5c.Enabled = True
+            chkNonRecognition5.Checked = False
 
             If pnRespon5b.Visible Then tbAction5b.Text = "" : tbAction5b.Enabled = True
             If pnRespon5c.Visible Then tbAction5c.Text = "" : tbAction5c.Enabled = True
@@ -1047,6 +1072,10 @@ Public Class observer
 
             racRespon6a.Enabled = False
             imbtFindRespon6a.Enabled = False
+            cbActionCompleted6a.Enabled = False
+            cbActionCompleted6b.Enabled = False
+            cbActionCompleted6c.Enabled = False
+            chkNonRecognition6.Checked = True
 
             If pnRespon6b.Visible Then tbAction6b.Text = MsgRecognition : tbAction6b.Enabled = False
             If pnRespon6c.Visible Then tbAction6c.Text = MsgRecognition : tbAction6c.Enabled = False
@@ -1056,6 +1085,10 @@ Public Class observer
 
             racRespon6a.Enabled = True
             imbtFindRespon6a.Enabled = True
+            cbActionCompleted6a.Enabled = True
+            cbActionCompleted6b.Enabled = True
+            cbActionCompleted6c.Enabled = True
+            chkNonRecognition6.Checked = False
 
             If pnRespon6b.Visible Then tbAction6b.Text = "" : tbAction6b.Enabled = True
             If pnRespon6c.Visible Then tbAction6c.Text = "" : tbAction6c.Enabled = True
@@ -1940,5 +1973,129 @@ Public Class observer
         Response.Redirect("observation.aspx")
     End Sub
 
+    Private Sub chkNonRecognition3_CheckedChanged(sender As Object, e As EventArgs) Handles chkNonRecognition3.CheckedChanged
+        If chkNonRecognition3.Checked Then
+            tbAction3a.Text = MsgRecognition
+            tbAction3a.Enabled = False
 
+            racRespon3a.Enabled = False
+            imbtFindRespon3a.Enabled = False
+            cbActionCompleted3a.Enabled = False
+            cbActionCompleted3b.Enabled = False
+            cbActionCompleted3c.Enabled = False
+            chkRecognition3.Checked = True
+
+            If pnRespon3b.Visible Then tbAction3b.Text = MsgRecognition : tbAction3b.Enabled = False
+            If pnRespon3c.Visible Then tbAction3c.Text = MsgRecognition : tbAction3c.Enabled = False
+
+        Else
+            tbAction3a.Text = ""
+            tbAction3a.Enabled = True
+
+            racRespon3a.Enabled = True
+            imbtFindRespon3a.Enabled = True
+            cbActionCompleted3a.Enabled = True
+            cbActionCompleted3b.Enabled = True
+            cbActionCompleted3c.Enabled = True
+            chkRecognition3.Checked = False
+
+            If pnRespon3b.Visible Then tbAction3b.Text = "" : tbAction3b.Enabled = True
+            If pnRespon3c.Visible Then tbAction3c.Text = "" : tbAction3c.Enabled = True
+
+        End If
+    End Sub
+
+    Private Sub chkNonRecognition4_CheckedChanged(sender As Object, e As EventArgs) Handles chkNonRecognition4.CheckedChanged
+        If chkNonRecognition4.Checked Then
+            tbAction4a.Text = MsgRecognition
+            tbAction4a.Enabled = False
+
+            racRespon4a.Enabled = False
+            imbtFindRespon4a.Enabled = False
+            cbActionCompleted4a.Enabled = False
+            cbActionCompleted4b.Enabled = False
+            cbActionCompleted4c.Enabled = False
+            chkRecognition4.Checked = True
+
+            If pnRespon4b.Visible Then tbAction4b.Text = MsgRecognition : tbAction4b.Enabled = False
+            If pnRespon4c.Visible Then tbAction4c.Text = MsgRecognition : tbAction4c.Enabled = False
+
+        Else
+            tbAction4a.Text = ""
+            tbAction4a.Enabled = True
+
+            racRespon4a.Enabled = True
+            imbtFindRespon4a.Enabled = True
+            cbActionCompleted4a.Enabled = True
+            cbActionCompleted4b.Enabled = True
+            cbActionCompleted4c.Enabled = True
+            chkRecognition4.Checked = False
+
+            If pnRespon4b.Visible Then tbAction4b.Text = "" : tbAction4b.Enabled = True
+            If pnRespon4c.Visible Then tbAction4c.Text = "" : tbAction4c.Enabled = True
+
+        End If
+    End Sub
+
+    Private Sub chkNonRecognition5_CheckedChanged(sender As Object, e As EventArgs) Handles chkNonRecognition5.CheckedChanged
+        If chkNonRecognition5.Checked Then
+            tbAction5a.Text = MsgRecognition
+            tbAction5a.Enabled = False
+
+            racRespon5a.Enabled = False
+            imbtFindRespon5a.Enabled = False
+            cbActionCompleted5a.Enabled = False
+            cbActionCompleted5b.Enabled = False
+            cbActionCompleted5c.Enabled = False
+            chkRecognition5.Checked = True
+
+            If pnRespon5b.Visible Then tbAction5b.Text = MsgRecognition : tbAction5b.Enabled = False
+            If pnRespon5c.Visible Then tbAction5c.Text = MsgRecognition : tbAction5c.Enabled = False
+
+        Else
+            tbAction5a.Text = ""
+            tbAction5a.Enabled = True
+
+            racRespon5a.Enabled = True
+            imbtFindRespon5a.Enabled = True
+            cbActionCompleted5a.Enabled = True
+            cbActionCompleted5b.Enabled = True
+            cbActionCompleted5c.Enabled = True
+            chkRecognition5.Checked = False
+
+            If pnRespon5b.Visible Then tbAction5b.Text = "" : tbAction5b.Enabled = True
+            If pnRespon5c.Visible Then tbAction5c.Text = "" : tbAction5c.Enabled = True
+
+        End If
+    End Sub
+
+    Private Sub chkNonRecognition6_CheckedChanged(sender As Object, e As EventArgs) Handles chkNonRecognition6.CheckedChanged
+        If chkNonRecognition6.Checked Then
+            tbAction6a.Text = MsgRecognition
+            tbAction6a.Enabled = False
+
+            racRespon6a.Enabled = False
+            imbtFindRespon6a.Enabled = False
+            cbActionCompleted6a.Enabled = False
+            cbActionCompleted6b.Enabled = False
+            cbActionCompleted6c.Enabled = False
+            chkRecognition6.Checked = True
+
+            If pnRespon6b.Visible Then tbAction6b.Text = MsgRecognition : tbAction6b.Enabled = False
+            If pnRespon6c.Visible Then tbAction6c.Text = MsgRecognition : tbAction6c.Enabled = False
+        Else
+            tbAction6a.Text = ""
+            tbAction6a.Enabled = True
+
+            racRespon6a.Enabled = True
+            imbtFindRespon6a.Enabled = True
+            cbActionCompleted6a.Enabled = True
+            cbActionCompleted6b.Enabled = True
+            cbActionCompleted6c.Enabled = True
+            chkRecognition6.Checked = False
+
+            If pnRespon6b.Visible Then tbAction6b.Text = "" : tbAction6b.Enabled = True
+            If pnRespon6c.Visible Then tbAction6c.Text = "" : tbAction6c.Enabled = True
+        End If
+    End Sub
 End Class
