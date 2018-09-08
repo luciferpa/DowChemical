@@ -6,7 +6,8 @@ ADD
 	chkNonOfi bit,
 	IsActionCompletedA bit,
 	IsActionCompletedB bit,
-	IsActionCompletedC bit
+	IsActionCompletedC bit,
+	ddlLocation text
 
 
 

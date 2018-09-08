@@ -1508,13 +1508,25 @@ Public Class observer
             Dim PanelC As Panel = RadMultiPage1.FindControl("pnRespon" & i.ToString & "c")
             Dim racResponC As RadAutoCompleteBox = RadMultiPage1.FindControl("racRespon" & i.ToString & "c")
             Dim tbActionC As TextBox = RadMultiPage1.FindControl("tbAction" & i.ToString & "c")
+            Dim chkEyeOfi As CheckBox = RadMultiPage1.FindControl("chkEyeOfi" & i.ToString)
+            Dim chkEyeInteraction As CheckBox = RadMultiPage1.FindControl("chkEyeInteraction" & i.ToString)
+            Dim chkNonBehavior As CheckBox = RadMultiPage1.FindControl("chkNonBehavior" & i.ToString)
+            Dim chkNonOfi As CheckBox = RadMultiPage1.FindControl("chkNonOfi" & i.ToString)
+            Dim cbActionCompletedA As CheckBox = RadMultiPage1.FindControl("cbActionCompleted" & i.ToString & "a")
+            Dim cbActionCompletedB As CheckBox = RadMultiPage1.FindControl("cbActionCompleted" & i.ToString & "b")
+            Dim cbActionCompletedC As CheckBox = RadMultiPage1.FindControl("cbActionCompleted" & i.ToString & "c")
 
-            Dim strIns As String = "INSERT INTO tblRecordDetail(recId, observItem, title, category, categorySub, failurePoint, equipment, IsHRO, hroChk1, hroChk2, hroChk3, hroChk4, hroChk5, 
+            Dim strIns As String = "INSERT INTO tblRecordDetail(
+                                    recId, observItem, title, category, categorySub, failurePoint, equipment, IsHRO, hroChk1, hroChk2, hroChk3, hroChk4, hroChk5, 
                                     secondEye, recognition, observType, contractor, pictureCount, description, proposeEnable_A, proposeDesc_A, proposeRespPerson_A, proposeAction_A, proposeStatus_A, 
-                                    proposeEnable_B, proposeDesc_B, proposeRespPerson_B, proposeAction_B, proposeStatus_B, proposeEnable_C, proposeDesc_C, proposeRespPerson_C, proposeAction_C, proposeStatus_C, observComplete) 
+                                    proposeEnable_B, proposeDesc_B, proposeRespPerson_B, proposeAction_B, proposeStatus_B, proposeEnable_C, proposeDesc_C, proposeRespPerson_C, proposeAction_C, proposeStatus_C, observComplete,
+                                      chkEyeOfi, chkEyeInteraction, chkNonBehavior, chkNonOfi, IsActionCompletedA, IsActionCompletedB, IsActionCompletedC, ddlLocation
+                                    ) 
                                     VALUES(@recId, @observItem, @title, @category, @categorySub, @failurePoint, @equipment, @IsHRO, @hroChk1, @hroChk2, @hroChk3, @hroChk4, @hroChk5, 
                                     @secondEye, @recognition, @observType, @contractor, @pictureCount, @description, @proposeEnable_A, @proposeDesc_A, @proposeRespPerson_A, @proposeAction_A, @proposeStatus_A, 
-                                    @proposeEnable_B, @proposeDesc_B, @proposeRespPerson_B, @proposeAction_B, @proposeStatus_B, @proposeEnable_C, @proposeDesc_C, @proposeRespPerson_C, @proposeAction_C, @proposeStatus_C, @observComplete)"
+                                    @proposeEnable_B, @proposeDesc_B, @proposeRespPerson_B, @proposeAction_B, @proposeStatus_B, @proposeEnable_C, @proposeDesc_C, @proposeRespPerson_C, @proposeAction_C, @proposeStatus_C, @observComplete,
+                                    @chkEyeOfi, @chkEyeInteraction, @chkNonBehavior, @chkNonOfi, @IsActionCompletedA, @IsActionCompletedB, @IsActionCompletedC, @ddlLocation
+                                    )"
             '-- Insert Command
             Dim conn As New SqlConnection(ConnStr)
             Dim command As New SqlCommand(strIns, conn)
@@ -1527,7 +1539,8 @@ Public Class observer
                 Else command.Parameters.Add("@categorySub", SqlDbType.Int).Value = DBNull.Value
             If rcbFailurePoint.SelectedValue <> "" Then command.Parameters.Add("@failurePoint", SqlDbType.Int).Value = CInt(rcbFailurePoint.SelectedValue) _
                 Else command.Parameters.Add("@failurePoint", SqlDbType.Int).Value = DBNull.Value
-            command.Parameters.Add("@equipment", SqlDbType.NVarChar).Value = rcbLocation.Text & "|" & tbEquipment.Text
+            command.Parameters.Add("@equipment", SqlDbType.NVarChar).Value = tbEquipment.Text
+            command.Parameters.Add("@ddlLocation", SqlDbType.NVarChar).Value = rcbLocation.Text
             command.Parameters.Add("@IsHRO", SqlDbType.Bit).Value = chkHRO.Checked
             command.Parameters.Add("@hroChk1", SqlDbType.Bit).Value = chkHRO_op1.Checked
             command.Parameters.Add("@hroChk2", SqlDbType.Bit).Value = chkHRO_op2.Checked
@@ -1540,10 +1553,13 @@ Public Class observer
             command.Parameters.Add("@contractor", SqlDbType.Int).Value = contractorId
             command.Parameters.Add("@pictureCount", SqlDbType.Int).Value = PictureList.Items.Count
             command.Parameters.Add("@description", SqlDbType.NVarChar).Value = tbDescription.Text
-
             command.Parameters.Add("@proposeEnable_A", SqlDbType.Bit).Value = True
             command.Parameters.Add("@proposeDesc_A", SqlDbType.NVarChar).Value = ""
             command.Parameters.Add("@proposeAction_A", SqlDbType.NVarChar).Value = tbActionA.Text
+            command.Parameters.Add("@chkEyeOfi", SqlDbType.Bit).Value = chkEyeOfi.Checked
+            command.Parameters.Add("@chkEyeInteraction", SqlDbType.Bit).Value = chkEyeInteraction.Checked
+            command.Parameters.Add("@chkNonBehavior", SqlDbType.Bit).Value = chkNonBehavior.Checked
+            command.Parameters.Add("@chkNonOfi", SqlDbType.Bit).Value = chkNonOfi.Checked
 
             Dim reponPersonA As Integer = 0
             Dim Status_A As Integer = 1000      '1001 = Recognition, 1002 = Inprogress
@@ -1560,6 +1576,7 @@ Public Class observer
             End If
             command.Parameters.Add("@proposeStatus_A", SqlDbType.Int).Value = Status_A
             command.Parameters.Add("@proposeRespPerson_A", SqlDbType.Int).Value = reponPersonA
+            command.Parameters.Add("@IsActionCompletedA", SqlDbType.Bit).Value = cbActionCompletedA.Checked
 
             '---- email & group email list
             'SaveGroupMailDetailPart(groupList, reponPersonA, 1000 + (i * 10) + 1)
@@ -1587,6 +1604,7 @@ Public Class observer
                 End If
                 command.Parameters.Add("@proposeStatus_B", SqlDbType.Int).Value = Status_B
                 command.Parameters.Add("@proposeRespPerson_B", SqlDbType.Int).Value = reponPersonB
+                command.Parameters.Add("@IsActionCompletedB", SqlDbType.Bit).Value = cbActionCompletedB.Checked
 
                 '---- email & group email list
                 'SaveGroupMailDetailPart(groupList, reponPersonB, 1000 + (i * 10) + 2)
@@ -1599,6 +1617,7 @@ Public Class observer
                 command.Parameters.Add("@proposeRespPerson_B", SqlDbType.Int).Value = DBNull.Value
                 command.Parameters.Add("@proposeAction_B", SqlDbType.NVarChar).Value = DBNull.Value
                 command.Parameters.Add("@proposeStatus_B", SqlDbType.Int).Value = Status_B
+                command.Parameters.Add("@IsActionCompletedB", SqlDbType.Bit).Value = False
             End If
 
             Dim Status_C As Integer = 1000      '1001 = Recognition, 1002 = Inprogress
@@ -1621,6 +1640,7 @@ Public Class observer
                 End If
                 command.Parameters.Add("@proposeStatus_C", SqlDbType.Int).Value = Status_C
                 command.Parameters.Add("@proposeRespPerson_C", SqlDbType.Int).Value = reponPersonC
+                command.Parameters.Add("@IsActionCompletedC", SqlDbType.Bit).Value = cbActionCompletedC.Checked
 
                 '---- email & group email list
                 'SaveGroupMailDetailPart(groupList, reponPersonC, 1000 + (i * 10) + 3)
@@ -1633,6 +1653,7 @@ Public Class observer
                 command.Parameters.Add("@proposeRespPerson_C", SqlDbType.Int).Value = DBNull.Value
                 command.Parameters.Add("@proposeAction_C", SqlDbType.NVarChar).Value = DBNull.Value
                 command.Parameters.Add("@proposeStatus_C", SqlDbType.Int).Value = Status_C
+                command.Parameters.Add("@IsActionCompletedC", SqlDbType.Bit).Value = False
             End If
 
             '-- update observComplete status
