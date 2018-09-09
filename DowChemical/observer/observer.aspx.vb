@@ -429,46 +429,56 @@ Public Class observer
         Dim imageExtension As String = RadUpload.UploadedFiles(0).GetExtension().ToString()
         Dim SaveFilesOri As String = ""
         Dim oFileName As String = ""
-        For Each f As UploadedFile In RadUpload.UploadedFiles
-            oFileName = Strings.Left(f.GetNameWithoutExtension, 20)
-            SaveFilesOri = CurrentPath & uniqueFilename & Strings.Left(oFileName, 20) & "_original" & imageExtension
-            f.SaveAs(SaveFilesOri)
-        Next
-        RadUpload.UploadedFiles.Clear()
 
-        'resize image
-        Dim oriImage As System.Drawing.Image
-        oriImage = System.Drawing.Image.FromFile(SaveFilesOri)
-        Dim newHeight As Integer
-        Dim newWidth As Integer
-        If oriImage.Height > 720 Then
-            newHeight = 720
-            newWidth = (oriImage.Width * newHeight) / oriImage.Height
+        If String.Compare(imageExtension, ".pdf") = 0 Or String.Compare(imageExtension, ".xlsx") = 0 Or String.Compare(imageExtension, ".xls") = 0 Then
+            For Each f As UploadedFile In RadUpload.UploadedFiles
+                oFileName = Strings.Left(f.GetNameWithoutExtension, 20)
+                SaveFilesOri = CurrentPath & uniqueFilename & Strings.Left(oFileName, 20) & imageExtension
+                f.SaveAs(SaveFilesOri)
+            Next
+            RadUpload.UploadedFiles.Clear()
         Else
-            newHeight = oriImage.Height
-            newWidth = oriImage.Width
-        End If
+            For Each f As UploadedFile In RadUpload.UploadedFiles
+                oFileName = Strings.Left(f.GetNameWithoutExtension, 20)
+                SaveFilesOri = CurrentPath & uniqueFilename & Strings.Left(oFileName, 20) & "_original" & imageExtension
+                f.SaveAs(SaveFilesOri)
+            Next
+            RadUpload.UploadedFiles.Clear()
 
-        'quality
-        Dim newImage As New Bitmap(newWidth, newHeight)
-        Using g As Graphics = Graphics.FromImage(DirectCast(newImage, System.Drawing.Image))
-            g.DrawImage(oriImage, 0, 0, newWidth, newHeight)
-            g.InterpolationMode = Drawing.Drawing2D.InterpolationMode.HighQualityBicubic
-        End Using
-        Dim Info As ImageCodecInfo() = ImageCodecInfo.GetImageEncoders()
-        Dim Params As New EncoderParameters(1)
-        Params.Param(0) = New EncoderParameter(System.Drawing.Imaging.Encoder.Quality, 80L)
+            'resize image
+            Dim oriImage As System.Drawing.Image
+            oriImage = System.Drawing.Image.FromFile(SaveFilesOri)
+            Dim newHeight As Integer
+            Dim newWidth As Integer
+            If oriImage.Height > 720 Then
+                newHeight = 720
+                newWidth = (oriImage.Width * newHeight) / oriImage.Height
+            Else
+                newHeight = oriImage.Height
+                newWidth = oriImage.Width
+            End If
 
-        Dim SaveFilesName As String
-        SaveFilesName = CurrentPath & uniqueFilename & Strings.Left(oFileName, 20) & imageExtension
-        newImage.Save(SaveFilesName, Info(1), Params)
-        newImage.Dispose()
-        oriImage.Dispose()
+            'quality
+            Dim newImage As New Bitmap(newWidth, newHeight)
+            Using g As Graphics = Graphics.FromImage(DirectCast(newImage, System.Drawing.Image))
+                g.DrawImage(oriImage, 0, 0, newWidth, newHeight)
+                g.InterpolationMode = Drawing.Drawing2D.InterpolationMode.HighQualityBicubic
+            End Using
+            Dim Info As ImageCodecInfo() = ImageCodecInfo.GetImageEncoders()
+            Dim Params As New EncoderParameters(1)
+            Params.Param(0) = New EncoderParameter(System.Drawing.Imaging.Encoder.Quality, 80L)
 
-        'delete original image
-        Dim FileInServ As New FileInfo(SaveFilesOri)
-        If FileInServ.Exists Then
-            FileInServ.Delete()
+            Dim SaveFilesName As String
+            SaveFilesName = CurrentPath & uniqueFilename & Strings.Left(oFileName, 20) & imageExtension
+            newImage.Save(SaveFilesName, Info(1), Params)
+            newImage.Dispose()
+            oriImage.Dispose()
+
+            'delete original image
+            Dim FileInServ As New FileInfo(SaveFilesOri)
+            If FileInServ.Exists Then
+                FileInServ.Delete()
+            End If
         End If
 
         '-- Insert Command
@@ -513,6 +523,17 @@ Public Class observer
         Dim dataRead As SqlDataReader = command.ExecuteReader()
 
         If dataRead.HasRows() Then Return False Else Return True
+    End Function
+
+    Private Function IsPicture(ByVal RadUpload As RadAsyncUpload) As Boolean
+        Dim imageExtension As String = RadUpload.UploadedFiles(0).GetExtension().ToString()
+        Dim isPic As Boolean
+        If String.Compare(imageExtension, ".pdf") = 0 Or String.Compare(imageExtension, ".xlsx") = 0 Or String.Compare(imageExtension, ".xls") = 0 Then
+            isPic = False
+        Else
+            isPic = True
+        End If
+        Return isPic
     End Function
 
 
@@ -592,10 +613,14 @@ Public Class observer
     Protected Sub btUploadImg1_Click(sender As Object, e As EventArgs) Handles btUploadImg1.Click
         Dim fileCount As Integer = RadUpload1.UploadedFiles.Count.ToString
         If fileCount <> 0 And PictureList1.Items.Count < 4 Then
+            Dim isPic As Boolean = IsPicture(RadUpload1)
             UploadImage(RadUpload1, 0, PictureList1.Items.Count)    'rtabStrip1.SelectedIndex = 0
-
-            PictureList1.DataBind()
-            pnShowImage1.Visible = True
+            If isPic Then
+                PictureList1.DataBind()
+                pnShowImage1.Visible = True
+            Else
+                lblShow1.Text = "Upload Complete."
+            End If
         End If
     End Sub
     Protected Sub imbtClose1_Click(sender As Object, e As ImageClickEventArgs)
@@ -723,10 +748,15 @@ Public Class observer
     Protected Sub btUploadImg2_Click(sender As Object, e As EventArgs) Handles btUploadImg2.Click
         Dim fileCount As Integer = RadUpload2.UploadedFiles.Count.ToString
         If fileCount <> 0 And PictureList2.Items.Count < 4 Then
+            Dim isPic As Boolean = IsPicture(RadUpload2)
             UploadImage(RadUpload2, 1, PictureList2.Items.Count)    'rtabStrip1.SelectedIndex = 1
+            If isPic Then
+                PictureList2.DataBind()
+                pnShowImage2.Visible = True
+            Else
+                lblShow2.Text = "Upload Complete."
+            End If
 
-            PictureList2.DataBind()
-            pnShowImage2.Visible = True
         End If
     End Sub
     Protected Sub imbtClose2_Click(sender As Object, e As ImageClickEventArgs)
@@ -820,10 +850,15 @@ Public Class observer
     Protected Sub btUploadImg3_Click(sender As Object, e As EventArgs) Handles btUploadImg3.Click
         Dim fileCount As Integer = RadUpload3.UploadedFiles.Count.ToString
         If fileCount <> 0 And PictureList3.Items.Count < 4 Then
+            Dim isPic As Boolean = IsPicture(RadUpload3)
             UploadImage(RadUpload3, 2, PictureList3.Items.Count)    'rtabStrip1.SelectedIndex = 2
+            If isPic Then
+                PictureList3.DataBind()
+                pnShowImage3.Visible = True
+            Else
+                lblShow3.Text = "Upload Complete."
+            End If
 
-            PictureList3.DataBind()
-            pnShowImage3.Visible = True
         End If
     End Sub
     Protected Sub imbtClose3_Click(sender As Object, e As ImageClickEventArgs)
@@ -914,10 +949,15 @@ Public Class observer
     Protected Sub btUploadImg4_Click(sender As Object, e As EventArgs) Handles btUploadImg4.Click
         Dim fileCount As Integer = RadUpload4.UploadedFiles.Count.ToString
         If fileCount <> 0 And PictureList4.Items.Count < 4 Then
+            Dim isPic As Boolean = IsPicture(RadUpload4)
             UploadImage(RadUpload4, 3, PictureList4.Items.Count)    'rtabStrip1.SelectedIndex = 3
+            If isPic Then
+                PictureList4.DataBind()
+                pnShowImage4.Visible = True
+            Else
+                lblShow4.Text = "Upload Complete."
+            End If
 
-            PictureList4.DataBind()
-            pnShowImage4.Visible = True
         End If
     End Sub
     Protected Sub imbtClose4_Click(sender As Object, e As ImageClickEventArgs)
@@ -1008,10 +1048,15 @@ Public Class observer
     Protected Sub btUploadImg5_Click(sender As Object, e As EventArgs) Handles btUploadImg5.Click
         Dim fileCount As Integer = RadUpload5.UploadedFiles.Count.ToString
         If fileCount <> 0 And PictureList5.Items.Count < 4 Then
+            Dim isPic As Boolean = IsPicture(RadUpload5)
             UploadImage(RadUpload5, 4, PictureList5.Items.Count)    'rtabStrip1.SelectedIndex = 4
+            If isPic Then
+                PictureList5.DataBind()
+                pnShowImage5.Visible = True
+            Else
+                lblShow5.Text = "Upload Complete."
+            End If
 
-            PictureList5.DataBind()
-            pnShowImage5.Visible = True
         End If
     End Sub
     Protected Sub imbtClose5_Click(sender As Object, e As ImageClickEventArgs)
@@ -1102,10 +1147,15 @@ Public Class observer
     Protected Sub btUploadImg6_Click(sender As Object, e As EventArgs) Handles btUploadImg6.Click
         Dim fileCount As Integer = RadUpload6.UploadedFiles.Count.ToString
         If fileCount <> 0 And PictureList6.Items.Count < 4 Then
+            Dim isPic As Boolean = IsPicture(RadUpload6)
             UploadImage(RadUpload6, 5, PictureList6.Items.Count)    'rtabStrip1.SelectedIndex = 5
+            If isPic Then
+                PictureList6.DataBind()
+                pnShowImage6.Visible = True
+            Else
+                lblShow6.Text = "Upload Complete."
+            End If
 
-            PictureList6.DataBind()
-            pnShowImage6.Visible = True
         End If
     End Sub
     Protected Sub imbtClose6_Click(sender As Object, e As ImageClickEventArgs)

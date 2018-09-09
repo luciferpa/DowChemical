@@ -689,6 +689,15 @@ Partial Public Class observer
     Protected WithEvents lbUploadInfo1 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''lblShow1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblShow1 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''btUploadImg1 control.
     '''</summary>
     '''<remarks>
@@ -1236,6 +1245,15 @@ Partial Public Class observer
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lbUploadInfo2 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblShow2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblShow2 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''btUploadImg2 control.
@@ -1787,6 +1805,15 @@ Partial Public Class observer
     Protected WithEvents lbUploadInfo3 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''lblShow3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblShow3 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''btUploadImg3 control.
     '''</summary>
     '''<remarks>
@@ -2334,6 +2361,15 @@ Partial Public Class observer
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lbUploadInfo4 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblShow4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblShow4 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''btUploadImg4 control.
@@ -2885,6 +2921,15 @@ Partial Public Class observer
     Protected WithEvents lbUploadInfo5 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''lblShow5 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblShow5 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''btUploadImg5 control.
     '''</summary>
     '''<remarks>
@@ -3432,6 +3477,15 @@ Partial Public Class observer
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lbUploadInfo6 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''lblShow6 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblShow6 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''btUploadImg6 control.

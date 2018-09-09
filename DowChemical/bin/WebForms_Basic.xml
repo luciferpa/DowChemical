@@ -2733,6 +2733,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:DowChemical.observer._lblShow1">
+<summary>
+lblShow1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:DowChemical.observer._btUploadImg1">
 <summary>
 btUploadImg1 control.
@@ -3276,6 +3285,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:DowChemical.observer._lbUploadInfo2">
 <summary>
 lbUploadInfo2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._lblShow2">
+<summary>
+lblShow2 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -3831,6 +3849,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:DowChemical.observer._lblShow3">
+<summary>
+lblShow3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:DowChemical.observer._btUploadImg3">
 <summary>
 btUploadImg3 control.
@@ -4374,6 +4401,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:DowChemical.observer._lbUploadInfo4">
 <summary>
 lbUploadInfo4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._lblShow4">
+<summary>
+lblShow4 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -4929,6 +4965,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:DowChemical.observer._lblShow5">
+<summary>
+lblShow5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:DowChemical.observer._btUploadImg5">
 <summary>
 btUploadImg5 control.
@@ -5472,6 +5517,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:DowChemical.observer._lbUploadInfo6">
 <summary>
 lbUploadInfo6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._lblShow6">
+<summary>
+lblShow6 control.
 </summary>
 <remarks>
 Auto-generated field.
