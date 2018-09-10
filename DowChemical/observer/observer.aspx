@@ -2776,6 +2776,7 @@
                                         </telerik:RadGrid>
                                     </div>
                                 </asp:Panel>
+                                <telerik:RadAjaxPanel ID="RadAjaxPanelCC" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
                                 <div class="row" style="padding: 4px 16px 0px 16px"">
                                     <div style="display: block; float: left; width: 25px; text-align: right; margin-top: 7px;">CC :</div>
                                     <div class="col-md-9">
@@ -2802,13 +2803,16 @@
                                             <GroupingSettings CollapseAllTooltip="Collapse all groups" />
                                             <MasterTableView >
                                                 <Columns>
-                                                    <telerik:GridBoundColumn DataField="empId" HeaderText="empId" UniqueName="empId" Visible="False">
+                                                    <telerik:GridBoundColumn DataField="Id" HeaderText="Id" UniqueName="Id" Visible="False">
                                                     </telerik:GridBoundColumn>
                                                     <telerik:GridBoundColumn DataField="empFullName" UniqueName="empFullName">
                                                         <ItemStyle Width="238px" />
                                                     </telerik:GridBoundColumn>
                                                     <telerik:GridBoundColumn DataField="empDowId" UniqueName="empDowId">
                                                         <ItemStyle Width="120px" />
+                                                    </telerik:GridBoundColumn>
+                                                    <telerik:GridBoundColumn DataField="departName" UniqueName="departName">
+                                                        <ItemStyle Width="100px" />
                                                     </telerik:GridBoundColumn>
                                                     <telerik:GridBoundColumn DataField="empEmail" UniqueName="empEmail">
                                                     </telerik:GridBoundColumn>
@@ -2819,6 +2823,7 @@
                                         </telerik:RadGrid>                                        
                                     </div>
                                 </asp:Panel>
+                                </telerik:RadAjaxPanel>
                                 <div style="padding: 8px 0px 0px 0px;">
                                     <asp:Button ID="btSendEmail" runat="server" CssClass="btn btn-lg btn-primary" Width="200px" Text="Send Email" CommandName="confirmsend" UseSubmitBehavior="true" OnClientClick="disableButton(this.id, 'waiting...')" />&nbsp;&nbsp;
                                     <asp:Button ID="btObservationList" runat="server" CssClass="btn btn-lg btn-primary" Width="200px" Text="Observation List" PostBackUrl="~/observer/observationList.aspx" />&nbsp;&nbsp;
@@ -2971,12 +2976,14 @@
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="RadCCEmail" />
                     <telerik:AjaxUpdatedControl ControlID="pnCC" />
+                    <telerik:AjaxUpdatedControl ControlID="hdAllIdCC" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="imgAddEntryCC">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="RadCCEmail" />
                     <telerik:AjaxUpdatedControl ControlID="pnCC" />
+                    <telerik:AjaxUpdatedControl ControlID="hdAllIdCC" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="rcbNoObserve">

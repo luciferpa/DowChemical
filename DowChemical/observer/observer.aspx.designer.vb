@@ -3821,6 +3821,15 @@ Partial Public Class observer
     Protected WithEvents rgEmailListEachOb As Global.Telerik.Web.UI.RadGrid
     
     '''<summary>
+    '''RadAjaxPanelCC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RadAjaxPanelCC As Global.Telerik.Web.UI.RadAjaxPanel
+    
+    '''<summary>
     '''srcCCEmail control.
     '''</summary>
     '''<remarks>

@@ -232,12 +232,6 @@ Public Class observer
 
     Private Sub imgAddEntryCC_Click(sender As Object, e As ImageClickEventArgs) Handles imgAddEntryCC.Click
         If hdEmpIdCC.Value <> "0" Then
-            If String.IsNullOrEmpty(hdAllIdCC.Value) Then
-                hdAllIdCC.Value = hdEmpIdCC.Value
-            Else
-                hdAllIdCC.Value &= "," & hdEmpIdCC.Value
-            End If
-
             RadCCEmailAddEntry(hdEmpIdCC.Value, hdFullNameCC.Value, True)
             hdEmpIdCC.Value = "0"
             hdFullNameCC.Value = ""
@@ -389,12 +383,13 @@ Public Class observer
     Public Shared dtTable As DataTable
     Public SqlDataAdapter As New SqlDataAdapter()
 
-    Private Sub AddDataToRgCC(ByVal AllIdCC As String)
-        Dim strSql As String = "SELECT * FROM tblEmployee where empId in (" & AllIdCC & ")"
+    Private Sub AddDataToRgCC(ByVal allID As String)
+        Dim strSqlAD As String = "SELECT tblEmployee.empDowId, tblEmployee.empName, tblEmployee.empSurname, tblEmployee.empFullName, 
+tblEmployee.empEmail, tblEmployee.departId, tblDepartment.departName FROM tblEmployee INNER JOIN tblDepartment ON tblEmployee.departId = tblDepartment.departId where empId in (" & allID & ")"
         Dim conn As New SqlConnection(ConnStr)
         dtTable = New DataTable()
         conn.Open()
-        SqlDataAdapter.SelectCommand = New SqlCommand(strSql, conn)
+        SqlDataAdapter.SelectCommand = New SqlCommand(strSqlAD, conn)
         SqlDataAdapter.Fill(dtTable)
         rgCC.DataSource = dtTable
         conn.Close()
@@ -411,15 +406,16 @@ Public Class observer
 
         '-- chk repeat
         If empId = hfOwnerEmpId.Value.ToString Then
-            RadCCEmail.Entries.RemoveAt(count - 1)
+            'RadCCEmail.Entries.RemoveAt(count - 1)
             MsgBoxRad("<b>This Observer same Observer #1</b>", 240, 76)
             Return
         End If
 
         ' OtherObs
         '-- chk RadCCEmail Max
-        If count > 5 Then
-            RadCCEmail.Entries.RemoveAt(count - 1)
+        If count >= 5 Then
+            'RadCCEmail.Entries.RemoveAt(count - 1)
+            MsgBoxRad("<b>Observers have a maximum of 5 names.</b>", 280, 76)
             Return
         End If
 
@@ -431,12 +427,21 @@ Public Class observer
                 count = count + 1
             End If
 
+            If String.IsNullOrEmpty(hdAllIdCC.Value) Then
+                hdAllIdCC.Value = empId
+            Else
+                hdAllIdCC.Value &= "," & empId
+            End If
+
             If count > 0 Then
                 hdEmpIdCC.Value = "0"
-                AddDataToRgCC(hdAllIdCC.Value)
-                rgCC.DataBind()
-                pnCC.Visible = True
-                RadCCEmail.Focus()
+                Dim idCC As String = hdAllIdCC.Value
+                If Not String.IsNullOrEmpty(idCC) Then
+                    AddDataToRgCC(idCC)
+                    rgCC.DataBind()
+                    pnCC.Visible = True
+                    RadCCEmail.Focus()
+                End If
             End If
         Else
             '-- remove token
@@ -2023,6 +2028,12 @@ Public Class observer
             Next
         End If
 
+        If rgCC.Items.Count > 0 Then
+            For Each items As GridDataItem In rgCC.Items
+                ReporterStr = ReporterStr & "[" & items.Cells(3).Text.Trim & ", " & items.Cells(4).Text.Trim & ", " & items.Cells(5).Text.Trim & "] "
+            Next
+        End If
+
         For i = 1 To CInt(rcbNoObserve.SelectedValue)
             Detail(0) = i.ToString
             Dim Title As TextBox = RadMultiPage1.FindControl("tbTitle" & i.ToString)
@@ -2275,6 +2286,5 @@ Public Class observer
             If pnRespon6c.Visible Then tbAction6c.Text = "" : tbAction6c.Enabled = True
         End If
     End Sub
-
 
 End Class
