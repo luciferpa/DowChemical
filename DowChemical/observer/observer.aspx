@@ -22,6 +22,12 @@
                 alert("You can select only five entry.");
             }
         }
+        function OnClientEntryAddingCCEmail(sender, eventArgs) {
+            if (sender.get_entries().get_count() > 4) {
+                eventArgs.set_cancel(true);
+                alert("You can select only five entry.");
+            }
+        }
 
         function pnHideHROStart() {
             var pn1 = $("#<%=pnHRO1.ClientID %>");
@@ -2770,6 +2776,49 @@
                                         </telerik:RadGrid>
                                     </div>
                                 </asp:Panel>
+                                <div class="row" style="padding: 4px 16px 0px 16px"">
+                                    <div style="display: block; float: left; width: 25px; text-align: right; margin-top: 7px;">CC :</div>
+                                    <div class="col-md-9">
+                                    <div style="display: block; float: left; width: 630px;">
+                                    <asp:SqlDataSource ID="srcCCEmail" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT empId, empDowId, empName, empSurname, empFullName, empEmail, empContact, empMobile, empDisplay, departId, plantId, joblvCode FROM tblEmployee WHERE (empEnable = 'true') AND (IsVisible = 'true')"></asp:SqlDataSource>
+                                    <telerik:RadAutoCompleteBox ID="RadCCEmail" runat="server" Width="630px" RenderMode="Lightweight" Skin="Bootstrap"
+                                        DataSourceID="srcCCEmail" DataTextField="empFullName" DataValueField="empId" EmptyMessage="Cc.. Add recipients for receiving a copy email"
+                                        MaxResultCount="5" OnClientEntryAdding="OnClientEntryAddingCCEmail" AllowCustomEntry="True">
+                                    <TokensSettings AllowTokenEditing="true" />
+                                    </telerik:RadAutoCompleteBox>
+                                    </div> 
+                                    <div style="display: block; float: left; width: 20px; margin-top: 4px; margin-left: 8px;">
+                                    <asp:ImageButton ID="ImageFindCC" runat="server" ImageUrl="~/Images/search-18h.png" OnClientClick="OpenEmployeeListCC();return false;"></asp:ImageButton>
+                                    <asp:HiddenField ID="hdEmpIdCC" runat="server" Value="0" />
+                                    <asp:HiddenField ID="hdFullNameCC" runat="server" Value="" />
+                                    <asp:HiddenField ID="hdAllIdCC" runat="server" Value="" />
+                                    <asp:ImageButton ID="imgAddEntryCC" runat="server" ImageUrl="~/Images/blank2h2.png"></asp:ImageButton> 
+                                    </div>
+                                    </div>
+                                </div>
+                                <asp:Panel ID="pnCC" runat="server" Visible="false">
+                                    <div style="display: block; float: none; width: 712px;">
+                                        <telerik:RadGrid ID="rgCC" runat="server" Skin="Metro" PageSize="15" AutoGenerateColumns="False" Width="712px" ShowHeader="False" GroupPanelPosition="Top">
+                                            <GroupingSettings CollapseAllTooltip="Collapse all groups" />
+                                            <MasterTableView >
+                                                <Columns>
+                                                    <telerik:GridBoundColumn DataField="empId" HeaderText="empId" UniqueName="empId" Visible="False">
+                                                    </telerik:GridBoundColumn>
+                                                    <telerik:GridBoundColumn DataField="empFullName" UniqueName="empFullName">
+                                                        <ItemStyle Width="238px" />
+                                                    </telerik:GridBoundColumn>
+                                                    <telerik:GridBoundColumn DataField="empDowId" UniqueName="empDowId">
+                                                        <ItemStyle Width="120px" />
+                                                    </telerik:GridBoundColumn>
+                                                    <telerik:GridBoundColumn DataField="empEmail" UniqueName="empEmail">
+                                                    </telerik:GridBoundColumn>
+                                                </Columns>
+                                            </MasterTableView>
+                                            <AlternatingItemStyle Height="30px" BackColor="#D5DCE3" />
+                                            <ItemStyle Height="30px" BackColor="#D5DCE3" />
+                                        </telerik:RadGrid>                                        
+                                    </div>
+                                </asp:Panel>
                                 <div style="padding: 8px 0px 0px 0px;">
                                     <asp:Button ID="btSendEmail" runat="server" CssClass="btn btn-lg btn-primary" Width="200px" Text="Send Email" CommandName="confirmsend" UseSubmitBehavior="true" OnClientClick="disableButton(this.id, 'waiting...')" />&nbsp;&nbsp;
                                     <asp:Button ID="btObservationList" runat="server" CssClass="btn btn-lg btn-primary" Width="200px" Text="Observation List" PostBackUrl="~/observer/observationList.aspx" />&nbsp;&nbsp;
@@ -2810,6 +2859,16 @@
                 IconUrl="../Images/blank4h4.gif" Title="Select Employee" EnableShadow="True"
                 Modal="True" OnClientClose="EmployeeSelect" ShowContentDuringLoad="False"
                 Style="display: inline; overflow: hidden; z-index: 80001;" RenderMode="Classic">
+            </telerik:RadWindow>            
+        </Windows>
+    </telerik:RadWindowManager>
+    <telerik:RadWindowManager ID="RadWindowManager3" runat="server" Skin="Bootstrap">
+        <Windows>
+            <telerik:RadWindow ID="rwEmployeeCC" runat="server" Width="680px" Height="504px"
+                Animation="FlyIn" VisibleStatusbar="False" Behaviors="Close, Move, Reload"
+                IconUrl="../Images/blank4h4.gif" Title="Select Employee" EnableShadow="True"
+                Modal="True" OnClientClose="EmployeeSelectCC" ShowContentDuringLoad="False"
+                Style="display: inline; overflow: hidden; z-index: 80001;" RenderMode="Classic">
             </telerik:RadWindow>
         </Windows>
     </telerik:RadWindowManager>
@@ -2849,6 +2908,28 @@
                     btAddEntry.click();
                 }
             }
+            
+            function OpenEmployeeListCC() {
+                var wnd = $find("<%=rwEmployeeCC.ClientID%>");
+                wnd.setUrl("../wnd_employeeList.aspx");
+                wnd.set_modal(true);
+                wnd.Center();
+                wnd.show();
+            }
+            function EmployeeSelectCC(sender, eventArgs) {
+                var arg = eventArgs.get_argument();
+                if (arg) {
+                    var hfempid = document.getElementById("<%=hdEmpIdCC.ClientID%>");
+                    hfempid.value = arg.selEmpId;
+
+                    var hffullname = document.getElementById("<%=hdFullNameCC.ClientID%>");
+                    hffullname.value = arg.selEmpFullname;
+
+                    var btAddEntry = document.getElementById("<%=imgAddEntryCC.ClientID%>");
+                    btAddEntry.click();
+                }
+            }
+
             function SuccessFunction(result) {
                 alert("SuccessFunction")
             }
@@ -2884,6 +2965,18 @@
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="racObservBox" />
                     <telerik:AjaxUpdatedControl ControlID="pnOtherObserver" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="RadCCEmail">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="RadCCEmail" />
+                    <telerik:AjaxUpdatedControl ControlID="pnCC" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="imgAddEntryCC">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="RadCCEmail" />
+                    <telerik:AjaxUpdatedControl ControlID="pnCC" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="rcbNoObserve">

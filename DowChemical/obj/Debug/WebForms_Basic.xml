@@ -5865,6 +5865,87 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:DowChemical.observer._srcCCEmail">
+<summary>
+srcCCEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._RadCCEmail">
+<summary>
+RadCCEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._ImageFindCC">
+<summary>
+ImageFindCC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._hdEmpIdCC">
+<summary>
+hdEmpIdCC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._hdFullNameCC">
+<summary>
+hdFullNameCC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._hdAllIdCC">
+<summary>
+hdAllIdCC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._imgAddEntryCC">
+<summary>
+imgAddEntryCC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._pnCC">
+<summary>
+pnCC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._rgCC">
+<summary>
+rgCC control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:DowChemical.observer._btSendEmail">
 <summary>
 btSendEmail control.
@@ -5913,6 +5994,24 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:DowChemical.observer._rwEmployee">
 <summary>
 rwEmployee control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._RadWindowManager3">
+<summary>
+RadWindowManager3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DowChemical.observer._rwEmployeeCC">
+<summary>
+rwEmployeeCC control.
 </summary>
 <remarks>
 Auto-generated field.

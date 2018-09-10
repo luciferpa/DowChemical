@@ -3821,6 +3821,87 @@ Partial Public Class observer
     Protected WithEvents rgEmailListEachOb As Global.Telerik.Web.UI.RadGrid
     
     '''<summary>
+    '''srcCCEmail control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents srcCCEmail As Global.System.Web.UI.WebControls.SqlDataSource
+    
+    '''<summary>
+    '''RadCCEmail control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RadCCEmail As Global.Telerik.Web.UI.RadAutoCompleteBox
+    
+    '''<summary>
+    '''ImageFindCC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ImageFindCC As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''hdEmpIdCC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hdEmpIdCC As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''hdFullNameCC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hdFullNameCC As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''hdAllIdCC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hdAllIdCC As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''imgAddEntryCC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents imgAddEntryCC As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''pnCC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pnCC As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''rgCC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rgCC As Global.Telerik.Web.UI.RadGrid
+    
+    '''<summary>
     '''btSendEmail control.
     '''</summary>
     '''<remarks>
@@ -3873,6 +3954,24 @@ Partial Public Class observer
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents rwEmployee As Global.Telerik.Web.UI.RadWindow
+    
+    '''<summary>
+    '''RadWindowManager3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RadWindowManager3 As Global.Telerik.Web.UI.RadWindowManager
+    
+    '''<summary>
+    '''rwEmployeeCC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rwEmployeeCC As Global.Telerik.Web.UI.RadWindow
     
     '''<summary>
     '''RadScriptBlock1 control.

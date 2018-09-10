@@ -165,6 +165,12 @@ Public Class observer
         racObservBoxAddEntry(empId, EmpFullName)
     End Sub
 
+    Private Sub RadCCEmail_EntryAdded(sender As Object, e As AutoCompleteEntryEventArgs) Handles RadCCEmail.EntryAdded
+        Dim empId As String = e.Entry.Value.ToString
+        Dim EmpFullName As String = e.Entry.Text
+        RadCCEmailAddEntry(empId, EmpFullName)
+    End Sub
+
     Private Sub racObservBox_EntryRemoved(sender As Object, e As AutoCompleteEntryEventArgs) Handles racObservBox.EntryRemoved
         Dim strDel As String = "DELETE FROM tblRecordOthEmp WHERE (recId = @recId) AND (empIdOth = @empIdOth)"
         Dim conn As New SqlConnection(ConnStr)
@@ -189,11 +195,52 @@ Public Class observer
         End If
     End Sub
 
+    Private Sub RadCCEmail_EntryRemoved(sender As Object, e As AutoCompleteEntryEventArgs) Handles RadCCEmail.EntryRemoved
+        Dim count As Integer = RadCCEmail.Entries.Count
+        Dim newAllIdCC As String
+        Dim removeId As String = e.Entry.Value
+        Dim s As String = hdAllIdCC.Value
+        Dim AllIdCC As String() = s.Split(New Char() {","c})
+        Dim IdCC As String
+        For Each IdCC In AllIdCC
+            If Not removeId.Equals(IdCC) Then
+                If String.IsNullOrEmpty(newAllIdCC) Then
+                    newAllIdCC = IdCC
+                Else
+                    newAllIdCC &= "," & IdCC
+                End If
+            End If
+        Next
+        hdAllIdCC.Value = newAllIdCC
+
+        If count > 0 Then
+            AddDataToRgCC(hdAllIdCC.Value)
+            rgCC.DataBind()
+            pnCC.Visible = True
+        Else
+            pnCC.Visible = False
+        End If
+    End Sub
+
     Protected Sub imgAddEntry_Click(sender As Object, e As ImageClickEventArgs) Handles imgAddEntry.Click
         If hfEmpIdSelect.Value <> "0" Then
             racObservBoxAddEntry(hfEmpIdSelect.Value, hfFullNameSelect.Value, True)
             hfEmpIdSelect.Value = "0"
             hfFullNameSelect.Value = ""
+        End If
+    End Sub
+
+    Private Sub imgAddEntryCC_Click(sender As Object, e As ImageClickEventArgs) Handles imgAddEntryCC.Click
+        If hdEmpIdCC.Value <> "0" Then
+            If String.IsNullOrEmpty(hdAllIdCC.Value) Then
+                hdAllIdCC.Value = hdEmpIdCC.Value
+            Else
+                hdAllIdCC.Value &= "," & hdEmpIdCC.Value
+            End If
+
+            RadCCEmailAddEntry(hdEmpIdCC.Value, hdFullNameCC.Value, True)
+            hdEmpIdCC.Value = "0"
+            hdFullNameCC.Value = ""
         End If
     End Sub
 
@@ -336,6 +383,65 @@ Public Class observer
             racObservBox.Entries.RemoveAt(count - 1)
             MsgBoxRad("<b>The observer with this name already exists.</b>", 280, 76)
             'tokenInfo.Text = "Token Remove"
+        End If
+    End Sub
+
+    Public Shared dtTable As DataTable
+    Public SqlDataAdapter As New SqlDataAdapter()
+
+    Private Sub AddDataToRgCC(ByVal AllIdCC As String)
+        Dim strSql As String = "SELECT * FROM tblEmployee where empId in (" & AllIdCC & ")"
+        Dim conn As New SqlConnection(ConnStr)
+        dtTable = New DataTable()
+        conn.Open()
+        SqlDataAdapter.SelectCommand = New SqlCommand(strSql, conn)
+        SqlDataAdapter.Fill(dtTable)
+        rgCC.DataSource = dtTable
+        conn.Close()
+    End Sub
+
+    Public Sub RadCCEmailAddEntry(ByVal empId As String, ByVal EmpFullName As String, Optional ByVal IsFromWnd As Boolean = 0)
+        Dim count As Integer = RadCCEmail.Entries.Count
+
+        ' Obs#1
+        If empId = "" Then
+            RadCCEmail.Entries.RemoveAt(count - 1)
+            Return
+        End If
+
+        '-- chk repeat
+        If empId = hfOwnerEmpId.Value.ToString Then
+            RadCCEmail.Entries.RemoveAt(count - 1)
+            MsgBoxRad("<b>This Observer same Observer #1</b>", 240, 76)
+            Return
+        End If
+
+        ' OtherObs
+        '-- chk RadCCEmail Max
+        If count > 5 Then
+            RadCCEmail.Entries.RemoveAt(count - 1)
+            Return
+        End If
+
+        '-- chk otherEmp repeat
+        If Not chkOtherEmployeeRepeat(CInt(empId)) Then
+            If IsFromWnd Then
+                RadCCEmail.Entries.Insert(count, New AutoCompleteBoxEntry(EmpFullName, empId))
+                RadCCEmail.DataBind()
+                count = count + 1
+            End If
+
+            If count > 0 Then
+                hdEmpIdCC.Value = "0"
+                AddDataToRgCC(hdAllIdCC.Value)
+                rgCC.DataBind()
+                pnCC.Visible = True
+                RadCCEmail.Focus()
+            End If
+        Else
+            '-- remove token
+            RadCCEmail.Entries.RemoveAt(count - 1)
+            MsgBoxRad("<b>The observer with this name already exists.</b>", 280, 76)
         End If
     End Sub
 
@@ -2169,4 +2275,6 @@ Public Class observer
             If pnRespon6c.Visible Then tbAction6c.Text = "" : tbAction6c.Enabled = True
         End If
     End Sub
+
+
 End Class
