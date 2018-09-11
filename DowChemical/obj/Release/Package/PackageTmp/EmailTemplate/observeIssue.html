@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style type="text/css">
+        .datagrid table { border-collapse: collapse; text-align: left; width: 100%; } 
+        .datagrid {font-size: 12pt !important; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important; background: #fff; overflow: hidden; border: 1px solid #0067B0; }
+        .datagrid table td, .datagrid table th { padding: 4px 8px; }
+        .datagrid table tbody td { color: #333333; font-size: 12pt !important; font-weight: normal; }
+        .datagrid table tbody .alt td { background: #EBEBEB; color: #333333; }
+        .datagrid table tbody td:first-child { border-left: none; }
+        .datagrid table tbody tr:last-child td { border-bottom: none; }
+        .imgContainer { overflow: hidden; width: 154px; }
+    </style>
+</head>
+<body>
+    <div style="width: 840px !important; padding-right: 20px;">
+        <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important; font-size: 10pt !important; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #0067B0; padding-bottom: 12px;">You are identified as the person to be notified for EZ Path Tool:</div>
+        <div class="datagrid" style="margin-top: 8px;">
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="width: 220px; text-align: right; font: bold;">Observed Department :</td>
+                        <td>{Department}</td>
+                    </tr>
+                    <tr class="alt">
+                        <td style="width: 220px; text-align: right; font: bold;">Action Number :</td>
+                        <td>{ActionNumber}</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 220px; text-align: right; font: bold;">Observe No :</td>
+                        <td>{ObserveNo}</td>
+                    </tr>                  
+                    <tr class="alt">
+                        <td style="width: 220px; text-align: right; font: bold;">Category :</td>
+                        <td>{Category}</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 220px; text-align: right; font: bold;">Sub Category :</td>
+                        <td>{CategorySub}</td>
+                    </tr>
+                    <tr class="alt">
+                        <td style="width: 220px; text-align: right; font: bold;">Failure Point :</td>
+                        <td>{FailurePoint}</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 220px; text-align: right; font: bold;">Equipment/Location :</td>
+                        <td>{Equipment}</td>
+                    </tr>
+                    <tr class="alt">
+                        <td style="width: 220px; text-align: right; vertical-align: top; padding-top: 4px; font: bold;">HRO :</td>
+                        <td>{HRO}</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 220px; text-align: right; font: bold;">Description :</td>
+                        <td>{Description}</td>
+                    </tr>                    
+                    <tr class="alt">
+                        <td style="width: 220px; text-align: right; vertical-align: top; padding-top: 4px; font: bold;">Propose Action #1 :</td>
+                        <td>
+                            <textarea style="width: 400px; height: 88px;" rows="2" cols="20">{ProposeActionA}</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 220px; text-align: right; font: bold;">Responsible Person #1 :</td>
+                        <td>{ResponA}</td>
+                    </tr>
+                    <!--<tr class="alt">
+                        <td style="width: 220px; text-align: right; vertical-align: top; padding-top: 4px; font: bold;">Propose Action #2 :</td>
+                        <td>
+                            <textarea style="width: 400px; height: 88px;" rows="2" cols="20">{ProposeActionB}</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 220px; text-align: right; font: bold;">Responsible Person #2 :</td>
+                        <td>{ResponB}</td>
+                    </tr>-->
+                    {ProposeActionB}{ResponB}
+                    <!--<tr class="alt">
+                        <td style="width: 220px; text-align: right; vertical-align: top; padding-top: 4px; font: bold;">Propose Action #3 :</td>
+                        <td>
+                            <textarea style="width: 400px; height: 88px;" rows="2" cols="20">{ProposeActionC}</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 220px; text-align: right; font: bold;">Responsible Person #3 :</td>
+                        <td>{ResponC}</td>
+                    </tr>-->
+                    {ProposeActionC}{ResponC}
+                    <tr class="alt">
+                        <td style="width: 220px; text-align: right; font: bold;">Reporter :</td>
+                        <td>{Reporter}</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 220px; text-align: right; font: bold;">Link Info :</td>
+                        <td><a href="{Link}">{Link}</a></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 220px; text-align: right; vertical-align: top; padding-top: 4px; font: bold;">Picture :</td>
+                        <td>
+                            <div class="imgContainer" style="width: 154px; float: left; display: block; margin: -3px 0px 0px -7px;">
+                                <img style="width: 150px;" src="{imgUrl1}" />
+                            </div>
+                            <div class="imgContainer" style="width: 154px; float: left; display: block; margin: -3px 0px 0px -7px;">
+                                <img style="width: 150px;" src="{imgUrl2}" />
+                            </div>
+                            <div class="imgContainer" style="width: 154px; float: left; display: block; margin: -3px 0px 0px -7px;">
+                                <img style="width: 150px;" src="{imgUrl3}" />
+                            </div>
+                            <div class="imgContainer" style="width: 154px; float: left; display: block; margin: -3px 0px 0px -7px;">
+                                <img style="width: 150px;" src="{imgUrl4}" />
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br />
+        <div style="color: #999999; font-size: 10pt;">
+            <div>Report Generated by EZ Path tool</div>
+            <div>EZ Path Technical Support Team: <a href="mailto: fezpath@dow.com">fezpath@dow.com</a></div>
+        </div>
+        <br />
+        <br />
+    </div>
+</body>
+</html>

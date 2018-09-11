@@ -1,0 +1,14 @@
+﻿
+h3 {
+    color: #333333;
+}
+
+.form-group-label {
+    font-size: 1.3em !important;
+    font-weight: lighter !important;
+    font-style: normal !important;
+    text-transform: none;
+    color: #555555  !important; }
+
+.visible-item {
+    visibility: hidden; }

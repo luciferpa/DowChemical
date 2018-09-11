@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:golfpati.database.windows.net,1433;Initial Catalog=DOWDB;Persist Security Info=False;User ID=g_patiwat;Password=Golf0814460074;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\DowChemical\\DowChemical\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection2-Web.config Connection String" description="DefaultConnection2 Connection String used in web.config by the application to access the database." defaultValue="Data Source=mssql-2012.chaiyohosting.com;Initial Catalog=DOWDB;User ID=dow;Password=!23qwe" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\DowChemical\\DowChemical\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection2']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection3-Web.config Connection String" description="DefaultConnection3 Connection String used in web.config by the application to access the database." defaultValue="Data Source=PHOENIX-7\SQLSERVER;Initial Catalog=DOWDB;User ID=sa;Password=!23qwe" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\DowChemical\\DowChemical\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection3']/@connectionString" />
+  </parameter>
+  <parameter name="Excel03Connection-Web.config Connection String" description="Excel03Connection Connection String used in web.config by the application to access the database." defaultValue="Provider=Microsoft.Jet.OLEDB.4.0; Data Source={0}; Extended Properties='Excel 8.0;HDR={1};IMEX=1'" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\DowChemical\\DowChemical\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Excel03Connection']/@connectionString" />
+  </parameter>
+  <parameter name="Excel07Connection-Web.config Connection String" description="Excel07Connection Connection String used in web.config by the application to access the database." defaultValue="Provider=Microsoft.ACE.OLEDB.12.0; Data Source={0}; Extended Properties='Excel 12.0;HDR={1}'" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\DowChemical\\DowChemical\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Excel07Connection']/@connectionString" />
+  </parameter>
+</parameters>

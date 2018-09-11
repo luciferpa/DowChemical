@@ -25,3 +25,13 @@ C:\ProjectPosOrange\DowChemical\AiLib\obj\Release\AiLib.vbproj.CoreCompileInputs
 C:\ProjectPosOrange\DowChemical\AiLib\obj\Release\AiLib.dll
 C:\ProjectPosOrange\DowChemical\AiLib\obj\Release\AiLib.xml
 C:\ProjectPosOrange\DowChemical\AiLib\obj\Release\AiLib.pdb
+C:\DowChemical\AiLib\bin\Release\AiLib.dll
+C:\DowChemical\AiLib\bin\Release\AiLib.pdb
+C:\DowChemical\AiLib\bin\Release\AiLib.xml
+C:\DowChemical\AiLib\obj\Release\AiLib.vbprojAssemblyReference.cache
+C:\DowChemical\AiLib\obj\Release\AiLib.Resources.resources
+C:\DowChemical\AiLib\obj\Release\AiLib.vbproj.GenerateResource.cache
+C:\DowChemical\AiLib\obj\Release\AiLib.vbproj.CoreCompileInputs.cache
+C:\DowChemical\AiLib\obj\Release\AiLib.dll
+C:\DowChemical\AiLib\obj\Release\AiLib.xml
+C:\DowChemical\AiLib\obj\Release\AiLib.pdb

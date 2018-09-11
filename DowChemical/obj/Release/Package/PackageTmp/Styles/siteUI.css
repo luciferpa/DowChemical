@@ -1,0 +1,331 @@
+﻿/* -- BUTTON ---- */
+.SearchButton28 {
+    padding: 0;
+    height: 28px;
+    width: 28px;
+    vertical-align: bottom;
+    background-image: url('../Images/search-28.png');
+    background-position: 0 -28px;
+    background-repeat: no-repeat;
+    margin-left: 2px;
+}
+.SearchButton28:hover
+{
+    padding: 0;
+    height: 28px;
+    width: 28px;
+    vertical-align: bottom;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-left: 2px;
+}
+
+.SearchButton24
+{
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    vertical-align: bottom;
+    background-image: url('../Images/bt_search_normal.png');
+    background-repeat: no-repeat;
+}
+.SearchButton24:hover
+{
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    vertical-align: bottom;
+    background-image: url('../Images/bt_search_dark.png');
+    background-repeat: no-repeat;
+}
+
+.SearchButton18
+{
+    background-position: 0 -2px;
+    padding: 0;
+    height: 18px;
+    width: 16px;
+    vertical-align: bottom;
+    background-image: url('../Images/search-18.png');
+    background-repeat: no-repeat;
+    margin-left: 2px;
+}
+.SearchButton18:hover
+{
+    background-position: 0 -2px;
+    padding: 0;
+    height: 18px;
+    width: 16px;
+    vertical-align: bottom;
+    background-image: url('../Images/search-18h.png');
+    background-repeat: no-repeat;
+    margin-left: 2px;
+}
+
+
+/* -- TEXTBOX ---- */
+.readonly_dis {
+    background-color: #ffffff !important;
+}
+
+.txtbox_Batch {
+    padding: -4px 4px 4px 4px;
+    border: 1px solid transparent;
+    font-family: 'Leelawadee', 'Segoe UI', Arial, Verdana, Helvetica, sans-serif;
+    color: #0066CC;
+    text-align: right;
+}
+.txtbox_Batch_Total {
+    margin: 0 -4px 0 0;
+    padding: 4px 2px 4px 4px;
+    border: 1px solid transparent;
+    font-family: 'Leelawadee', 'Segoe UI', Arial, Verdana, Helvetica, sans-serif;
+    text-align: right;
+    font-weight: bold;
+}
+.txtbox_Batch_R {
+    text-align: right;
+}
+
+.txtboxDisable {
+    color: darkblue !important;
+}
+
+
+
+/* -- CHECKBOX ---- */
+.chkBT0 label
+{ 
+    position: relative; 
+    top: 0;
+    font-weight:normal !important;
+}
+.chkBT1 label
+{ 
+    position: relative; 
+    top: 1px; 
+    font-weight:normal !important;
+}
+.chkBT2 label
+{ 
+    position: relative; 
+    top: 2px; 
+    font-weight:normal !important;
+}
+.chkBT3 label
+{ 
+    position: relative; 
+    top: 3px; 
+    font-weight:normal !important;
+}
+.chkBT4 label
+{ 
+    position: relative; 
+    top: 3px; 
+    font-weight:normal !important;
+}
+.chkBT1m label
+{ 
+    position: relative; 
+    top: -1px; 
+    font-weight:normal !important;
+}
+.chkBT2m label
+{ 
+    position: relative; 
+    top: -2px; 
+    font-weight:normal !important;
+}
+.chkBT3m label
+{ 
+    position: relative; 
+    top: -3px; 
+    font-weight:normal !important;
+}
+.chkBT4m label
+{ 
+    position: relative; 
+    top: -4px; 
+    font-weight:normal !important;
+}
+.chkBT0w200 label
+{ 
+    position: relative; 
+    top: 0;
+    font-weight:200 !important
+}
+.chkBT1w200 label
+{ 
+    position: relative; 
+    top: 1px;
+    font-weight:200 !important
+}
+.chkBT2w200 label
+{ 
+    position: relative; 
+    top: 2px; 
+    font-weight:200 !important
+}
+.chkBT3w200 label
+{ 
+    position: relative; 
+    top: 3px; 
+    font-weight:200 !important
+}
+.chkBT4w200 label
+{ 
+    position: relative; 
+    top: 3px; 
+    font-weight:200 !important
+}
+.chkBT1mw200 label
+{ 
+    position: relative; 
+    top: -1px; 
+    font-weight:200 !important
+}
+.chkBT2mw200 label
+{ 
+    position: relative; 
+    top: -2px; 
+    font-weight:normal !important;
+}
+.chkBT3mw200 label
+{ 
+    position: relative; 
+    top: -3px; 
+    font-weight:200 !important
+}
+.chkBT4mw200 label
+{ 
+    position: relative; 
+    top: -4px; 
+    font-weight:200 !important
+}
+
+.chkBT2mRadEditForm label
+{ 
+    position: relative; 
+    top: -2px; 
+    font-weight:normal !important;
+    font-size: 1em !important;
+}
+
+
+/* LayoutBox */
+.TwoLayout1_Left {
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 6px;
+    height: 120px;
+    background-color: #dc6565;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.TwoLayout1_Right {
+    height: 120px;
+    margin-left: 4px;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #BBBBBB;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.TwoLayoutGreen_Left {
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 8px;
+    height: 120px;
+    background-color: #26b756;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.TwoLayoutGreen_Right {
+    height: 120px;
+    margin-left: 6px;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #BBBBBB;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.TwoLayoutBlue_Left {
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 8px;
+    height: 120px;
+    background-color: #018dc8;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.TwoLayoutBlue_Right {
+    height: 120px;
+    margin-left: 6px;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #BBBBBB;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.TwoLayoutRed_Left {
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 8px;
+    height: 120px;
+    background-color: #e74b3c;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.TwoLayoutRed_Right {
+    height: 120px;
+    margin-left: 6px;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #BBBBBB;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.TwoLayoutYellow_Left {
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 8px;
+    height: 120px;
+    background-color: #ffda3f;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.TwoLayoutYellow_Right {
+    height: 120px;
+    margin-left: 6px;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #BBBBBB;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.TwoLayoutGray_Left {
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 8px;
+    height: 120px;
+    background-color: #69758d;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.TwoLayoutGray_Right {
+    height: 120px;
+    margin-left: 6px;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #BBBBBB;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+
