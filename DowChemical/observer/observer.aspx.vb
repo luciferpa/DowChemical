@@ -2287,4 +2287,199 @@ tblEmployee.empEmail, tblEmployee.departId, tblDepartment.departName FROM tblEmp
         End If
     End Sub
 
+    Private Sub chk2Eye1_CheckedChanged(sender As Object, e As EventArgs) Handles chk2Eye1.CheckedChanged
+
+        tbAction1a.Text = ""
+        tbAction1a.Enabled = True
+
+        racRespon1a.Enabled = True
+        imbtFindRespon1a.Enabled = True
+        cbActionCompleted1a.Enabled = True
+        cbActionCompleted1b.Enabled = True
+        cbActionCompleted1c.Enabled = True
+        chkRecognition1.Checked = False
+        chkNonRecognition1.Checked = False
+
+        If pnRespon1b.Visible Then tbAction1b.Text = "" : tbAction1b.Enabled = True
+        If pnRespon1c.Visible Then tbAction1c.Text = "" : tbAction1c.Enabled = True
+
+    End Sub
+
+    Private Sub chkNonBehavior1_CheckedChanged(sender As Object, e As EventArgs) Handles chkNonBehavior1.CheckedChanged
+
+        tbAction1a.Text = ""
+        tbAction1a.Enabled = True
+
+        racRespon1a.Enabled = True
+        imbtFindRespon1a.Enabled = True
+        cbActionCompleted1a.Enabled = True
+        cbActionCompleted1b.Enabled = True
+        cbActionCompleted1c.Enabled = True
+        chkRecognition1.Checked = False
+        chkNonRecognition1.Checked = False
+
+        If pnRespon1b.Visible Then tbAction1b.Text = "" : tbAction1b.Enabled = True
+        If pnRespon1c.Visible Then tbAction1c.Text = "" : tbAction1c.Enabled = True
+
+    End Sub
+
+    Private Sub chk2Eye2_CheckedChanged(sender As Object, e As EventArgs) Handles chk2Eye2.CheckedChanged
+        tbAction2a.Text = ""
+        tbAction2a.Enabled = True
+
+        racRespon2a.Enabled = True
+        imbtFindRespon2a.Enabled = True
+        cbActionCompleted2a.Enabled = True
+        cbActionCompleted2b.Enabled = True
+        cbActionCompleted2c.Enabled = True
+        chkRecognition2.Checked = True
+        chkNonRecognition2.Checked = False
+
+        If pnRespon2b.Visible Then tbAction2b.Text = "" : tbAction2b.Enabled = True
+        If pnRespon2c.Visible Then tbAction2c.Text = "" : tbAction2c.Enabled = True
+    End Sub
+
+    Private Sub chk2Eye3_CheckedChanged(sender As Object, e As EventArgs) Handles chk2Eye3.CheckedChanged
+        tbAction3a.Text = ""
+        tbAction3a.Enabled = True
+
+        racRespon3a.Enabled = True
+        imbtFindRespon3a.Enabled = True
+        cbActionCompleted3a.Enabled = True
+        cbActionCompleted3b.Enabled = True
+        cbActionCompleted3c.Enabled = True
+        chkRecognition3.Checked = False
+        chkNonRecognition3.Checked = False
+
+        If pnRespon3b.Visible Then tbAction3b.Text = "" : tbAction3b.Enabled = True
+        If pnRespon3c.Visible Then tbAction3c.Text = "" : tbAction3c.Enabled = True
+    End Sub
+
+    Private Sub chk2Eye4_CheckedChanged(sender As Object, e As EventArgs) Handles chk2Eye4.CheckedChanged
+        tbAction4a.Text = ""
+        tbAction4a.Enabled = True
+
+        racRespon4a.Enabled = True
+        imbtFindRespon4a.Enabled = True
+        cbActionCompleted4a.Enabled = True
+        cbActionCompleted4b.Enabled = True
+        cbActionCompleted4c.Enabled = True
+        chkRecognition4.Checked = False
+        chkNonRecognition4.Checked = False
+
+        If pnRespon4b.Visible Then tbAction4b.Text = "" : tbAction4b.Enabled = True
+        If pnRespon4c.Visible Then tbAction4c.Text = "" : tbAction4c.Enabled = True
+    End Sub
+
+    Private Sub chk2Eye5_CheckedChanged(sender As Object, e As EventArgs) Handles chk2Eye5.CheckedChanged
+        tbAction5a.Text = ""
+        tbAction5a.Enabled = True
+
+        racRespon5a.Enabled = True
+        imbtFindRespon5a.Enabled = True
+        cbActionCompleted5a.Enabled = True
+        cbActionCompleted5b.Enabled = True
+        cbActionCompleted5c.Enabled = True
+        chkRecognition5.Checked = False
+        chkNonRecognition5.Checked = False
+
+        If pnRespon5b.Visible Then tbAction5b.Text = "" : tbAction5b.Enabled = True
+        If pnRespon5c.Visible Then tbAction5c.Text = "" : tbAction5c.Enabled = True
+    End Sub
+
+    Private Sub chk2Eye6_CheckedChanged(sender As Object, e As EventArgs) Handles chk2Eye6.CheckedChanged
+        tbAction6a.Text = ""
+        tbAction6a.Enabled = True
+
+        racRespon6a.Enabled = True
+        imbtFindRespon6a.Enabled = True
+        cbActionCompleted6a.Enabled = True
+        cbActionCompleted6b.Enabled = True
+        cbActionCompleted6c.Enabled = True
+        chkRecognition6.Checked = False
+        chkNonRecognition6.Checked = False
+
+        If pnRespon6b.Visible Then tbAction6b.Text = "" : tbAction6b.Enabled = True
+        If pnRespon6c.Visible Then tbAction6c.Text = "" : tbAction6c.Enabled = True
+    End Sub
+
+    Private Sub chkNonBehavior2_CheckedChanged(sender As Object, e As EventArgs) Handles chkNonBehavior2.CheckedChanged
+        tbAction2a.Text = ""
+        tbAction2a.Enabled = True
+
+        racRespon2a.Enabled = True
+        imbtFindRespon2a.Enabled = True
+        cbActionCompleted2a.Enabled = True
+        cbActionCompleted2b.Enabled = True
+        cbActionCompleted2c.Enabled = True
+        chkRecognition2.Checked = True
+        chkNonRecognition2.Checked = False
+
+        If pnRespon2b.Visible Then tbAction2b.Text = "" : tbAction2b.Enabled = True
+        If pnRespon2c.Visible Then tbAction2c.Text = "" : tbAction2c.Enabled = True
+    End Sub
+
+    Private Sub chkNonBehavior3_CheckedChanged(sender As Object, e As EventArgs) Handles chkNonBehavior3.CheckedChanged
+        tbAction3a.Text = ""
+        tbAction3a.Enabled = True
+
+        racRespon3a.Enabled = True
+        imbtFindRespon3a.Enabled = True
+        cbActionCompleted3a.Enabled = True
+        cbActionCompleted3b.Enabled = True
+        cbActionCompleted3c.Enabled = True
+        chkRecognition3.Checked = False
+        chkNonRecognition3.Checked = False
+
+        If pnRespon3b.Visible Then tbAction3b.Text = "" : tbAction3b.Enabled = True
+        If pnRespon3c.Visible Then tbAction3c.Text = "" : tbAction3c.Enabled = True
+    End Sub
+
+    Private Sub chkNonBehavior4_CheckedChanged(sender As Object, e As EventArgs) Handles chkNonBehavior4.CheckedChanged
+        tbAction4a.Text = ""
+        tbAction4a.Enabled = True
+
+        racRespon4a.Enabled = True
+        imbtFindRespon4a.Enabled = True
+        cbActionCompleted4a.Enabled = True
+        cbActionCompleted4b.Enabled = True
+        cbActionCompleted4c.Enabled = True
+        chkRecognition4.Checked = False
+        chkNonRecognition4.Checked = False
+
+        If pnRespon4b.Visible Then tbAction4b.Text = "" : tbAction4b.Enabled = True
+        If pnRespon4c.Visible Then tbAction4c.Text = "" : tbAction4c.Enabled = True
+    End Sub
+
+    Private Sub chkNonBehavior5_CheckedChanged(sender As Object, e As EventArgs) Handles chkNonBehavior5.CheckedChanged
+        tbAction5a.Text = ""
+        tbAction5a.Enabled = True
+
+        racRespon5a.Enabled = True
+        imbtFindRespon5a.Enabled = True
+        cbActionCompleted5a.Enabled = True
+        cbActionCompleted5b.Enabled = True
+        cbActionCompleted5c.Enabled = True
+        chkRecognition5.Checked = False
+        chkNonRecognition5.Checked = False
+
+        If pnRespon5b.Visible Then tbAction5b.Text = "" : tbAction5b.Enabled = True
+        If pnRespon5c.Visible Then tbAction5c.Text = "" : tbAction5c.Enabled = True
+    End Sub
+
+    Private Sub chkNonBehavior6_CheckedChanged(sender As Object, e As EventArgs) Handles chkNonBehavior6.CheckedChanged
+        tbAction6a.Text = ""
+        tbAction6a.Enabled = True
+
+        racRespon6a.Enabled = True
+        imbtFindRespon6a.Enabled = True
+        cbActionCompleted6a.Enabled = True
+        cbActionCompleted6b.Enabled = True
+        cbActionCompleted6c.Enabled = True
+        chkRecognition6.Checked = False
+        chkNonRecognition6.Checked = False
+
+        If pnRespon6b.Visible Then tbAction6b.Text = "" : tbAction6b.Enabled = True
+        If pnRespon6c.Visible Then tbAction6c.Text = "" : tbAction6c.Enabled = True
+    End Sub
 End Class

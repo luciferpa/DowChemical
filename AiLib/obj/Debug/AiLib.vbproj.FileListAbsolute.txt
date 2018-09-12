@@ -41,3 +41,4 @@ C:\DowChemical\AiLib\obj\Debug\AiLib.vbproj.CoreCompileInputs.cache
 C:\DowChemical\AiLib\obj\Debug\AiLib.dll
 C:\DowChemical\AiLib\obj\Debug\AiLib.xml
 C:\DowChemical\AiLib\obj\Debug\AiLib.pdb
+C:\DowChemical\AiLib\obj\Debug\AiLib.vbprojAssemblyReference.cache
