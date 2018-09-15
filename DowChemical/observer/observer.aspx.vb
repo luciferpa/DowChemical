@@ -2332,7 +2332,7 @@ tblEmployee.empEmail, tblEmployee.departId, tblDepartment.departName FROM tblEmp
         cbActionCompleted2a.Enabled = True
         cbActionCompleted2b.Enabled = True
         cbActionCompleted2c.Enabled = True
-        chkRecognition2.Checked = True
+        chkRecognition2.Checked = False
         chkNonRecognition2.Checked = False
 
         If pnRespon2b.Visible Then tbAction2b.Text = "" : tbAction2b.Enabled = True
@@ -2412,7 +2412,7 @@ tblEmployee.empEmail, tblEmployee.departId, tblDepartment.departName FROM tblEmp
         cbActionCompleted2a.Enabled = True
         cbActionCompleted2b.Enabled = True
         cbActionCompleted2c.Enabled = True
-        chkRecognition2.Checked = True
+        chkRecognition2.Checked = False
         chkNonRecognition2.Checked = False
 
         If pnRespon2b.Visible Then tbAction2b.Text = "" : tbAction2b.Enabled = True

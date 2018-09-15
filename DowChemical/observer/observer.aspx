@@ -1466,10 +1466,10 @@
                             <div class="col-md-9">
                                 <div>
                                     <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
-                                        <asp:CheckBox ID="chk2Eye2" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Behavior Observation [2<small>nd</small> Eye]" OnClick="showPanelEye2(this.checked);" />
+                                        <asp:CheckBox ID="chk2Eye2" runat="server" CssClass="chkBT2m" AutoPostBack="True" Text="&nbsp;&nbsp;Behavior Observation [2<small>nd</small> Eye]" OnClick="showPanelEye2(this.checked);" />
                                     </div>
                                     <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
-                                        <asp:CheckBox ID="chkNonBehavior2" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Field Inspection [Non-Behavior]" OnClick="showPanelNon2(this.checked);" />
+                                        <asp:CheckBox ID="chkNonBehavior2" runat="server" CssClass="chkBT2m" AutoPostBack="True" Text="&nbsp;&nbsp;Field Inspection [Non-Behavior]" OnClick="showPanelNon2(this.checked);" />
                                     </div>
                                     <div style="display: block; float: left; width: 230px; padding: 8px 0px 4px 16px;">
                                         <asp:CheckBox ID="chkHRO2" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;HRO" OnClick="showPanelHRO2(this.checked);" />
@@ -3418,7 +3418,16 @@
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="chk2Eye3">
                 <UpdatedControls>
-
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon3a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon3a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition3" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition3" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3c" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="chkNonBehavior3">
