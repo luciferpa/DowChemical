@@ -730,7 +730,9 @@ tblEmployee.empEmail, tblEmployee.departId, tblDepartment.departName FROM tblEmp
                 PictureList1.DataBind()
                 pnShowImage1.Visible = True
             Else
-                lblShow1.Text = "Upload Complete."
+                'lblShow1.Text = "Upload Complete."
+                MsgBoxRad("<b>Upload the wrong file type.</b>", 240, 76)
+                Return
             End If
         End If
     End Sub
@@ -865,7 +867,9 @@ tblEmployee.empEmail, tblEmployee.departId, tblDepartment.departName FROM tblEmp
                 PictureList2.DataBind()
                 pnShowImage2.Visible = True
             Else
-                lblShow2.Text = "Upload Complete."
+                'lblShow2.Text = "Upload Complete."
+                MsgBoxRad("<b>Upload the wrong file type.</b>", 240, 76)
+                Return
             End If
 
         End If
@@ -967,7 +971,9 @@ tblEmployee.empEmail, tblEmployee.departId, tblDepartment.departName FROM tblEmp
                 PictureList3.DataBind()
                 pnShowImage3.Visible = True
             Else
-                lblShow3.Text = "Upload Complete."
+                'lblShow3.Text = "Upload Complete."
+                MsgBoxRad("<b>Upload the wrong file type.</b>", 240, 76)
+                Return
             End If
 
         End If
@@ -1066,7 +1072,9 @@ tblEmployee.empEmail, tblEmployee.departId, tblDepartment.departName FROM tblEmp
                 PictureList4.DataBind()
                 pnShowImage4.Visible = True
             Else
-                lblShow4.Text = "Upload Complete."
+                'lblShow4.Text = "Upload Complete."
+                MsgBoxRad("<b>Upload the wrong file type.</b>", 240, 76)
+                Return
             End If
 
         End If
@@ -1165,7 +1173,9 @@ tblEmployee.empEmail, tblEmployee.departId, tblDepartment.departName FROM tblEmp
                 PictureList5.DataBind()
                 pnShowImage5.Visible = True
             Else
-                lblShow5.Text = "Upload Complete."
+                'lblShow5.Text = "Upload Complete."
+                MsgBoxRad("<b>Upload the wrong file type.</b>", 240, 76)
+                Return
             End If
 
         End If
@@ -1264,7 +1274,9 @@ tblEmployee.empEmail, tblEmployee.departId, tblDepartment.departName FROM tblEmp
                 PictureList6.DataBind()
                 pnShowImage6.Visible = True
             Else
-                lblShow6.Text = "Upload Complete."
+                'lblShow6.Text = "Upload Complete."
+                MsgBoxRad("<b>Upload the wrong file type.</b>", 240, 76)
+                Return
             End If
 
         End If

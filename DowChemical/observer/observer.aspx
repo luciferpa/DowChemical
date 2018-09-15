@@ -1266,19 +1266,19 @@
                         <%--Interaction Panel--%>
 
                         <div class="row" style="padding: 4px 16px 4px 16px">
-                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Attachment File : </div>
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Picture : </div>
                             <div class="col-md-9">
                                 <telerik:RadAjaxPanel ID="RadAjaxPanel12" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
                                     <div class="row">
                                         <div style="display: block; float: left; width: 360px;">
-                                            <telerik:RadAsyncUpload ID="RadUpload1" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp,xlsx,xls,pdf"
+                                            <telerik:RadAsyncUpload ID="RadUpload1" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp"
                                                 MultipleFileSelection="Automatic" Skin="Bootstrap" TemporaryFolder="~/ImagesUpload" MaxFileInputsCount="1" UploadedFilesRendering="BelowFileInput">
                                             </telerik:RadAsyncUpload>
-                                            <asp:Label ID="lbUploadInfo1" Text="File Size limit 1000KB, (jpg, bmp, png, gif, xlsm, xls, pdf)" runat="server" Font-Size="X-Small" /><br>
+                                            <asp:Label ID="lbUploadInfo1" Text="File Size limit 1000KB, (jpg, bmp, png, gif)" runat="server" Font-Size="X-Small" /><br>
                                             <asp:Label ID="lblShow1" runat="server" Font-Size="X-Small" ForeColor="#339933" />
                                         </div>
                                         <div style="display: block; float: left; width: 200px;">
-                                            <asp:Button ID="btUploadImg1" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload File" CommandName="uploadimg" Width="100px" /><span id="asyncUpload1" style="color: Red; line-height: 15px; font-size: x-small;"></span>
+                                            <asp:Button ID="btUploadImg1" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload Image" CommandName="uploadimg" Width="100px" /><span id="asyncUpload1" style="color: Red; line-height: 15px; font-size: x-small;"></span>
                                         </div>
                                     </div>
                                     <asp:Panel ID="pnShowImage1" runat="server" Visible="false">
@@ -1563,19 +1563,19 @@
                         <%--Interaction Panel--%>
 
                         <div class="row" style="padding: 4px 16px 4px 16px">
-                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Attachment File : </div>
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Picture : </div>
                             <div class="col-md-9">
                                 <telerik:RadAjaxPanel ID="RadAjaxPanel22" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
                                     <div class="row">
                                         <div style="display: block; float: left; width: 360px;">
-                                            <telerik:RadAsyncUpload ID="RadUpload2" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp,xlsx,xls,pdf"
+                                            <telerik:RadAsyncUpload ID="RadUpload2" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp"
                                                 MultipleFileSelection="Automatic" Skin="Bootstrap" TemporaryFolder="~/ImagesUpload" MaxFileInputsCount="1" UploadedFilesRendering="BelowFileInput">
                                             </telerik:RadAsyncUpload>
-                                            <asp:Label ID="lbUploadInfo2" Text="File Size limit 1000KB, (jpg, bmp, png, gif, xlsm, xls, pdf)" runat="server" Font-Size="X-Small" /><br>
+                                            <asp:Label ID="lbUploadInfo2" Text="File Size limit 1000KB, (jpg, bmp, png, gif)" runat="server" Font-Size="X-Small" /><br>
                                             <asp:Label ID="lblShow2" runat="server" Font-Size="X-Small" ForeColor="#339933" />
                                         </div>
                                         <div style="display: block; float: left; width: 200px;">
-                                            <asp:Button ID="btUploadImg2" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload File" CommandName="uploadimg" Width="100px" /><span id="asyncUpload2" style="color: Red; line-height: 15px; font-size: x-small;"></span>
+                                            <asp:Button ID="btUploadImg2" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload Image" CommandName="uploadimg" Width="100px" /><span id="asyncUpload2" style="color: Red; line-height: 15px; font-size: x-small;"></span>
                                         </div>
                                     </div>
                                     <asp:Panel ID="pnShowImage2" runat="server" Visible="false">
@@ -1587,14 +1587,13 @@
                                                             <div style="position: absolute; margin-left: 160px;">
                                                                 <asp:ImageButton ID="imbtClose2" runat="server" ImageUrl="~/Images/bt_close-dark.png" ToolTip="Cancel Upload" OnClick="imbtClose2_Click" />
                                                             </div>
-                                                            <asp:Image ID="Image2" runat="server" ImageUrl='<%# Eval("picUrl") %>' Width="176px" />
-                                                            <telerik:RadToolTip ID="RadToolTip2" runat="server" ManualClose="True" Modal="True" Position="Center" RelativeTo="Element" ShowEvent="OnClick" TargetControlID="Image2">
+                                                            <asp:Image ID="Image2" runat="server" ImageUrl='<%# Eval("picUrl") %>' Width="176px" /><telerik:RadToolTip ID="RadToolTip2" runat="server" ManualClose="True" Modal="True" Position="Center" RelativeTo="Element" ShowEvent="OnClick" TargetControlID="Image2">
                                                                 <asp:Image ID="ImageView2" runat="server" ImageUrl='<%# Eval("picUrl") %>' Height="480px" />
                                                             </telerik:RadToolTip>
                                                         </div>
                                                     </ItemTemplate>
                                                 </asp:DataList>
-                                                <asp:SqlDataSource ID="srcPicture2" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '0')">
+                                                <asp:SqlDataSource ID="srcPicture2" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '1')">
                                                     <SelectParameters>
                                                         <asp:ControlParameter ControlID="hfRecId" Name="recId" PropertyName="Value" />
                                                     </SelectParameters>
@@ -1860,19 +1859,19 @@
                         <%--Interaction Panel--%>
 
                         <div class="row" style="padding: 4px 16px 4px 16px">
-                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Attachment File : </div>
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Picture : </div>
                             <div class="col-md-9">
                                 <telerik:RadAjaxPanel ID="RadAjaxPanel32" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
                                     <div class="row">
                                         <div style="display: block; float: left; width: 360px;">
-                                            <telerik:RadAsyncUpload ID="RadUpload3" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp,xlsx,xls,pdf"
+                                            <telerik:RadAsyncUpload ID="RadUpload3" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp"
                                                 MultipleFileSelection="Automatic" Skin="Bootstrap" TemporaryFolder="~/ImagesUpload" MaxFileInputsCount="1" UploadedFilesRendering="BelowFileInput">
                                             </telerik:RadAsyncUpload>
-                                            <asp:Label ID="lbUploadInfo3" Text="File Size limit 1000KB, (jpg, bmp, png, gif, xlsm, xls, pdf)" runat="server" Font-Size="X-Small" /><br>
+                                            <asp:Label ID="lbUploadInfo3" Text="File Size limit 1000KB, (jpg, bmp, png, gif)" runat="server" Font-Size="X-Small" /><br>
                                             <asp:Label ID="lblShow3" runat="server" Font-Size="X-Small" ForeColor="#339933" />
                                         </div>
                                         <div style="display: block; float: left; width: 200px;">
-                                            <asp:Button ID="btUploadImg3" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload File" CommandName="uploadimg" Width="100px" /><span id="asyncUpload3" style="color: Red; line-height: 15px; font-size: x-small;"></span>
+                                            <asp:Button ID="btUploadImg3" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload Image" CommandName="uploadimg" Width="100px" /><span id="asyncUpload3" style="color: Red; line-height: 15px; font-size: x-small;"></span>
                                         </div>
                                     </div>
                                     <asp:Panel ID="pnShowImage3" runat="server" Visible="false">
@@ -1884,14 +1883,13 @@
                                                             <div style="position: absolute; margin-left: 160px;">
                                                                 <asp:ImageButton ID="imbtClose3" runat="server" ImageUrl="~/Images/bt_close-dark.png" ToolTip="Cancel Upload" OnClick="imbtClose3_Click" />
                                                             </div>
-                                                            <asp:Image ID="Image3" runat="server" ImageUrl='<%# Eval("picUrl") %>' Width="176px" />
-                                                            <telerik:RadToolTip ID="RadToolTip3" runat="server" ManualClose="True" Modal="True" Position="Center" RelativeTo="Element" ShowEvent="OnClick" TargetControlID="Image3">
+                                                            <asp:Image ID="Image3" runat="server" ImageUrl='<%# Eval("picUrl") %>' Width="176px" /><telerik:RadToolTip ID="RadToolTip3" runat="server" ManualClose="True" Modal="True" Position="Center" RelativeTo="Element" ShowEvent="OnClick" TargetControlID="Image3">
                                                                 <asp:Image ID="ImageView3" runat="server" ImageUrl='<%# Eval("picUrl") %>' Height="480px" />
                                                             </telerik:RadToolTip>
                                                         </div>
                                                     </ItemTemplate>
                                                 </asp:DataList>
-                                                <asp:SqlDataSource ID="srcPicture3" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '0')">
+                                                <asp:SqlDataSource ID="srcPicture3" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '2')">
                                                     <SelectParameters>
                                                         <asp:ControlParameter ControlID="hfRecId" Name="recId" PropertyName="Value" />
                                                     </SelectParameters>
@@ -2157,19 +2155,19 @@
                         <%--Interaction Panel--%>
 
                         <div class="row" style="padding: 4px 16px 4px 16px">
-                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Attachment File : </div>
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Picture : </div>
                             <div class="col-md-9">
                                 <telerik:RadAjaxPanel ID="RadAjaxPanel42" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
                                     <div class="row">
                                         <div style="display: block; float: left; width: 360px;">
-                                            <telerik:RadAsyncUpload ID="RadUpload4" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp,xlsx,xls,pdf"
+                                            <telerik:RadAsyncUpload ID="RadUpload4" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp"
                                                 MultipleFileSelection="Automatic" Skin="Bootstrap" TemporaryFolder="~/ImagesUpload" MaxFileInputsCount="1" UploadedFilesRendering="BelowFileInput">
                                             </telerik:RadAsyncUpload>
-                                            <asp:Label ID="lbUploadInfo4" Text="File Size limit 1000KB, (jpg, bmp, png, gif, xlsm, xls, pdf)" runat="server" Font-Size="X-Small" /><br>
+                                            <asp:Label ID="lbUploadInfo4" Text="File Size limit 1000KB, (jpg, bmp, png, gif)" runat="server" Font-Size="X-Small" /><br>
                                             <asp:Label ID="lblShow4" runat="server" Font-Size="X-Small" ForeColor="#339933" />
                                         </div>
                                         <div style="display: block; float: left; width: 200px;">
-                                            <asp:Button ID="btUploadImg4" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload File" CommandName="uploadimg" Width="100px" /><span id="asyncUpload4" style="color: Red; line-height: 15px; font-size: x-small;"></span>
+                                            <asp:Button ID="btUploadImg4" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload Image" CommandName="uploadimg" Width="100px" /><span id="asyncUpload4" style="color: Red; line-height: 15px; font-size: x-small;"></span>
                                         </div>
                                     </div>
                                     <asp:Panel ID="pnShowImage4" runat="server" Visible="false">
@@ -2181,14 +2179,13 @@
                                                             <div style="position: absolute; margin-left: 160px;">
                                                                 <asp:ImageButton ID="imbtClose4" runat="server" ImageUrl="~/Images/bt_close-dark.png" ToolTip="Cancel Upload" OnClick="imbtClose4_Click" />
                                                             </div>
-                                                            <asp:Image ID="Image4" runat="server" ImageUrl='<%# Eval("picUrl") %>' Width="176px" />
-                                                            <telerik:RadToolTip ID="RadToolTip4" runat="server" ManualClose="True" Modal="True" Position="Center" RelativeTo="Element" ShowEvent="OnClick" TargetControlID="Image4">
+                                                            <asp:Image ID="Image4" runat="server" ImageUrl='<%# Eval("picUrl") %>' Width="176px" /><telerik:RadToolTip ID="RadToolTip4" runat="server" ManualClose="True" Modal="True" Position="Center" RelativeTo="Element" ShowEvent="OnClick" TargetControlID="Image4">
                                                                 <asp:Image ID="ImageView4" runat="server" ImageUrl='<%# Eval("picUrl") %>' Height="480px" />
                                                             </telerik:RadToolTip>
                                                         </div>
                                                     </ItemTemplate>
                                                 </asp:DataList>
-                                                <asp:SqlDataSource ID="srcPicture4" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '0')">
+                                                <asp:SqlDataSource ID="srcPicture4" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '3')">
                                                     <SelectParameters>
                                                         <asp:ControlParameter ControlID="hfRecId" Name="recId" PropertyName="Value" />
                                                     </SelectParameters>
@@ -2454,19 +2451,19 @@
                         <%--Interaction Panel--%>
 
                         <div class="row" style="padding: 4px 16px 4px 16px">
-                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Attachment File : </div>
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Picture : </div>
                             <div class="col-md-9">
                                 <telerik:RadAjaxPanel ID="RadAjaxPanel52" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
                                     <div class="row">
                                         <div style="display: block; float: left; width: 360px;">
-                                            <telerik:RadAsyncUpload ID="RadUpload5" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp,xlsx,xls,pdf"
+                                            <telerik:RadAsyncUpload ID="RadUpload5" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp"
                                                 MultipleFileSelection="Automatic" Skin="Bootstrap" TemporaryFolder="~/ImagesUpload" MaxFileInputsCount="1" UploadedFilesRendering="BelowFileInput">
                                             </telerik:RadAsyncUpload>
-                                            <asp:Label ID="lbUploadInfo5" Text="File Size limit 1000KB, (jpg, bmp, png, gif, xlsm, xls, pdf)" runat="server" Font-Size="X-Small" /><br>
+                                            <asp:Label ID="lbUploadInfo5" Text="File Size limit 1000KB, (jpg, bmp, png, gif)" runat="server" Font-Size="X-Small" /><br>
                                             <asp:Label ID="lblShow5" runat="server" Font-Size="X-Small" ForeColor="#339933" />
                                         </div>
                                         <div style="display: block; float: left; width: 200px;">
-                                            <asp:Button ID="btUploadImg5" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload File" CommandName="uploadimg" Width="100px" /><span id="asyncUpload5" style="color: Red; line-height: 15px; font-size: x-small;"></span>
+                                            <asp:Button ID="btUploadImg5" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload Image" CommandName="uploadimg" Width="100px" /><span id="asyncUpload5" style="color: Red; line-height: 15px; font-size: x-small;"></span>
                                         </div>
                                     </div>
                                     <asp:Panel ID="pnShowImage5" runat="server" Visible="false">
@@ -2485,7 +2482,7 @@
                                                         </div>
                                                     </ItemTemplate>
                                                 </asp:DataList>
-                                                <asp:SqlDataSource ID="srcPicture5" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '0')">
+                                                <asp:SqlDataSource ID="srcPicture5" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '4')">
                                                     <SelectParameters>
                                                         <asp:ControlParameter ControlID="hfRecId" Name="recId" PropertyName="Value" />
                                                     </SelectParameters>
@@ -2751,19 +2748,19 @@
                         <%--Interaction Panel--%>
 
                         <div class="row" style="padding: 4px 16px 4px 16px">
-                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Attachment File : </div>
+                            <div style="display: block; float: left; width: 160px; text-align: right; margin-top: 7px;">Picture : </div>
                             <div class="col-md-9">
                                 <telerik:RadAjaxPanel ID="RadAjaxPanel62" runat="server" Width="100%" LoadingPanelID="RadAjaxLoadingPanel1">
                                     <div class="row">
                                         <div style="display: block; float: left; width: 360px;">
-                                            <telerik:RadAsyncUpload ID="RadUpload6" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp,xlsx,xls,pdf"
+                                            <telerik:RadAsyncUpload ID="RadUpload6" runat="server" Height="32px" MaxFileSize="20524288" AllowedFileExtensions="jpg,png,gif,bmp"
                                                 MultipleFileSelection="Automatic" Skin="Bootstrap" TemporaryFolder="~/ImagesUpload" MaxFileInputsCount="1" UploadedFilesRendering="BelowFileInput">
                                             </telerik:RadAsyncUpload>
-                                            <asp:Label ID="lbUploadInfo6" Text="File Size limit 1000KB, (jpg, bmp, png, gif, xlsm, xls, pdf)" runat="server" Font-Size="X-Small" /><br>
+                                            <asp:Label ID="lbUploadInfo6" Text="File Size limit 1000KB, (jpg, bmp, png, gif)" runat="server" Font-Size="X-Small" /><br>
                                             <asp:Label ID="lblShow6" runat="server" Font-Size="X-Small" ForeColor="#339933" />
                                         </div>
                                         <div style="display: block; float: left; width: 200px;">
-                                            <asp:Button ID="btUploadImg6" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload File" CommandName="uploadimg" Width="100px" /><span id="asyncUpload6" style="color: Red; line-height: 15px; font-size: x-small;"></span>
+                                            <asp:Button ID="btUploadImg6" runat="server" CssClass="btn btn-sm btn-primary" Text="Upload Image" CommandName="uploadimg" Width="100px" /><span id="asyncUpload6" style="color: Red; line-height: 15px; font-size: x-small;"></span>
                                         </div>
                                     </div>
                                     <asp:Panel ID="pnShowImage6" runat="server" Visible="false">
@@ -2775,14 +2772,13 @@
                                                             <div style="position: absolute; margin-left: 160px;">
                                                                 <asp:ImageButton ID="imbtClose6" runat="server" ImageUrl="~/Images/bt_close-dark.png" ToolTip="Cancel Upload" OnClick="imbtClose6_Click" />
                                                             </div>
-                                                            <asp:Image ID="Image6" runat="server" ImageUrl='<%# Eval("picUrl") %>' Width="176px" />
-                                                            <telerik:RadToolTip ID="RadToolTip6" runat="server" ManualClose="True" Modal="True" Position="Center" RelativeTo="Element" ShowEvent="OnClick" TargetControlID="Image6">
+                                                            <asp:Image ID="Image6" runat="server" ImageUrl='<%# Eval("picUrl") %>' Width="176px" /><telerik:RadToolTip ID="RadToolTip6" runat="server" ManualClose="True" Modal="True" Position="Center" RelativeTo="Element" ShowEvent="OnClick" TargetControlID="Image6">
                                                                 <asp:Image ID="ImageView6" runat="server" ImageUrl='<%# Eval("picUrl") %>' Height="480px" />
                                                             </telerik:RadToolTip>
                                                         </div>
                                                     </ItemTemplate>
                                                 </asp:DataList>
-                                                <asp:SqlDataSource ID="srcPicture6" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '0')">
+                                                <asp:SqlDataSource ID="srcPicture6" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Id, recId, observeItem, picItem, picUrl FROM tblRecordPicture WHERE (recId = @recId) AND (observeItem = '5')">
                                                     <SelectParameters>
                                                         <asp:ControlParameter ControlID="hfRecId" Name="recId" PropertyName="Value" />
                                                     </SelectParameters>
