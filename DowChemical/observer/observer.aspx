@@ -681,42 +681,108 @@
             var bt1a = $("#<%=imbtOtherAction1a.ClientID %>");
             var pn1b = $("#<%=pnRespon1b.ClientID %>");
             var pn1c = $("#<%=pnRespon1c.ClientID %>");
-            if (show) { bt1a.hide(); } else { bt1a.show(); }
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi1.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction1.ClientID%>");
+            var chkNonOfi = document.getElementById("<%=chkNonOfi1.ClientID%>");
+            if (show) {
+                bt1a.hide();
+                chkEyeOfi.checked = false;
+                chkEyeInteraction.checked = false;
+                chkNonOfi.checked = false;
+                showPanelContract1(false);
+            } else {
+                bt1a.show();
+            }
             pn1b.hide(); pn1c.hide();
         }
         function recogChk2(show) {
             var bt2a = $("#<%=imbtOtherAction2a.ClientID %>");
             var pn2b = $("#<%=pnRespon2b.ClientID %>");
             var pn2c = $("#<%=pnRespon2c.ClientID %>");
-            if (show) { bt2a.hide(); } else { bt2a.show(); }
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi2.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction2.ClientID%>");
+            var chkNonOfi = document.getElementById("<%=chkNonOfi2.ClientID%>");
+            if (show) {
+                bt2a.hide();
+                chkEyeOfi.checked = false;
+                chkEyeInteraction.checked = false;
+                chkNonOfi.checked = false;
+                showPanelContract2(false);
+            } else {
+                bt2a.show();
+            }
             pn2b.hide(); pn2c.hide();
         }
         function recogChk3(show) {
             var bt3a = $("#<%=imbtOtherAction3a.ClientID %>");
             var pn3b = $("#<%=pnRespon3b.ClientID %>");
             var pn3c = $("#<%=pnRespon3c.ClientID %>");
-            if (show) { bt3a.hide(); } else { bt3a.show(); }
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi3.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction3.ClientID%>");
+            var chkNonOfi = document.getElementById("<%=chkNonOfi3.ClientID%>");
+            if (show) {
+                bt3a.hide();
+                chkEyeOfi.checked = false;
+                chkEyeInteraction.checked = false;
+                chkNonOfi.checked = false;
+                showPanelContract3(false);
+            } else {
+                bt3a.show();
+            }
             pn3b.hide(); pn3c.hide();
         }
         function recogChk4(show) {
             var bt4a = $("#<%=imbtOtherAction4a.ClientID %>");
             var pn4b = $("#<%=pnRespon4b.ClientID %>");
             var pn4c = $("#<%=pnRespon4c.ClientID %>");
-            if (show) { bt4a.hide(); } else { bt4a.show(); }
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi4.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction4.ClientID%>");
+            var chkNonOfi = document.getElementById("<%=chkNonOfi4.ClientID%>");
+            if (show) {
+                bt4a.hide();
+                chkEyeOfi.checked = false;
+                chkEyeInteraction.checked = false;
+                chkNonOfi.checked = false;
+                showPanelContract4(false);
+            } else {
+                bt4a.show();
+            }
             pn4b.hide(); pn4c.hide();
         }
         function recogChk5(show) {
             var bt5a = $("#<%=imbtOtherAction5a.ClientID %>");
             var pn5b = $("#<%=pnRespon5b.ClientID %>");
             var pn5c = $("#<%=pnRespon5c.ClientID %>");
-            if (show) { bt5a.hide(); } else { bt5a.show(); }
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi5.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction5.ClientID%>");
+            var chkNonOfi = document.getElementById("<%=chkNonOfi5.ClientID%>");
+            if (show) {
+                bt5a.hide();
+                chkEyeOfi.checked = false;
+                chkEyeInteraction.checked = false;
+                chkNonOfi.checked = false;
+                showPanelContract5(false);
+            } else {
+                bt5a.show();
+            }
             pn5b.hide(); pn5c.hide();
         }
         function recogChk6(show) {
             var bt6a = $("#<%=imbtOtherAction6a.ClientID %>");
             var pn6b = $("#<%=pnRespon6b.ClientID %>");
             var pn6c = $("#<%=pnRespon6c.ClientID %>");
-            if (show) { bt6a.hide(); } else { bt6a.show(); }
+            var chkEyeOfi = document.getElementById("<%=chkEyeOfi6.ClientID%>");
+            var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction6.ClientID%>");
+            var chkNonOfi = document.getElementById("<%=chkNonOfi6.ClientID%>");
+            if (show) {
+                bt6a.hide();
+                chkEyeOfi.checked = false;
+                chkEyeInteraction.checked = false;
+                chkNonOfi.checked = false;
+                showPanelContract6(false);
+            } else {
+                bt6a.show();
+            }
             pn6b.hide(); pn6c.hide();
         }
 
@@ -1190,10 +1256,10 @@
                                         <asp:CheckBox ID="chkRecognition1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk1(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeOfi1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract1(this.checked);" />
+                                        <asp:CheckBox ID="chkEyeOfi1" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract1(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeInteraction1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract1(this.checked);" />
+                                        <asp:CheckBox ID="chkEyeInteraction1" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract1(this.checked);" />
                                     </div>                                    
                                 </div>
                             </div>
@@ -1209,7 +1275,7 @@
                                         <asp:CheckBox ID="chkNonRecognition1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk1(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkNonOfi1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract1(this.checked);" />
+                                        <asp:CheckBox ID="chkNonOfi1" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract1(this.checked);" />
                                     </div>                                 
                                 </div>
                             </div>
@@ -1487,10 +1553,10 @@
                                         <asp:CheckBox ID="chkRecognition2" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk2(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeOfi2" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract2(this.checked);" />
+                                        <asp:CheckBox ID="chkEyeOfi2" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract2(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeInteraction2" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract2(this.checked);" />
+                                        <asp:CheckBox ID="chkEyeInteraction2" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract2(this.checked);" />
                                     </div>                                    
                                 </div>
                             </div>
@@ -1506,7 +1572,7 @@
                                         <asp:CheckBox ID="chkNonRecognition2" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk2(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkNonOfi2" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract2(this.checked);" />
+                                        <asp:CheckBox ID="chkNonOfi2" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract2(this.checked);" />
                                     </div>                                 
                                 </div>
                             </div>
@@ -1783,10 +1849,10 @@
                                         <asp:CheckBox ID="chkRecognition3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk3(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeOfi3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract3(this.checked);" />
+                                        <asp:CheckBox ID="chkEyeOfi3" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract3(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeInteraction3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract3(this.checked);" />
+                                        <asp:CheckBox ID="chkEyeInteraction3" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract3(this.checked);" />
                                     </div>                                    
                                 </div>
                             </div>
@@ -1802,7 +1868,7 @@
                                         <asp:CheckBox ID="chkNonRecognition3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk3(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkNonOfi3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract3(this.checked);" />
+                                        <asp:CheckBox ID="chkNonOfi3" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract3(this.checked);" />
                                     </div>                                 
                                 </div>
                             </div>
@@ -2079,10 +2145,10 @@
                                         <asp:CheckBox ID="chkRecognition4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk4(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeOfi4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract4(this.checked);" />
+                                        <asp:CheckBox ID="chkEyeOfi4" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract4(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeInteraction4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract4(this.checked);" />
+                                        <asp:CheckBox ID="chkEyeInteraction4" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract4(this.checked);" />
                                     </div>                                    
                                 </div>
                             </div>
@@ -2098,7 +2164,7 @@
                                         <asp:CheckBox ID="chkNonRecognition4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk4(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkNonOfi4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract4(this.checked);" />
+                                        <asp:CheckBox ID="chkNonOfi4" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract4(this.checked);" />
                                     </div>                                 
                                 </div>
                             </div>
@@ -2375,10 +2441,10 @@
                                         <asp:CheckBox ID="chkRecognition5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk5(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeOfi5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract5(this.checked);" />
+                                        <asp:CheckBox ID="chkEyeOfi5" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract5(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeInteraction5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract5(this.checked);" />
+                                        <asp:CheckBox ID="chkEyeInteraction5" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract5(this.checked);" />
                                     </div>                                    
                                 </div>
                             </div>
@@ -2394,7 +2460,7 @@
                                         <asp:CheckBox ID="chkNonRecognition5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk5(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkNonOfi5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract5(this.checked);" />
+                                        <asp:CheckBox ID="chkNonOfi5" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract5(this.checked);" />
                                     </div>                                 
                                 </div>
                             </div>
@@ -2672,10 +2738,10 @@
                                         <asp:CheckBox ID="chkRecognition6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk6(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeOfi6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract6(this.checked);" />
+                                        <asp:CheckBox ID="chkEyeOfi6" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract6(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkEyeInteraction6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract6(this.checked);" />
+                                        <asp:CheckBox ID="chkEyeInteraction6" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Interaction" OnClick="showPanelContract6(this.checked);" />
                                     </div>                                    
                                 </div>
                             </div>
@@ -2691,7 +2757,7 @@
                                         <asp:CheckBox ID="chkNonRecognition6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk6(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkNonOfi6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract6(this.checked);" />
+                                        <asp:CheckBox ID="chkNonOfi6" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract6(this.checked);" />
                                     </div>                                 
                                 </div>
                             </div>
@@ -3286,6 +3352,50 @@
                     <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1c" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkEyeOfi1">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction1a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction1b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction1c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon1a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon1a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition1" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition1" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeInteraction1" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkEyeInteraction1">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction1a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction1b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction1c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon1a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon1a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition1" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition1" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeOfi1" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkNonOfi1">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction1a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction1b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction1c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon1a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon1a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition1" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition1" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted1c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="btUploadImg1">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="RadUpload1" />
@@ -3371,6 +3481,50 @@
                     <telerik:AjaxUpdatedControl ControlID="racRespon2a" />
                     <telerik:AjaxUpdatedControl ControlID="imbtFindRespon2a" />
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition2" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkEyeOfi2">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction2a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction2b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction2c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon2a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon2a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition2" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition2" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeInteraction2" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkEyeInteraction2">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction2a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction2b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction2c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon2a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon2a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition2" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition2" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeOfi2" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkNonOfi2">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction2a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction2b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction2c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon2a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon2a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition2" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition2" />
                     <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2a" />
                     <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2b" />
                     <telerik:AjaxUpdatedControl ControlID="cbActionCompleted2c" />
@@ -3466,6 +3620,50 @@
                     <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3c" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkEyeOfi3">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon3a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon3a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition3" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition3" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeInteraction3" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkEyeInteraction3">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon3a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon3a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition3" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition3" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeOfi3" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkNonOfi3">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction3c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon3a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon3a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition3" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition3" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted3c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="btUploadImg3">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="RadUpload3" />
@@ -3551,6 +3749,50 @@
                     <telerik:AjaxUpdatedControl ControlID="racRespon4a" />
                     <telerik:AjaxUpdatedControl ControlID="imbtFindRespon4a" />
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition4" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkEyeOfi4">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction4a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction4b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction4c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon4a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon4a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition4" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition4" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeInteraction4" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkEyeInteraction4">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction4a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction4b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction4c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon4a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon4a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition4" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition4" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeOfi4" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkNonOfi4">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction4a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction4b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction4c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon4a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon4a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition4" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition4" />
                     <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4a" />
                     <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4b" />
                     <telerik:AjaxUpdatedControl ControlID="cbActionCompleted4c" />
@@ -3646,6 +3888,50 @@
                     <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5c" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkEyeOfi5">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction5a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction5b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction5c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon5a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon5a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition5" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition5" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeInteraction5" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkEyeInteraction5">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction5a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction5b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction5c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon5a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon5a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition5" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition5" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeOfi5" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkNonOfi5">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction5a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction5b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction5c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon5a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon5a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition5" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition5" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted5c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="btUploadImg5">
                 <UpdatedControls>
                     <telerik:AjaxUpdatedControl ControlID="RadUpload5" />
@@ -3731,6 +4017,50 @@
                     <telerik:AjaxUpdatedControl ControlID="racRespon6a" />
                     <telerik:AjaxUpdatedControl ControlID="imbtFindRespon6a" />
                     <telerik:AjaxUpdatedControl ControlID="chkRecognition6" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkEyeOfi6">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction6a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction6b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction6c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon6a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon6a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition6" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition6" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeInteraction6" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkEyeInteraction6">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction6a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction6b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction6c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon6a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon6a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition6" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition6" />
+                    <telerik:AjaxUpdatedControl ControlID="chkEyeOfi6" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6a" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6b" />
+                    <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6c" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="chkNonOfi6">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="tbAction6a" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction6b" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction6c" />
+                    <telerik:AjaxUpdatedControl ControlID="racRespon6a" />
+                    <telerik:AjaxUpdatedControl ControlID="imbtFindRespon6a" />
+                    <telerik:AjaxUpdatedControl ControlID="chkRecognition6" />
+                    <telerik:AjaxUpdatedControl ControlID="chkNonRecognition6" />
                     <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6a" />
                     <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6b" />
                     <telerik:AjaxUpdatedControl ControlID="cbActionCompleted6c" />

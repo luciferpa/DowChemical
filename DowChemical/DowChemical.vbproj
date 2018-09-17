@@ -493,8 +493,6 @@
     </Content>
     <Content Include="detail\Web.config" />
     <None Include="My Project\PublishProfiles\DowChemical - Web Deploy.pubxml" />
-    <None Include="My Project\PublishProfiles\DowChemical-APlus.pubxml" />
-    <None Include="My Project\PublishProfiles\DowChemical.pubxml" />
     <Content Include="observer\Web.config" />
     <None Include="Scripts\jquery-2.2.4-vsdoc.js" />
     <Content Include="Scripts\bootstrap.js" />

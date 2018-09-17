@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:golfpati.database.windows.net,1433;Initial Catalog=DOWDB;Persist Security Info=False;User ID=g_patiwat;Password=Golf0814460074;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:golfpati.database.windows.net,1433;Initial Catalog=DOWDB;Persist Security Info=False;User ID=g_patiwat;Password=Golf0814460074;&#xD;&#xA;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\DowChemical\\DowChemical\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
   <parameter name="DefaultConnection2-Web.config Connection String" description="DefaultConnection2 Connection String used in web.config by the application to access the database." defaultValue="Data Source=mssql-2012.chaiyohosting.com;Initial Catalog=DOWDB;User ID=dow;Password=!23qwe" tags="SqlConnectionString">
