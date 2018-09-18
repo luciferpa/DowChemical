@@ -461,12 +461,11 @@
             var hf = document.getElementById("<%=hfPnContract1.ClientID%>");
             var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction1.ClientID%>");
             var chkEyeOfi = document.getElementById("<%=chkEyeOfi1.ClientID%>");
-            var chkNonOfi = document.getElementById("<%=chkNonOfi1.ClientID%>");
             if (show) {
                 pn.show();
                 hf.value = "1";
             } else {
-                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false && chkNonOfi.checked == false) {
+                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false) {
                     pn.hide();
                     hf.value = "0";
                 }                
@@ -477,12 +476,11 @@
             var hf = document.getElementById("<%=hfPnContract2.ClientID%>");
             var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction2.ClientID%>");
             var chkEyeOfi = document.getElementById("<%=chkEyeOfi2.ClientID%>");
-            var chkNonOfi = document.getElementById("<%=chkNonOfi2.ClientID%>");
             if (show) {
                 pn.show();
                 hf.value = "1";
             } else {
-                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false && chkNonOfi.checked == false) {
+                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false) {
                     pn.hide();
                     hf.value = "0";
                 }                
@@ -493,12 +491,11 @@
             var hf = document.getElementById("<%=hfPnContract3.ClientID%>");
             var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction3.ClientID%>");
             var chkEyeOfi = document.getElementById("<%=chkEyeOfi3.ClientID%>");
-            var chkNonOfi = document.getElementById("<%=chkNonOfi3.ClientID%>");
             if (show) {
                 pn.show();
                 hf.value = "1";
             } else {
-                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false && chkNonOfi.checked == false) {
+                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false) {
                     pn.hide();
                     hf.value = "0";
                 }                
@@ -509,12 +506,11 @@
             var hf = document.getElementById("<%=hfPnContract4.ClientID%>");
             var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction4.ClientID%>");
             var chkEyeOfi = document.getElementById("<%=chkEyeOfi4.ClientID%>");
-            var chkNonOfi = document.getElementById("<%=chkNonOfi4.ClientID%>");
             if (show) {
                 pn.show();
                 hf.value = "1";
             } else {
-                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false && chkNonOfi.checked == false) {
+                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false) {
                     pn.hide();
                     hf.value = "0";
                 }                
@@ -525,12 +521,11 @@
             var hf = document.getElementById("<%=hfPnContract5.ClientID%>");
             var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction5.ClientID%>");
             var chkEyeOfi = document.getElementById("<%=chkEyeOfi5.ClientID%>");
-            var chkNonOfi = document.getElementById("<%=chkNonOfi5.ClientID%>");
             if (show) {
                 pn.show();
                 hf.value = "1";
             } else {
-                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false && chkNonOfi.checked == false) {
+                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false) {
                     pn.hide();
                     hf.value = "0";
                 }                
@@ -541,12 +536,11 @@
             var hf = document.getElementById("<%=hfPnContract6.ClientID%>");
             var chkEyeInteraction = document.getElementById("<%=chkEyeInteraction6.ClientID%>");
             var chkEyeOfi = document.getElementById("<%=chkEyeOfi6.ClientID%>");
-            var chkNonOfi = document.getElementById("<%=chkNonOfi6.ClientID%>");
             if (show) {
                 pn.show();
                 hf.value = "1";
             } else {
-                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false && chkNonOfi.checked == false) {
+                if (chkEyeInteraction.checked == false && chkEyeOfi.checked == false) {
                     pn.hide();
                     hf.value = "0";
                 }                
@@ -1275,7 +1269,7 @@
                                         <asp:CheckBox ID="chkNonRecognition1" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk1(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkNonOfi1" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract1(this.checked);" />
+                                        <asp:CheckBox ID="chkNonOfi1" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" />
                                     </div>                                 
                                 </div>
                             </div>
@@ -1572,7 +1566,7 @@
                                         <asp:CheckBox ID="chkNonRecognition2" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk2(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkNonOfi2" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract2(this.checked);" />
+                                        <asp:CheckBox ID="chkNonOfi2" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" />
                                     </div>                                 
                                 </div>
                             </div>
@@ -1868,7 +1862,7 @@
                                         <asp:CheckBox ID="chkNonRecognition3" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk3(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkNonOfi3" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract3(this.checked);" />
+                                        <asp:CheckBox ID="chkNonOfi3" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" />
                                     </div>                                 
                                 </div>
                             </div>
@@ -2164,7 +2158,7 @@
                                         <asp:CheckBox ID="chkNonRecognition4" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk4(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkNonOfi4" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract4(this.checked);" />
+                                        <asp:CheckBox ID="chkNonOfi4" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" />
                                     </div>                                 
                                 </div>
                             </div>
@@ -2460,7 +2454,7 @@
                                         <asp:CheckBox ID="chkNonRecognition5" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk5(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkNonOfi5" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract5(this.checked);" />
+                                        <asp:CheckBox ID="chkNonOfi5" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" />
                                     </div>                                 
                                 </div>
                             </div>
@@ -2757,7 +2751,7 @@
                                         <asp:CheckBox ID="chkNonRecognition6" runat="server" CssClass="chkBT2m" Text="&nbsp;&nbsp;Recognition" AutoPostBack="True" OnClick="recogChk6(this.checked);" />
                                     </div>
                                     <div>
-                                        <asp:CheckBox ID="chkNonOfi6" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" OnClick="showPanelContract6(this.checked);" />
+                                        <asp:CheckBox ID="chkNonOfi6" runat="server" AutoPostBack="True" CssClass="chkBT2m" Text="&nbsp;&nbsp;Opportunity For Improvement [OFI]" />
                                     </div>                                 
                                 </div>
                             </div>
